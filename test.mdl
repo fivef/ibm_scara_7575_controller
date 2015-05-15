@@ -1,0 +1,5152 @@
+Model {
+  Name			  "test"
+  Version		  8.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.284"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "test"
+      PropName		      "mdlProps"
+    }
+  }
+  PreLoadFcn		  "waijung.modelPreload; % Required for working with Waijung Blockset. Do not remove."
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  CloseFcn		  "waijung.modelClose; % Required for working with Waijung Blockset. Do not remove."
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [1.0, 0.0, 1918.0, 1169.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		3
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1868.0, 991.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "293"
+	  Extents		  [1868.0, 991.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-137.46866313706778, -7.90438259876197]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "256"
+	  Extents		  [1868.0, 991.0]
+	  ZoomFactor		  [1.7499999999999993]
+	  Offset		  [0.0, 2.2737367544323206e-13]
+	}
+	PropName		"EditorsInfo"
+      }
+    }
+  }
+  Created		  "Sat Jul 27 18:57:47 2013"
+  Creator		  "Sr Antonio"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sp"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 15 16:57:21 2015"
+  RTWModifiedTimeStamp	  353508535
+  ModelVersionFormat	  "1.%<AutoIncrement:284>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  on
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    9
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "test"
+    signals_		    []
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "test"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      10
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "1"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsWarning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  15
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "ARM Compatible->Cortex - M4"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "LittleEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "ARM Compatible->Cortex - M4"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  16
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  17
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  18
+	  Version		  "1.13.0"
+	  SystemTargetFile	  "stm32f4.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  off
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "ert_default_tmf"
+	  Description		  "STM32F4 Target"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "stm32f4_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  on
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      19
+	      Version		      "1.13.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Classic"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      20
+	      Version		      "1.13.0"
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  off
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "stm32f4.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.ERTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  21
+		  Version		  "1.13.0"
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Use local settings"
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  on
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  off
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  off
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  off
+		  GenerateASAP2		  off
+		  ExtMode		  off
+		  ExtModeTransport	  0
+		  ExtModeStaticAlloc	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTesting	  off
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  InlinedParameterPlacement "NonHierarchical"
+		  TargetOS		  "BareBoardExample"
+		  MultiInstanceErrorCode  "Error"
+		  RateGroupingCode	  on
+		  RootIOFormat		  "Individual arguments"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  ERTSrcFileBannerTemplate "stm32f4_code_template.cgt"
+		  ERTHdrFileBannerTemplate "stm32f4_code_template.cgt"
+		  ERTDataSrcFileTemplate  "stm32f4_code_template.cgt"
+		  ERTDataHdrFileTemplate  "stm32f4_code_template.cgt"
+		  ERTCustomFileTemplate	  "stm32f4_file_process.tlc"
+		  EnableDataOwnership	  off
+		  SignalDisplayLevel	  10
+		  ParamTuneLevel	  10
+		  GlobalDataDefinition	  "Auto"
+		  DataDefinitionFile	  "global.c"
+		  GlobalDataReference	  "Auto"
+		  ERTFilePackagingFormat  "Modular"
+		  DataReferenceFile	  "global.h"
+		  PreserveExpressionOrder off
+		  PreserveIfCondition	  off
+		  ConvertIfToSwitch	  off
+		  PreserveExternInFcnDecls on
+		  SuppressUnreachableDefaultCases off
+		  EnableUserReplacementTypes off
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    double		    ""
+		    single		    ""
+		    int32		    ""
+		    int16		    ""
+		    int8		    ""
+		    uint32		    ""
+		    uint16		    ""
+		    uint8		    ""
+		    boolean		    ""
+		    int			    ""
+		    uint		    ""
+		    char		    ""
+		    }
+		    PropName		    "ReplacementTypes"
+		  }
+		  MemSecPackage		  "--- None ---"
+		  MemSecDataConstants	  "Default"
+		  MemSecDataIO		  "Default"
+		  MemSecDataInternal	  "Default"
+		  MemSecDataParameters	  "Default"
+		  MemSecFuncInitTerm	  "Default"
+		  MemSecFuncExecute	  "Default"
+		  MemSecFuncSharedUtil	  "Default"
+		}
+		PropName		"Components"
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  22
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  23
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    MECH.SimMechanicsCC {
+	      $ObjectID		      24
+	      Version		      "1.13.0"
+	      Name		      "SimMechanics"
+	      WarnOnRedundantConstraints on
+	      WarnOnSingularInitialAssembly off
+	      ShowCutJoints	      off
+	      VisOnUpdateDiagram      off
+	      VisDuringSimulation     off
+	      EnableVisSimulationTime on
+	      VisSampleTime	      "0"
+	      DisableBodyVisControl   off
+	      ShowCG		      on
+	      ShowCS		      on
+	      ShowOnlyPortCS	      off
+	      HighlightModel	      on
+	      FramesToBeSkipped	      "0"
+	      AnimationDelay	      "3"
+	      RecordAVI		      off
+	      CompressAVI	      on
+	      AutoFitVis	      "off"
+	      EnableSelection	      on
+	      LastVizWinPosition      "[-1 -1 -1 -1]"
+	      CamPosition	      "[0 0 0]"
+	      CamTarget		      "[0 0 -1]"
+	      CamUpVector	      "[0 1 0]"
+	      CamHeight		      "-1"
+	      CamViewAngle	      "0"
+	      VisBackgroundColor      "[0.9 0.9 0.95]"
+	      DefaultBodyColor	      "[1 0 0]"
+	      MDLBodyVisualizationType "Convex hull from body CS locations"
+	      OVRRIDBodyVisualizationType "NONE"
+	    }
+	    simmechanics.ConfigurationSet {
+	      $ObjectID		      25
+	      Version		      "1.13.0"
+	      Description	      "SimMechanics 2G"
+	      Array {
+		Type			"Handle"
+		Dimension		2
+		simmechanics.DiagnosticsConfigSet {
+		  $ObjectID		  26
+		  Version		  "1.13.0"
+		  Description		  "Diagnostics"
+		  Name			  "DiagnosticsConfigSet"
+		  SimMechanicsInvalidVisualProperty "warning"
+		  SimMechanicsCrossSectionNullEdge "warning"
+		  SimMechanicsUnconnectedFramePorts "warning"
+		  SimMechanicsRedundantBlock "warning"
+		  SimMechanicsConflictingReferenceFrames "warning"
+		  SimMechanicsRigidlyBoundBlock	"error"
+		  SimMechanicsUnsatisfiedHighPriorityTargets "warning"
+		  SimMechanicsJointTargetOverSpecification "error"
+		}
+		simmechanics.ExplorerConfigSet {
+		  $ObjectID		  27
+		  Version		  "1.13.0"
+		  Description		  "Explorer"
+		  Name			  "ExplorerConfigSet"
+		  SimMechanicsOpenEditorOnUpdate on
+		}
+		PropName		"Components"
+	      }
+	      Name		      "SimMechanics2G"
+	    }
+	    PropName		    "Components"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogSimulationStatistics off
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "stm32f4_configset"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Code Generation/Interface"
+      ConfigPrmDlgPosition     [ 533, 115, 1765, 964 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    10
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    28
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      DeadZone
+      LowerValue	      "-0.5"
+      UpperValue	      "0.5"
+      SaturateOnIntegerOverflow	on
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Memory
+      X0		      "0"
+      InheritSampleTime	      off
+      LinearizeMemory	      off
+      LinearizeAsDelay	      off
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      X0		      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Signum
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+  }
+  System {
+    Name		    "test"
+    Location		    [1, 0, 1919, 1169]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "125"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "498"
+    Block {
+      BlockType		      Reference
+      Name		      "Compare\nTo Constant"
+      SID		      "383"
+      Ports		      [1, 1]
+      Position		      [2045, 770, 2075, 800]
+      ZOrder		      170
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      SourceType	      "Compare To Constant"
+      relop		      "~="
+      const		      "0"
+      OutDataTypeStr	      "boolean"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Compare\nTo Constant1"
+      SID		      "419"
+      Ports		      [1, 1]
+      Position		      [2045, 1005, 2075, 1035]
+      ZOrder		      179
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      SourceType	      "Compare To Constant"
+      relop		      "~="
+      const		      "0"
+      OutDataTypeStr	      "boolean"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion1"
+      SID		      "375"
+      Position		      [315, 598, 390, 632]
+      ZOrder		      182
+      ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
+      OutDataTypeStr	      "boolean"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion3"
+      SID		      "482"
+      Position		      [1150, 488, 1225, 522]
+      ZOrder		      191
+      OutDataTypeStr	      "int32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion4"
+      SID		      "421"
+      Position		      [1630, 1028, 1705, 1062]
+      ZOrder		      176
+      OutDataTypeStr	      "double"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion5"
+      SID		      "483"
+      Position		      [1140, 338, 1215, 372]
+      ZOrder		      192
+      OutDataTypeStr	      "int32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion7"
+      SID		      "491"
+      Position		      [1510, 788, 1585, 822]
+      ZOrder		      199
+      OutDataTypeStr	      "double"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "Encoder Read"
+      SID		      "498"
+      Ports		      [0, 2]
+      Position		      [785, 743, 975, 872]
+      ZOrder		      200
+      FunctionName	      "stm32f4_encoderread"
+      Parameters	      "sampletime,sampletimestr,blockid,timer,apb,portstr,pinstr,pinmat,chmat,filterstr,filter,factor"
+      ",rstcnt,ppr"
+      EnableBusSupport	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		29
+	$ClassName		"Simulink.Mask"
+	Type			"stm32f4_encoderread"
+	Description		"The output Direction (uint32) is the direction of rotation either 0 or 1.\n\nThe output Position (count"
+	") (uint32) is the count of number of edges of the encoder output signals from either channel A and B. The decoder is "
+	"set to count at every rising and falling edge of both channel A and B (4x) or (x2) for one channel. For example, if a"
+	"n encoder has 180 pulses per revolution (PPS) and two channels are selected, the maximum count is 720 per revolution "
+	"(4x180 = 720), i.e. from 0 to 719."
+	Help			"web(fullfile(waijungdocroot,'stm32f4_encoderread.htm'),'-browser')"
+	Initialization		"stm32f4_encoderread_callback('init');"
+	SelfModifiable		"on"
+	Display			"text(0.05, 0.5, 'Timer: 1\\nInput pins [CH_A, CH_B]: [E9,E11]\\nRST Counter: No\\nTs (sec): 0.01','ver','m"
+	"iddle','hor','left');port_label('output', 1, 'Direction');port_label('output', 2, 'Position (count)')"
+	IconUnits		"normalized"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  18
+	  Object {
+	    $ObjectID		    30
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      6
+	      Cell		      "1"
+	      Cell		      "2"
+	      Cell		      "3"
+	      Cell		      "4"
+	      Cell		      "5"
+	      Cell		      "8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "timer"
+	    Prompt		    "Timer"
+	    Value		    "1"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('timer');"
+	  }
+	  Object {
+	    $ObjectID		    31
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Not available - Do not use"
+	      Cell		      "E9"
+	      Cell		      "A8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "ch1"
+	    Prompt		    "Channel A Input Pin"
+	    Value		    "E9"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('chA');"
+	  }
+	  Object {
+	    $ObjectID		    32
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Not available - Do not use"
+	      Cell		      "E11"
+	      Cell		      "A9"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "ch2"
+	    Prompt		    "Channel B Input Pin"
+	    Value		    "E11"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('chB');"
+	  }
+	  Object {
+	    $ObjectID		    33
+	    Type		    "edit"
+	    Name		    "ppr"
+	    Prompt		    "PPR (Number of pulses generated per revolution)"
+	    Value		    "180"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('ppr');"
+	  }
+	  Object {
+	    $ObjectID		    34
+	    Type		    "checkbox"
+	    Name		    "rstcnt"
+	    Prompt		    "Reset counter after every counter read"
+	    Value		    "off"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('rstcnt');"
+	  }
+	  Object {
+	    $ObjectID		    35
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      16
+	      Cell		      "No filter; sampling is done at fDTS"
+	      Cell		      "fSAMPLING=fCK_INT; N=2"
+	      Cell		      "fSAMPLING=fCK_INT; N=4"
+	      Cell		      "fSAMPLING=fCK_INT; N=8"
+	      Cell		      "fSAMPLING=fDTS/2; N=6"
+	      Cell		      "fSAMPLING=fDTS/2; N=8"
+	      Cell		      "fSAMPLING=fDTS/4; N=6"
+	      Cell		      "fSAMPLING=fDTS/4; N=8"
+	      Cell		      "fSAMPLING=fDTS/8; N=6"
+	      Cell		      "fSAMPLING=fDTS/8; N=8"
+	      Cell		      "fSAMPLING=fDTS/16; N=5"
+	      Cell		      "fSAMPLING=fDTS/16; N=6"
+	      Cell		      "fSAMPLING=fDTS/16; N=8"
+	      Cell		      "fSAMPLING=fDTS/32; N=5"
+	      Cell		      "fSAMPLING=fDTS/32; N=6"
+	      Cell		      "fSAMPLING=fDTS/32; N=8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "filterstr"
+	    Prompt		    "Built-in Input Capture Filter"
+	    Value		    "No filter; sampling is done at fDTS"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "stm32f4_encoderread_callback('filterstr');"
+	  }
+	  Object {
+	    $ObjectID		    36
+	    Type		    "edit"
+	    Name		    "sampletime"
+	    Prompt		    "Sample time (sec)"
+	    Value		    "0.01"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    37
+	    Type		    "edit"
+	    Name		    "sampletimestr"
+	    Prompt		    "Compiled sample time (sec) in string"
+	    Value		    "0.01"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "stm32f4_encoderread_callback('sampletimestr');"
+	  }
+	  Object {
+	    $ObjectID		    38
+	    Type		    "edit"
+	    Name		    "blockid"
+	    Prompt		    "BlockID"
+	    Value		    "EncoderRead"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "stm32f4_encoderread_callback('blockid');"
+	  }
+	  Object {
+	    $ObjectID		    39
+	    Type		    "checkbox"
+	    Name		    "absresetinput"
+	    Prompt		    "Enable absolute position reset input signal"
+	    Value		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    40
+	    Type		    "edit"
+	    Name		    "portpinstr"
+	    Prompt		    "Port pin string"
+	    Value		    "E9,E11"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    41
+	    Type		    "edit"
+	    Name		    "portstr"
+	    Prompt		    "Port string"
+	    Value		    "[\"E\"]"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    42
+	    Type		    "edit"
+	    Name		    "pinstr"
+	    Prompt		    "Pin string"
+	    Value		    "[\"GPIO_Pin_9 | GPIO_Pin_11\"]"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    43
+	    Type		    "edit"
+	    Name		    "pinmat"
+	    Prompt		    "Pin matrix"
+	    Value		    "[2 9 11]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    44
+	    Type		    "edit"
+	    Name		    "chmat"
+	    Prompt		    "Channel order"
+	    Value		    "[1  2]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    45
+	    Type		    "edit"
+	    Name		    "apb"
+	    Prompt		    "APB"
+	    Value		    "2"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    46
+	    Type		    "edit"
+	    Name		    "filter"
+	    Prompt		    "Filter ID"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    47
+	    Type		    "edit"
+	    Name		    "factor"
+	    Prompt		    "Factor"
+	    Value		    "4"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Motor 1"
+      SID		      "256"
+      Ports		      [1]
+      Position		      [2115, 834, 2230, 876]
+      ZOrder		      154
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Motor 1"
+	Location		[1, 0, 1919, 1169]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"175"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Motor Speed"
+	  SID			  "257"
+	  Position		  [270, 208, 300, 222]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutMin		  "[-1]"
+	  OutMax		  "[1]"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  SID			  "218"
+	  Position		  [405, 130, 435, 160]
+	  ZOrder		  129
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "Basic PWM"
+	  SID			  "205"
+	  Ports			  [1]
+	  Position		  [630, 106, 810, 184]
+	  ZOrder		  125
+	  FunctionName		  "stm32f4_basicpwm"
+	  Parameters		  "timer,pwmperiod,ch1pin,ch2pin,ch3pin,ch4pin,sampletime,sampletimestr,blockid,apb,portstr,pinstr,pinm"
+	  "at,timarr,timprescale,chmat,polaritystr"
+	  EnableBusSupport	  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    48
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "stm32f4_basicpwm"
+	    Description		    "This block implements basic Edge-aligned Pulse Width Modulation (PWM) generation.\nAll timers a"
+	    "re 16-bit. The PWM period is fixed (per timer)."
+	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
+	    Initialization	    "stm32f4_basicpwm_callback('init');"
+	    SelfModifiable	    "on"
+	    Display		    "text(0.95, 0.5, 'Timer: 3\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
+	    "le','hor','right');port_label('input', 1,'CH1 (A6)')"
+	    IconUnits		    "normalized"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      22
+	      Object {
+		$ObjectID		49
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  12
+		  Cell			  "1"
+		  Cell			  "2"
+		  Cell			  "3"
+		  Cell			  "4"
+		  Cell			  "5"
+		  Cell			  "8"
+		  Cell			  "9"
+		  Cell			  "10"
+		  Cell			  "11"
+		  Cell			  "12"
+		  Cell			  "13"
+		  Cell			  "14"
+		  PropName		  "TypeOptions"
+		}
+		Name			"timer"
+		Prompt			"Timer"
+		Value			"3"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('timer');"
+	      }
+	      Object {
+		$ObjectID		50
+		Type			"edit"
+		Name			"pwmperiod"
+		Prompt			"PWM Period (seconds)"
+		Value			"4e-5"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('pwmperiod');"
+	      }
+	      Object {
+		$ObjectID		51
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Active High"
+		  Cell			  "Active Low"
+		  PropName		  "TypeOptions"
+		}
+		Name			"polarity"
+		Prompt			"Polarity"
+		Value			"Active High"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('polarity');"
+	      }
+	      Object {
+		$ObjectID		52
+		Type			"edit"
+		Name			"polaritystr"
+		Prompt			"Polaritystr"
+		Value			"TIM_OCPolarity_High"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		53
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  4
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A6"
+		  Cell			  "C6"
+		  Cell			  "B4"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch1pin"
+		Prompt			"Channel 1"
+		Value			"A6"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch1pin');"
+	      }
+	      Object {
+		$ObjectID		54
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  4
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A7"
+		  Cell			  "C7"
+		  Cell			  "B5"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch2pin"
+		Prompt			"Channel 2"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch2pin');"
+	      }
+	      Object {
+		$ObjectID		55
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  3
+		  Cell			  "Not available - Do not use"
+		  Cell			  "B0"
+		  Cell			  "C8"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch3pin"
+		Prompt			"Channel 3"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch3pin');"
+	      }
+	      Object {
+		$ObjectID		56
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  3
+		  Cell			  "Not available - Do not use"
+		  Cell			  "B1"
+		  Cell			  "C9"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch4pin"
+		Prompt			"Channel 4"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch4pin');"
+	      }
+	      Object {
+		$ObjectID		57
+		Type			"edit"
+		Name			"sampletime"
+		Prompt			"Sample time (sec)"
+		Value			"0.01"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('sampletime');"
+	      }
+	      Object {
+		$ObjectID		58
+		Type			"edit"
+		Name			"sampletimestr"
+		Prompt			"Compiled sample time (sec) in string"
+		Value			"0.01"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+		Callback		"stm32f4_basicpwm_callback('sampletimestr');"
+	      }
+	      Object {
+		$ObjectID		59
+		Type			"edit"
+		Name			"blockid"
+		Prompt			"BlockID"
+		Value			"Motor1BasicPWM"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+		Callback		"stm32f4_basicpwm_callback('blockid');"
+	      }
+	      Object {
+		$ObjectID		60
+		Type			"edit"
+		Name			"portpinstr"
+		Prompt			"Port pin string"
+		Value			"A6,,,"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		61
+		Type			"checkbox"
+		Name			"enablecustomportlabel"
+		Prompt			"Enable custom port labels"
+		Value			"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('enablecustomportlabel');"
+	      }
+	      Object {
+		$ObjectID		62
+		Type			"edit"
+		Name			"cinputportlabel"
+		Prompt			"Custom input port labels (Ex. In1, In2, In3)"
+		Value			"In1, In2, In3, In4"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		63
+		Type			"edit"
+		Name			"coutputportlabel"
+		Prompt			"Custom output port labels (Ex. Out1, Out2, Out3)"
+		Value			"0"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		64
+		Type			"edit"
+		Name			"apb"
+		Prompt			"APB"
+		Value			"1"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		65
+		Type			"edit"
+		Name			"portstr"
+		Prompt			"Port string"
+		Value			"[\"A\"]"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		66
+		Type			"edit"
+		Name			"pinstr"
+		Prompt			"Pin string"
+		Value			"[\"GPIO_Pin_6\"]"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		67
+		Type			"edit"
+		Name			"pinmat"
+		Prompt			"Pin matrix"
+		Value			"[1 6]"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		68
+		Type			"edit"
+		Name			"timarr"
+		Prompt			"Timer ARR"
+		Value			"1119"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		69
+		Type			"edit"
+		Name			"timprescale"
+		Prompt			"Timer PRESCALE"
+		Value			"2"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		70
+		Type			"edit"
+		Name			"chmat"
+		Prompt			"Channel order"
+		Value			"[1]"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "220"
+	  Ports			  [1, 1]
+	  Position		  [480, 285, 510, 315]
+	  ZOrder		  130
+	  LibraryVersion	  "1.274"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  relop			  ">"
+	  const			  "0"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion6"
+	  SID			  "488"
+	  Position		  [500, 128, 575, 162]
+	  ZOrder		  196
+	  OutDataTypeStr	  "double"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Direction"
+	  SID			  "204"
+	  Ports			  [2]
+	  Position		  [625, 280, 815, 360]
+	  ZOrder		  124
+	  LibraryVersion	  "1.48"
+	  SourceBlock		  "stm32f4_io_lib/Digital Output"
+	  SourceType		  "stm32f4_digital_output"
+	  use_bitband		  on
+	  port			  "A"
+	  speed			  "100"
+	  porttype		  "Push Pull"
+	  porttypestr		  "PP"
+	  use_pin0		  off
+	  use_pin1		  off
+	  use_pin2		  off
+	  use_pin3		  off
+	  use_pin4		  on
+	  use_pin5		  on
+	  use_pin6		  off
+	  use_pin7		  off
+	  use_pin8		  off
+	  use_pin9		  off
+	  use_pin10		  off
+	  use_pin11		  off
+	  use_pin12		  off
+	  use_pin13		  off
+	  use_pin14		  off
+	  use_pin15		  off
+	  pinstr		  "GPIO_Pin_4 | GPIO_Pin_5"
+	  usedpinarray		  "[0  0  0  0  1  1  0  0  0  0  0  0  0  0  0  0]"
+	  bitbandingstr		  "\n#define Motor1Direction_A4 Peripheral_BB(GPIOA->ODR, 4)  /* Output pin */\n#define Motor1Direct"
+	  "ion_A5 Peripheral_BB(GPIOA->ODR, 5)  /* Output pin */"
+	  sampletime		  "-1"
+	  sampletimestr		  "0"
+	  blockid		  "Motor1Direction"
+	  enablecustomportlabel	  off
+	  globalinit		  off
+	  cinputportlabel	  "In1, In2"
+	  coutputportlabel	  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "492"
+	  Position		  [340, 125, 380, 165]
+	  ZOrder		  197
+	  Gain			  "100"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "209"
+	  Ports			  [1, 1]
+	  Position		  [565, 324, 595, 356]
+	  ZOrder		  126
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Direction"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Motor Speed"
+	  SrcPort		  1
+	  Points		  [51, 0]
+	  Branch {
+	    Points		    [0, -10; -47, 0; 0, -60]
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Compare\nTo Constant"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Data Type Conversion6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  Points		  [22, 0]
+	  Branch {
+	    DstBlock		    "Direction"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "Logical\nOperator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion6"
+	  SrcPort		  1
+	  DstBlock		  "Basic PWM"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "103"
+	  Name			  "-1 to 1 to pwm and motor direction converter\n"
+	  Position		  [486, 81]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  ZOrder		  -2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Motor 2"
+      SID		      "422"
+      Ports		      [1]
+      Position		      [2115, 1069, 2230, 1111]
+      ZOrder		      173
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Motor 2"
+	Location		[1, 0, 1919, 1169]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"175"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Motor Speed"
+	  SID			  "423"
+	  Position		  [270, 208, 300, 222]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutMin		  "[-1]"
+	  OutMax		  "[1]"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  SID			  "424"
+	  Position		  [480, 130, 510, 160]
+	  ZOrder		  129
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "Basic PWM"
+	  SID			  "425"
+	  Ports			  [1]
+	  Position		  [630, 126, 810, 204]
+	  ZOrder		  125
+	  FunctionName		  "stm32f4_basicpwm"
+	  Parameters		  "timer,pwmperiod,ch1pin,ch2pin,ch3pin,ch4pin,sampletime,sampletimestr,blockid,apb,portstr,pinstr,pinm"
+	  "at,timarr,timprescale,chmat,polaritystr"
+	  EnableBusSupport	  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    71
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "stm32f4_basicpwm"
+	    Description		    "This block implements basic Edge-aligned Pulse Width Modulation (PWM) generation.\nAll timers a"
+	    "re 16-bit. The PWM period is fixed (per timer)."
+	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
+	    Initialization	    "stm32f4_basicpwm_callback('init');"
+	    SelfModifiable	    "on"
+	    Display		    "text(0.95, 0.5, 'Timer: 5\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
+	    "le','hor','right');port_label('input', 1,'CH1 (A0)')"
+	    IconUnits		    "normalized"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      22
+	      Object {
+		$ObjectID		72
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  12
+		  Cell			  "1"
+		  Cell			  "2"
+		  Cell			  "3"
+		  Cell			  "4"
+		  Cell			  "5"
+		  Cell			  "8"
+		  Cell			  "9"
+		  Cell			  "10"
+		  Cell			  "11"
+		  Cell			  "12"
+		  Cell			  "13"
+		  Cell			  "14"
+		  PropName		  "TypeOptions"
+		}
+		Name			"timer"
+		Prompt			"Timer"
+		Value			"5"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('timer');"
+	      }
+	      Object {
+		$ObjectID		73
+		Type			"edit"
+		Name			"pwmperiod"
+		Prompt			"PWM Period (seconds)"
+		Value			"4e-5"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('pwmperiod');"
+	      }
+	      Object {
+		$ObjectID		74
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Active High"
+		  Cell			  "Active Low"
+		  PropName		  "TypeOptions"
+		}
+		Name			"polarity"
+		Prompt			"Polarity"
+		Value			"Active High"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('polarity');"
+	      }
+	      Object {
+		$ObjectID		75
+		Type			"edit"
+		Name			"polaritystr"
+		Prompt			"Polaritystr"
+		Value			"TIM_OCPolarity_High"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		76
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A0"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch1pin"
+		Prompt			"Channel 1"
+		Value			"A0"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch1pin');"
+	      }
+	      Object {
+		$ObjectID		77
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A1"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch2pin"
+		Prompt			"Channel 2"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch2pin');"
+	      }
+	      Object {
+		$ObjectID		78
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A2"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch3pin"
+		Prompt			"Channel 3"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch3pin');"
+	      }
+	      Object {
+		$ObjectID		79
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Not available - Do not use"
+		  Cell			  "A3"
+		  PropName		  "TypeOptions"
+		}
+		Name			"ch4pin"
+		Prompt			"Channel 4"
+		Value			"Not available - Do not use"
+		Evaluate		"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('ch4pin');"
+	      }
+	      Object {
+		$ObjectID		80
+		Type			"edit"
+		Name			"sampletime"
+		Prompt			"Sample time (sec)"
+		Value			"0.01"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('sampletime');"
+	      }
+	      Object {
+		$ObjectID		81
+		Type			"edit"
+		Name			"sampletimestr"
+		Prompt			"Compiled sample time (sec) in string"
+		Value			"0.01"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+		Callback		"stm32f4_basicpwm_callback('sampletimestr');"
+	      }
+	      Object {
+		$ObjectID		82
+		Type			"edit"
+		Name			"blockid"
+		Prompt			"BlockID"
+		Value			"Motor2BasicPWM"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+		Callback		"stm32f4_basicpwm_callback('blockid');"
+	      }
+	      Object {
+		$ObjectID		83
+		Type			"edit"
+		Name			"portpinstr"
+		Prompt			"Port pin string"
+		Value			"A0,,,"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		84
+		Type			"checkbox"
+		Name			"enablecustomportlabel"
+		Prompt			"Enable custom port labels"
+		Value			"off"
+		Tunable			"off"
+		Callback		"stm32f4_basicpwm_callback('enablecustomportlabel');"
+	      }
+	      Object {
+		$ObjectID		85
+		Type			"edit"
+		Name			"cinputportlabel"
+		Prompt			"Custom input port labels (Ex. In1, In2, In3)"
+		Value			"In1, In2, In3, In4"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		86
+		Type			"edit"
+		Name			"coutputportlabel"
+		Prompt			"Custom output port labels (Ex. Out1, Out2, Out3)"
+		Value			"0"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		87
+		Type			"edit"
+		Name			"apb"
+		Prompt			"APB"
+		Value			"1"
+		Evaluate		"off"
+		Tunable			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		88
+		Type			"edit"
+		Name			"portstr"
+		Prompt			"Port string"
+		Value			"[\"A\"]"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		89
+		Type			"edit"
+		Name			"pinstr"
+		Prompt			"Pin string"
+		Value			"[\"GPIO_Pin_0\"]"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		90
+		Type			"edit"
+		Name			"pinmat"
+		Prompt			"Pin matrix"
+		Value			"[1 0]"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		91
+		Type			"edit"
+		Name			"timarr"
+		Prompt			"Timer ARR"
+		Value			"1119"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		92
+		Type			"edit"
+		Name			"timprescale"
+		Prompt			"Timer PRESCALE"
+		Value			"2"
+		Evaluate		"off"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		93
+		Type			"edit"
+		Name			"chmat"
+		Prompt			"Channel order"
+		Value			"[1]"
+		Tunable			"off"
+		Enabled			"off"
+		Visible			"off"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "426"
+	  Ports			  [1, 1]
+	  Position		  [480, 285, 510, 315]
+	  ZOrder		  130
+	  LibraryVersion	  "1.274"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  relop			  ">"
+	  const			  "0"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Direction"
+	  SID			  "428"
+	  Ports			  [2]
+	  Position		  [625, 280, 815, 360]
+	  ZOrder		  124
+	  LibraryVersion	  "1.48"
+	  SourceBlock		  "stm32f4_io_lib/Digital Output"
+	  SourceType		  "stm32f4_digital_output"
+	  use_bitband		  on
+	  port			  "A"
+	  speed			  "100"
+	  porttype		  "Push Pull"
+	  porttypestr		  "PP"
+	  use_pin0		  off
+	  use_pin1		  on
+	  use_pin2		  off
+	  use_pin3		  on
+	  use_pin4		  off
+	  use_pin5		  off
+	  use_pin6		  off
+	  use_pin7		  off
+	  use_pin8		  off
+	  use_pin9		  off
+	  use_pin10		  off
+	  use_pin11		  off
+	  use_pin12		  off
+	  use_pin13		  off
+	  use_pin14		  off
+	  use_pin15		  off
+	  pinstr		  "GPIO_Pin_1 | GPIO_Pin_3"
+	  usedpinarray		  "[0  1  0  1  0  0  0  0  0  0  0  0  0  0  0  0]"
+	  bitbandingstr		  "\n#define Motor2Direction_A1 Peripheral_BB(GPIOA->ODR, 1)  /* Output pin */\n#define Motor2Direct"
+	  "ion_A3 Peripheral_BB(GPIOA->ODR, 3)  /* Output pin */"
+	  sampletime		  "-1"
+	  sampletimestr		  "0"
+	  blockid		  "Motor2Direction"
+	  enablecustomportlabel	  off
+	  globalinit		  off
+	  cinputportlabel	  "In1, In2"
+	  coutputportlabel	  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "494"
+	  Position		  [420, 125, 460, 165]
+	  ZOrder		  198
+	  Gain			  "100"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "430"
+	  Ports			  [1, 1]
+	  Position		  [565, 324, 595, 356]
+	  ZOrder		  126
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Direction"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, 20]
+	  DstBlock		  "Basic PWM"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  Points		  [22, 0]
+	  Branch {
+	    DstBlock		    "Direction"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "Logical\nOperator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Motor Speed"
+	  SrcPort		  1
+	  Points		  [51, 0]
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Compare\nTo Constant"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "431"
+	  Name			  "-1 to 1 to pwm and motor direction converter\n"
+	  Position		  [516, 86]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PID Controller"
+      SID		      "293"
+      Ports		      [5, 1]
+      Position		      [1630, 796, 1785, 914]
+      ZOrder		      156
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      DialogController	      "pidpack.PIDConfig.pidDDGCreate"
+      DialogControllerArgs    "DataTag0"
+      DeleteFcn		      "pidpack.PIDConfig.closeTuner(gcbh)"
+      ModelCloseFcn	      "pidpack.PIDConfig.closeTuner(gcbh)"
+      NameChangeFcn	      "pidpack.PIDConfig.updateTunerName(gcbh)"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		94
+	$ClassName		"Simulink.Mask"
+	Type			"PID 1dof"
+	Description		"Simulink:masks:PID1dof_MD"
+	Initialization		"pidpack.PIDConfig.configPID(gcbh);"
+	SelfModifiable		"on"
+	Display			"image(imread(fullfile(matlabroot,'toolbox','simulink','blocks','@pidpack','@PIDMasks','images','blank.png'"
+	"),'png'),[0 0 1 1]);\ndisp('PID(s)')\nport_label('input',1, '');\nport_label('output',1, '');\nplot([0 4 4 7]+2,[0 0 "
+	"8 8]+80);\nplot([1 4 6]+2,[3 6 3]+80);\nplot([0 4 6 10]+142,[0 0 8 8]+55);\n"
+	RunInitForIconRedraw	"on"
+	IconUnits		"pixels"
+	Capabilities		"slmaskedcaps(gcbh)"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  102
+	  Object {
+	    $ObjectID		    95
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      5
+	      Cell		      "Simulink:masks:PID"
+	      Cell		      "Simulink:masks:PI"
+	      Cell		      "Simulink:masks:PD"
+	      Cell		      "Simulink:masks:P"
+	      Cell		      "Simulink:masks:I"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "Controller"
+	    Prompt		    "Simulink:masks:Controller_MP"
+	    Value		    "PID"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    96
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Simulink:masks:ContinuousTime"
+	      Cell		      "Simulink:masks:DiscreteTime"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "TimeDomain"
+	    Prompt		    "Simulink:masks:TimeDomain_MP"
+	    Value		    "Continuous-time"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    97
+	    Type		    "edit"
+	    Name		    "SampleTime"
+	    Prompt		    "Simulink:masks:SampleTime1ForInherited_MP"
+	    Value		    "1"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    98
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Simulink:masks:ForwardEuler"
+	      Cell		      "Simulink:masks:BackwardEuler"
+	      Cell		      "Simulink:masks:Trapezoidal"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "IntegratorMethod"
+	    Prompt		    "Simulink:masks:IntegratorMethod_MP"
+	    Value		    "Forward Euler"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    99
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Simulink:masks:ForwardEuler"
+	      Cell		      "Simulink:masks:BackwardEuler"
+	      Cell		      "Simulink:masks:Trapezoidal"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "FilterMethod"
+	    Prompt		    "Simulink:masks:FilterMethod_MP"
+	    Value		    "Forward Euler"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    100
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Simulink:masks:Ideal"
+	      Cell		      "Simulink:masks:Parallel"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "Form"
+	    Prompt		    "Simulink:masks:Form_MP"
+	    Value		    "Parallel"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    101
+	    Type		    "edit"
+	    Name		    "P"
+	    Prompt		    "Simulink:masks:ProportionalP_MP"
+	    Value		    "0.003"
+	  }
+	  Object {
+	    $ObjectID		    102
+	    Type		    "edit"
+	    Name		    "I"
+	    Prompt		    "Simulink:masks:IntegralI_MP"
+	    Value		    "0.003"
+	  }
+	  Object {
+	    $ObjectID		    103
+	    Type		    "edit"
+	    Name		    "D"
+	    Prompt		    "Simulink:masks:DerivativeD_MP"
+	    Value		    "0"
+	  }
+	  Object {
+	    $ObjectID		    104
+	    Type		    "edit"
+	    Name		    "N"
+	    Prompt		    "Simulink:masks:FilterCoefficientN_MP"
+	    Value		    "100"
+	  }
+	  Object {
+	    $ObjectID		    105
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Simulink:masks:internal"
+	      Cell		      "Simulink:masks:external"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "InitialConditionSource"
+	    Prompt		    "Simulink:masks:Source_MP"
+	    Value		    "internal"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    106
+	    Type		    "edit"
+	    Name		    "InitialConditionForIntegrator"
+	    Prompt		    "Simulink:masks:Integrator_MP"
+	    Value		    "0"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    107
+	    Type		    "edit"
+	    Name		    "InitialConditionForFilter"
+	    Prompt		    "Simulink:masks:Filter_MP"
+	    Value		    "0"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    108
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      5
+	      Cell		      "Simulink:masks:none"
+	      Cell		      "Simulink:masks:rising"
+	      Cell		      "Simulink:masks:falling"
+	      Cell		      "Simulink:masks:either"
+	      Cell		      "Simulink:masks:level"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "ExternalReset"
+	    Prompt		    "Simulink:masks:ExternalReset_MP"
+	    Value		    "rising"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    109
+	    Type		    "checkbox"
+	    Name		    "IgnoreLimit"
+	    Prompt		    "Simulink:masks:IgnoreResetWhenLinearizing_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    110
+	    Type		    "checkbox"
+	    Name		    "ZeroCross"
+	    Prompt		    "Simulink:masks:EnableZerocrossingDetection_MP"
+	    Value		    "on"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    111
+	    Type		    "checkbox"
+	    Name		    "LimitOutput"
+	    Prompt		    "Simulink:masks:LimitOutput_MP"
+	    Value		    "on"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    112
+	    Type		    "edit"
+	    Name		    "UpperSaturationLimit"
+	    Prompt		    "Simulink:masks:UpperSaturationLimit_MP"
+	    Value		    "1"
+	  }
+	  Object {
+	    $ObjectID		    113
+	    Type		    "edit"
+	    Name		    "LowerSaturationLimit"
+	    Prompt		    "Simulink:masks:LowerSaturationLimit_MP"
+	    Value		    "-1"
+	  }
+	  Object {
+	    $ObjectID		    114
+	    Type		    "checkbox"
+	    Name		    "LinearizeAsGain"
+	    Prompt		    "Simulink:masks:IgnoreSaturationWhenLinearizing_MP"
+	    Value		    "on"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    115
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Simulink:masks:none"
+	      Cell		      "Simulink:masks:backCalculation"
+	      Cell		      "Simulink:masks:clamping"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "AntiWindupMode"
+	    Prompt		    "Simulink:masks:AntiwindupMethod_MP"
+	    Value		    "clamping"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    116
+	    Type		    "edit"
+	    Name		    "Kb"
+	    Prompt		    "Simulink:masks:BackcalculationCoefficientKb_MP"
+	    Value		    "1"
+	  }
+	  Object {
+	    $ObjectID		    117
+	    Type		    "checkbox"
+	    Name		    "TrackingMode"
+	    Prompt		    "Simulink:masks:EnableTrackingMode_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    118
+	    Type		    "edit"
+	    Name		    "Kt"
+	    Prompt		    "Simulink:masks:TrackingCoefficientKt_MP"
+	    Value		    "1"
+	  }
+	  Object {
+	    $ObjectID		    119
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      7
+	      Cell		      "Simulink:masks:Ceiling"
+	      Cell		      "Simulink:masks:Convergent"
+	      Cell		      "Simulink:masks:Floor"
+	      Cell		      "Simulink:masks:Nearest"
+	      Cell		      "Simulink:masks:Round"
+	      Cell		      "Simulink:masks:Simplest"
+	      Cell		      "Simulink:masks:Zero"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "RndMeth"
+	    Prompt		    "Simulink:masks:IntegerRoundingMode_MP"
+	    Value		    "Floor"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    120
+	    Type		    "checkbox"
+	    Name		    "SaturateOnIntegerOverflow"
+	    Prompt		    "Simulink:masks:SaturateOnIntegerOverflow_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    121
+	    Type		    "checkbox"
+	    Name		    "LockScale"
+	    Prompt		    "Simulink:masks:LockDataTypeAgainstFxpTools_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    122
+	    Type		    "min"
+	    Name		    "PParamMin"
+	    Prompt		    "Simulink:masks:PParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    123
+	    Type		    "max"
+	    Name		    "PParamMax"
+	    Prompt		    "Simulink:masks:PParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    124
+	    Type		    "unidt({a=30|28|29|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "PParamDataTypeStr"
+	    Prompt		    "Simulink:masks:PParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    125
+	    Type		    "min"
+	    Name		    "IParamMin"
+	    Prompt		    "Simulink:masks:IParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    126
+	    Type		    "max"
+	    Name		    "IParamMax"
+	    Prompt		    "Simulink:masks:IParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    127
+	    Type		    "unidt({a=33|31|32|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "IParamDataTypeStr"
+	    Prompt		    "Simulink:masks:IParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    128
+	    Type		    "min"
+	    Name		    "DParamMin"
+	    Prompt		    "Simulink:masks:DParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    129
+	    Type		    "max"
+	    Name		    "DParamMax"
+	    Prompt		    "Simulink:masks:DParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    130
+	    Type		    "unidt({a=36|34|35|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "DParamDataTypeStr"
+	    Prompt		    "Simulink:masks:DParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    131
+	    Type		    "min"
+	    Name		    "NParamMin"
+	    Prompt		    "Simulink:masks:NParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    132
+	    Type		    "max"
+	    Name		    "NParamMax"
+	    Prompt		    "Simulink:masks:NParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    133
+	    Type		    "unidt({a=39|37|38|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "NParamDataTypeStr"
+	    Prompt		    "Simulink:masks:NParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    134
+	    Type		    "min"
+	    Name		    "KbParamMin"
+	    Prompt		    "Simulink:masks:KbParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    135
+	    Type		    "max"
+	    Name		    "KbParamMax"
+	    Prompt		    "Simulink:masks:KbParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    136
+	    Type		    "unidt({a=42|40|41|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "KbParamDataTypeStr"
+	    Prompt		    "Simulink:masks:KbParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    137
+	    Type		    "min"
+	    Name		    "KtParamMin"
+	    Prompt		    "Simulink:masks:KtParameterMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    138
+	    Type		    "max"
+	    Name		    "KtParamMax"
+	    Prompt		    "Simulink:masks:KtParameterMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    139
+	    Type		    "unidt({a=45|43|44|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
+	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
+	    "nsignedSign})"
+	    Name		    "KtParamDataTypeStr"
+	    Prompt		    "Simulink:masks:KtParameter_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    140
+	    Type		    "min"
+	    Name		    "POutMin"
+	    Prompt		    "Simulink:masks:PProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    141
+	    Type		    "max"
+	    Name		    "POutMax"
+	    Prompt		    "Simulink:masks:PProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    142
+	    Type		    "unidt({a=48|46|47|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "POutDataTypeStr"
+	    Prompt		    "Simulink:masks:PProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    143
+	    Type		    "min"
+	    Name		    "IOutMin"
+	    Prompt		    "Simulink:masks:IProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    144
+	    Type		    "max"
+	    Name		    "IOutMax"
+	    Prompt		    "Simulink:masks:IProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    145
+	    Type		    "unidt({a=51|49|50|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "IOutDataTypeStr"
+	    Prompt		    "Simulink:masks:IProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    146
+	    Type		    "min"
+	    Name		    "DOutMin"
+	    Prompt		    "Simulink:masks:DProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    147
+	    Type		    "max"
+	    Name		    "DOutMax"
+	    Prompt		    "Simulink:masks:DProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    148
+	    Type		    "unidt({a=54|52|53|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "DOutDataTypeStr"
+	    Prompt		    "Simulink:masks:DProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    149
+	    Type		    "min"
+	    Name		    "NOutMin"
+	    Prompt		    "Simulink:masks:NProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    150
+	    Type		    "max"
+	    Name		    "NOutMax"
+	    Prompt		    "Simulink:masks:NProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    151
+	    Type		    "unidt({a=57|55|56|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "NOutDataTypeStr"
+	    Prompt		    "Simulink:masks:NProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    152
+	    Type		    "min"
+	    Name		    "KbOutMin"
+	    Prompt		    "Simulink:masks:KbProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    153
+	    Type		    "max"
+	    Name		    "KbOutMax"
+	    Prompt		    "Simulink:masks:KbProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    154
+	    Type		    "unidt({a=60|58|59|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "KbOutDataTypeStr"
+	    Prompt		    "Simulink:masks:KbProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    155
+	    Type		    "min"
+	    Name		    "KtOutMin"
+	    Prompt		    "Simulink:masks:KtProductOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    156
+	    Type		    "max"
+	    Name		    "KtOutMax"
+	    Prompt		    "Simulink:masks:KtProductOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    157
+	    Type		    "unidt({a=63|61|62|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
+	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "KtOutDataTypeStr"
+	    Prompt		    "Simulink:masks:KtProductOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    158
+	    Type		    "min"
+	    Name		    "IntegratorOutMin"
+	    Prompt		    "Simulink:masks:IntegratorOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    159
+	    Type		    "max"
+	    Name		    "IntegratorOutMax"
+	    Prompt		    "Simulink:masks:IntegratorOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    160
+	    Type		    "unidt({a=66|64|65|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation}{b=doub"
+	    "le|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDT"
+	    "SignedSign|UDTUnsignedSign})"
+	    Name		    "IntegratorOutDataTypeStr"
+	    Prompt		    "Simulink:masks:IntegratorOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    161
+	    Type		    "min"
+	    Name		    "FilterOutMin"
+	    Prompt		    "Simulink:masks:FilterOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    162
+	    Type		    "max"
+	    Name		    "FilterOutMax"
+	    Prompt		    "Simulink:masks:FilterOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    163
+	    Type		    "unidt({a=69|67|68|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation}{b=doub"
+	    "le|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDT"
+	    "SignedSign|UDTUnsignedSign})"
+	    Name		    "FilterOutDataTypeStr"
+	    Prompt		    "Simulink:masks:FilterOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    164
+	    Type		    "min"
+	    Name		    "SumOutMin"
+	    Prompt		    "Simulink:masks:SumOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    165
+	    Type		    "max"
+	    Name		    "SumOutMax"
+	    Prompt		    "Simulink:masks:SumOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    166
+	    Type		    "unidt({a=72|70|71|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
+	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumOutDataTypeStr"
+	    Prompt		    "Simulink:masks:SumOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    167
+	    Type		    "min"
+	    Name		    "SumI1OutMin"
+	    Prompt		    "Simulink:masks:SumI1OutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    168
+	    Type		    "max"
+	    Name		    "SumI1OutMax"
+	    Prompt		    "Simulink:masks:SumI1OutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    169
+	    Type		    "unidt({a=75|73|74|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
+	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI1OutDataTypeStr"
+	    Prompt		    "Simulink:masks:SumI1Output_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    170
+	    Type		    "min"
+	    Name		    "SumI2OutMin"
+	    Prompt		    "Simulink:masks:SumI2OutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    171
+	    Type		    "max"
+	    Name		    "SumI2OutMax"
+	    Prompt		    "Simulink:masks:SumI2OutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    172
+	    Type		    "unidt({a=78|76|77|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
+	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI2OutDataTypeStr"
+	    Prompt		    "Simulink:masks:SumI2Output_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    173
+	    Type		    "min"
+	    Name		    "SumI3OutMin"
+	    Prompt		    "Simulink:masks:SumI3OutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    174
+	    Type		    "max"
+	    Name		    "SumI3OutMax"
+	    Prompt		    "Simulink:masks:SumI3OutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    175
+	    Type		    "unidt({a=81|79|80|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
+	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI3OutDataTypeStr"
+	    Prompt		    "Simulink:masks:SumI3Output_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    176
+	    Type		    "min"
+	    Name		    "SumDOutMin"
+	    Prompt		    "Simulink:masks:SumDOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    177
+	    Type		    "max"
+	    Name		    "SumDOutMax"
+	    Prompt		    "Simulink:masks:SumDOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    178
+	    Type		    "unidt({a=84|82|83|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
+	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
+	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumDOutDataTypeStr"
+	    Prompt		    "Simulink:masks:SumDOutput_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    179
+	    Type		    "unidt({a=85|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
+	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumAccumDataTypeStr"
+	    Prompt		    "Simulink:masks:AccumulatorOfSum_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    180
+	    Type		    "unidt({a=86|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
+	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI1AccumDataTypeStr"
+	    Prompt		    "Simulink:masks:AccumulatorOfSumI1_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    181
+	    Type		    "unidt({a=87|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
+	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI2AccumDataTypeStr"
+	    Prompt		    "Simulink:masks:AccumulatorOfSumI2_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    182
+	    Type		    "unidt({a=88|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
+	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumI3AccumDataTypeStr"
+	    Prompt		    "Simulink:masks:AccumulatorOfSumI3_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    183
+	    Type		    "unidt({a=89|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
+	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
+	    Name		    "SumDAccumDataTypeStr"
+	    Prompt		    "Simulink:masks:AccumulatorOfSumD_MP"
+	    Value		    "Inherit: Inherit via internal rule"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    184
+	    Type		    "min"
+	    Name		    "SaturationOutMin"
+	    Prompt		    "Simulink:masks:SaturationOutputMinimum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    185
+	    Type		    "max"
+	    Name		    "SaturationOutMax"
+	    Prompt		    "Simulink:masks:SaturationOutputMaximum_MP"
+	    Value		    "[]"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    186
+	    Type		    "unidt({a=92|90|91|}{i=Inherit: Inherit via back propagation|Inherit: Same as input}{b=double|single|in"
+	    "t8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|U"
+	    "DTUnsignedSign})"
+	    Name		    "SaturationOutDataTypeStr"
+	    Prompt		    "Simulink:masks:SaturationOutput_MP"
+	    Value		    "Inherit: Same as input"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    187
+	    Type		    "edit"
+	    Name		    "IntegratorContinuousStateAttributes"
+	    Prompt		    "Simulink:masks:StateNameegposition_MP"
+	    Value		    "''"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    188
+	    Type		    "edit"
+	    Name		    "IntegratorStateIdentifier"
+	    Prompt		    "Simulink:masks:StateName_MP"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    189
+	    Type		    "checkbox"
+	    Name		    "IntegratorStateMustResolveToSignalObject"
+	    Prompt		    "Simulink:masks:StateNameMustResolveToSimulinkSignalObject_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    190
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "Simulink:masks:Auto"
+	      Cell		      "Simulink:masks:ExportedGlobal"
+	      Cell		      "Simulink:masks:ImportedExtern"
+	      Cell		      "Simulink:masks:ImportedExternPointer"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "IntegratorRTWStateStorageClass"
+	    Prompt		    "Simulink:masks:CodeGenerationStorageClass_MP"
+	    Value		    "Auto"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    191
+	    Type		    "edit"
+	    Name		    "IntegratorRTWStateStorageTypeQualifier"
+	    Prompt		    "Simulink:masks:CodeGenerationStorageTypeQualifier_MP"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    192
+	    Type		    "edit"
+	    Name		    "FilterContinuousStateAttributes"
+	    Prompt		    "Simulink:masks:StateNameegposition_MP"
+	    Value		    "''"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    193
+	    Type		    "edit"
+	    Name		    "FilterStateIdentifier"
+	    Prompt		    "Simulink:masks:StateName_MP"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    194
+	    Type		    "checkbox"
+	    Name		    "FilterStateMustResolveToSignalObject"
+	    Prompt		    "Simulink:masks:StateNameMustResolveToSimulinkSignalObject_MP"
+	    Value		    "off"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    195
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "Simulink:masks:Auto"
+	      Cell		      "Simulink:masks:ExportedGlobal"
+	      Cell		      "Simulink:masks:ImportedExtern"
+	      Cell		      "Simulink:masks:ImportedExternPointer"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "FilterRTWStateStorageClass"
+	    Prompt		    "Simulink:masks:CodeGenerationStorageClass_MP"
+	    Value		    "Auto"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    196
+	    Type		    "edit"
+	    Name		    "FilterRTWStateStorageTypeQualifier"
+	    Prompt		    "Simulink:masks:CodeGenerationStorageTypeQualifier_MP"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
+      System {
+	Name			"PID Controller"
+	Location		[1, 0, 1919, 1169]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"200"
+	SIDHighWatermark	"1795"
+	SIDPrevWatermark	"1689"
+	Block {
+	  BlockType		  Inport
+	  Name			  "u"
+	  SID			  "293:1"
+	  Position		  [25, 150, 45, 170]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "RESET"
+	  SID			  "293:1665"
+	  Position		  [35, 410, 55, 430]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u1"
+	  SID			  "293:1690"
+	  Position		  [45, 20, 65, 40]
+	  ZOrder		  14
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u2"
+	  SID			  "293:1691"
+	  Position		  [85, 110, 105, 130]
+	  ZOrder		  15
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u3"
+	  SID			  "293:1692"
+	  Position		  [105, 315, 125, 335]
+	  ZOrder		  16
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Clamping circuit"
+	  SID			  "293:1781"
+	  Ports			  [2, 1]
+	  Position		  [165, 196, 245, 234]
+	  ZOrder		  68
+	  BlockMirror		  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Clamping circuit"
+	    Location		    [100, 100, 900, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "preSat"
+	      SID		      "293:1782"
+	      Position		      [665, 48, 695, 62]
+	      ZOrder		      1
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "preIntegrator"
+	      SID		      "293:1783"
+	      Position		      [665, 218, 695, 232]
+	      ZOrder		      2
+	      BlockMirror	      on
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "AND"
+	      SID		      "293:1792"
+	      Ports		      [2, 1]
+	      Position		      [175, 115, 205, 175]
+	      ZOrder		      11
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "DataTypeConv2"
+	      SID		      "293:1785"
+	      Position		      [555, 210, 595, 240]
+	      ZOrder		      4
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      DeadZone
+	      Name		      "DeadZone"
+	      SID		      "293:1787"
+	      Position		      [440, 150, 470, 180]
+	      ZOrder		      6
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      LowerValue	      "LowerSaturationLimit"
+	      UpperValue	      "UpperSaturationLimit"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Equal"
+	      SID		      "293:1791"
+	      Ports		      [2, 1]
+	      Position		      [225, 151, 250, 169]
+	      ZOrder		      10
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      Operator		      "=="
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "293:1786"
+	      Position		      [440, 80, 470, 110]
+	      ZOrder		      5
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      Gain		      "0"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory"
+	      SID		      "293:1793"
+	      Position		      [125, 134, 150, 156]
+	      ZOrder		      12
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "NotEqual"
+	      SID		      "293:1789"
+	      Ports		      [2, 1]
+	      Position		      [335, 112, 365, 143]
+	      ZOrder		      8
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      Operator		      "~="
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Signum
+	      Name		      "SignPreIntegrator"
+	      SID		      "293:1790"
+	      Position		      [335, 212, 350, 238]
+	      ZOrder		      9
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	    }
+	    Block {
+	      BlockType		      Signum
+	      Name		      "SignPreSat"
+	      SID		      "293:1788"
+	      Position		      [340, 43, 355, 67]
+	      ZOrder		      7
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Clamp"
+	      SID		      "293:1784"
+	      Position		      [75, 138, 105, 152]
+	      ZOrder		      3
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "preSat"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		DstBlock		"SignPreSat"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[-85, 0; 0, 110]
+		DstBlock		"DeadZone"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[-85, 0; 0, 40]
+		DstBlock		"Gain"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "preIntegrator"
+	      SrcPort		      1
+	      DstBlock		      "DataTypeConv2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "DataTypeConv2"
+	      SrcPort		      1
+	      DstBlock		      "SignPreIntegrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      Points		      [-25, 0; 0, 25]
+	      DstBlock		      "NotEqual"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "DeadZone"
+	      SrcPort		      1
+	      Points		      [-25, 0; 0, -30]
+	      DstBlock		      "NotEqual"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "SignPreSat"
+	      SrcPort		      1
+	      Points		      [-35, 0; 0, 100]
+	      DstBlock		      "Equal"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "NotEqual"
+	      SrcPort		      1
+	      DstBlock		      "AND"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "SignPreIntegrator"
+	      SrcPort		      1
+	      Points		      [-30, 0; 0, -60]
+	      DstBlock		      "Equal"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Equal"
+	      SrcPort		      1
+	      DstBlock		      "AND"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "AND"
+	      SrcPort		      1
+	      DstBlock		      "Memory"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Memory"
+	      SrcPort		      1
+	      DstBlock		      "Clamp"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "293:1795"
+	  Position		  [210, 95, 230, 115]
+	  ZOrder		  70
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  DisableCoverage	  on
+	  Value			  "0"
+	  OutDataTypeStr	  "Inherit: Inherit via back propagation"
+	  PreserveConstantTs	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Derivative Gain"
+	  SID			  "293:1775"
+	  Position		  [105, 250, 135, 280]
+	  ZOrder		  62
+	  DisableCoverage	  on
+	  Gain			  "D"
+	  ParamMin		  "DParamMin"
+	  ParamMax		  "DParamMax"
+	  ParamDataTypeStr	  "DParamDataTypeStr"
+	  OutMin		  "DOutMin"
+	  OutMax		  "DOutMax"
+	  OutDataTypeStr	  "DOutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Filter"
+	  SID			  "293:1777"
+	  Ports			  [2, 1]
+	  Position		  [315, 303, 390, 367]
+	  ZOrder		  64
+	  BlockMirror		  on
+	  DisableCoverage	  on
+	  ExternalReset		  "rising"
+	  InitialCondition	  "InitialConditionForFilter"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Filter Coefficient"
+	  SID			  "293:1778"
+	  Position		  [335, 250, 365, 280]
+	  ZOrder		  65
+	  Gain			  "N"
+	  ParamMin		  "NParamMin"
+	  ParamMax		  "NParamMax"
+	  ParamDataTypeStr	  "NParamDataTypeStr"
+	  OutMin		  "NOutMin"
+	  OutMax		  "NOutMax"
+	  OutDataTypeStr	  "NOutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Integral Gain"
+	  SID			  "293:1774"
+	  Position		  [105, 145, 135, 175]
+	  ZOrder		  61
+	  DisableCoverage	  on
+	  Gain			  "I"
+	  ParamMin		  "IParamMin"
+	  ParamMax		  "IParamMax"
+	  ParamDataTypeStr	  "IParamDataTypeStr"
+	  OutMin		  "IOutMin"
+	  OutMax		  "IOutMax"
+	  OutDataTypeStr	  "IOutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  SID			  "293:1776"
+	  Ports			  [2, 1]
+	  Position		  [315, 128, 390, 192]
+	  ZOrder		  63
+	  ExternalReset		  "rising"
+	  InitialCondition	  "InitialConditionForIntegrator"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Proportional Gain"
+	  SID			  "293:1773"
+	  Position		  [105, 55, 135, 85]
+	  ZOrder		  60
+	  Gain			  "P"
+	  ParamMin		  "PParamMin"
+	  ParamMax		  "PParamMax"
+	  ParamDataTypeStr	  "PParamDataTypeStr"
+	  OutMin		  "POutMin"
+	  OutMax		  "POutMax"
+	  OutDataTypeStr	  "POutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "293:1780"
+	  Ports			  [1, 1]
+	  Position		  [545, 145, 575, 175]
+	  ZOrder		  67
+	  InputPortMap		  "u0"
+	  UpperLimit		  "UpperSaturationLimit"
+	  LowerLimit		  "LowerSaturationLimit"
+	  OutMin		  "SaturationOutMin"
+	  OutMax		  "SaturationOutMax"
+	  OutDataTypeStr	  "SaturationOutDataTypeStr"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "293:1772"
+	  Ports			  [3, 1]
+	  Position		  [415, 150, 435, 170]
+	  ZOrder		  59
+	  IconShape		  "round"
+	  Inputs		  "+++"
+	  InputSameDT		  off
+	  AccumDataTypeStr	  "SumAccumDataTypeStr"
+	  OutMin		  "SumOutMin"
+	  OutMax		  "SumOutMax"
+	  OutDataTypeStr	  "SumOutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "SumD"
+	  SID			  "293:1779"
+	  Ports			  [2, 1]
+	  Position		  [235, 255, 255, 275]
+	  ZOrder		  66
+	  DisableCoverage	  on
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  AccumDataTypeStr	  "SumDAccumDataTypeStr"
+	  OutMin		  "SumDOutMin"
+	  OutMax		  "SumDOutMax"
+	  OutDataTypeStr	  "SumDOutDataTypeStr"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  "293:1794"
+	  Position		  [260, 122, 290, 168]
+	  ZOrder		  69
+	  Criteria		  "u2 > Threshold"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  SID			  "293:10"
+	  Position		  [610, 150, 630, 170]
+	  ZOrder		  -10
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "u1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	}
+	Line {
+	  SrcBlock		  "u"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Integral Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 105]
+	    DstBlock		    "Derivative Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -90]
+	    DstBlock		    "Proportional Gain"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integral Gain"
+	  SrcPort		  1
+	  Points		  [105, 0]
+	  Branch {
+	    Points		    [5, 0; 0, 35; 15, 0; 0, 30]
+	    DstBlock		    "Clamping circuit"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Switch"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Derivative Gain"
+	  SrcPort		  1
+	  DstBlock		  "SumD"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SumD"
+	  SrcPort		  1
+	  DstBlock		  "Filter Coefficient"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filter Coefficient"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Filter"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [10, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Filter"
+	  SrcPort		  1
+	  Points		  [-65, 0]
+	  DstBlock		  "SumD"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Proportional Gain"
+	  SrcPort		  1
+	  Points		  [285, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RESET"
+	  SrcPort		  1
+	  Points		  [240, 0]
+	  Branch {
+	    DstBlock		    "Integrator"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [120, 0; 0, -70]
+	    DstBlock		    "Filter"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "y"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Saturation"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Clamping circuit"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [0, 10]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clamping circuit"
+	  SrcPort		  1
+	  Points		  [0, -70]
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID Controller1"
+      SID		      "432"
+      Ports		      [2, 1]
+      Position		      [1750, 1046, 1905, 1164]
+      ZOrder		      174
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Continuous/PID Controller"
+      SourceType	      "PID 1dof"
+      Controller	      "PID"
+      TimeDomain	      "Continuous-time"
+      SampleTime	      "1"
+      IntegratorMethod	      "Forward Euler"
+      FilterMethod	      "Forward Euler"
+      Form		      "Parallel"
+      P			      "0.003"
+      I			      "0.003"
+      D			      "0"
+      N			      "100"
+      InitialConditionSource  "internal"
+      InitialConditionForIntegrator "0"
+      InitialConditionForFilter	"0"
+      ExternalReset	      "rising"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      LimitOutput	      on
+      UpperSaturationLimit    "1"
+      LowerSaturationLimit    "-1"
+      LinearizeAsGain	      on
+      AntiWindupMode	      "clamping"
+      Kb		      "1"
+      TrackingMode	      off
+      Kt		      "1"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      LockScale		      off
+      PParamMin		      "[]"
+      PParamMax		      "[]"
+      PParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      IParamMin		      "[]"
+      IParamMax		      "[]"
+      IParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      DParamMin		      "[]"
+      DParamMax		      "[]"
+      DParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      NParamMin		      "[]"
+      NParamMax		      "[]"
+      NParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      KbParamMin	      "[]"
+      KbParamMax	      "[]"
+      KbParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KtParamMin	      "[]"
+      KtParamMax	      "[]"
+      KtParamDataTypeStr      "Inherit: Inherit via internal rule"
+      POutMin		      "[]"
+      POutMax		      "[]"
+      POutDataTypeStr	      "Inherit: Inherit via internal rule"
+      IOutMin		      "[]"
+      IOutMax		      "[]"
+      IOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      DOutMin		      "[]"
+      DOutMax		      "[]"
+      DOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      NOutMin		      "[]"
+      NOutMax		      "[]"
+      NOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KbOutMin		      "[]"
+      KbOutMax		      "[]"
+      KbOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KtOutMin		      "[]"
+      KtOutMax		      "[]"
+      KtOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      IntegratorOutMin	      "[]"
+      IntegratorOutMax	      "[]"
+      IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+      FilterOutMin	      "[]"
+      FilterOutMax	      "[]"
+      FilterOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumOutMin		      "[]"
+      SumOutMax		      "[]"
+      SumOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SumI1OutMin	      "[]"
+      SumI1OutMax	      "[]"
+      SumI1OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI2OutMin	      "[]"
+      SumI2OutMax	      "[]"
+      SumI2OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI3OutMin	      "[]"
+      SumI3OutMax	      "[]"
+      SumI3OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumDOutMin	      "[]"
+      SumDOutMax	      "[]"
+      SumDOutDataTypeStr      "Inherit: Inherit via internal rule"
+      SumAccumDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI2AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI3AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumDAccumDataTypeStr    "Inherit: Inherit via internal rule"
+      SaturationOutMin	      "[]"
+      SaturationOutMax	      "[]"
+      SaturationOutDataTypeStr "Inherit: Same as input"
+      IntegratorContinuousStateAttributes "''"
+      IntegratorStateMustResolveToSignalObject off
+      IntegratorRTWStateStorageClass "Auto"
+      FilterContinuousStateAttributes "''"
+      FilterStateMustResolveToSignalObject off
+      FilterRTWStateStorageClass "Auto"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition"
+      SID		      "20"
+      Position		      [400, 629, 440, 671]
+      ZOrder		      -10
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      OutPortSampleTime	      "0.005"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition1"
+      SID		      "216"
+      Position		      [565, 239, 605, 281]
+      ZOrder		      119
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      Deterministic	      off
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition2"
+      SID		      "295"
+      Position		      [405, 379, 445, 421]
+      ZOrder		      158
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      Deterministic	      off
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition3"
+      SID		      "435"
+      Position		      [320, 414, 360, 456]
+      ZOrder		      180
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      Deterministic	      off
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition4"
+      SID		      "436"
+      Position		      [485, 274, 525, 316]
+      ZOrder		      181
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      Deterministic	      off
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SCARA Encoder 1"
+      SID		      "251"
+      Ports		      [2, 6]
+      Position		      [810, 402, 1035, 503]
+      ZOrder		      153
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SCARA Encoder 1"
+	Location		[1, 0, 1919, 1169]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "reset position to 0"
+	  SID			  "377"
+	  Position		  [1070, 388, 1100, 402]
+	  ZOrder		  167
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "reset position to 0 1"
+	  SID			  "405"
+	  Position		  [1070, 733, 1100, 747]
+	  ZOrder		  184
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  " reset counter on read"
+	  SID			  "250"
+	  Position		  [40, 497, 175, 553]
+	  ZOrder		  161
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  "225"
+	  Ports			  [2, 1]
+	  Position		  [930, 392, 960, 423]
+	  ZOrder		  155
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  InputSameDT		  off
+	  AccumDataTypeStr	  "int32"
+	  OutDataTypeStr	  "int32"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add1"
+	  SID			  "406"
+	  Ports			  [2, 1]
+	  Position		  [930, 737, 960, 768]
+	  ZOrder		  175
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  InputSameDT		  off
+	  AccumDataTypeStr	  "int32"
+	  OutDataTypeStr	  "int32"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "378"
+	  Position		  [1070, 330, 1100, 360]
+	  ZOrder		  168
+	  Value			  "0"
+	  OutDataTypeStr	  "int32"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "407"
+	  Position		  [1070, 675, 1100, 705]
+	  ZOrder		  185
+	  Value			  "0"
+	  OutDataTypeStr	  "int32"
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion2"
+	  SID			  "292"
+	  Position		  [620, 383, 695, 417]
+	  ZOrder		  165
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  OutDataTypeStr	  "int32"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion5"
+	  SID			  "475"
+	  Position		  [485, 828, 560, 862]
+	  ZOrder		  188
+	  OutDataTypeStr	  "int32"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "476"
+	  Position		  [825, 385, 855, 415]
+	  ZOrder		  189
+	  Gain			  "-1"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory"
+	  SID			  "232"
+	  Position		  [1265, 380, 1295, 410]
+	  ZOrder		  156
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory1"
+	  SID			  "411"
+	  Position		  [1265, 725, 1295, 755]
+	  ZOrder		  176
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Quadratur Encoder2"
+	  SID			  "474"
+	  Ports			  [2, 2]
+	  Position		  [205, 483, 340, 572]
+	  ZOrder		  187
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
+	  LibraryVersion	  "1.179"
+	  SourceBlock		  "waijung_customcode/Basic Custom Code"
+	  SourceType		  "waijung_basic_customcode"
+	  inputporttype		  "boolean,boolean"
+	  cinputportlabel	  "resetEncoder1, resetEncoder2"
+	  cinputportlabelstr	  "[\"resetEncoder1\",\" resetEncoder2\"]"
+	  inputportcount	  "2"
+	  inputporttypeid	  "[8  8]"
+	  outputporttype	  "int16,int16"
+	  coutputportlabel	  "encoder1, encoder2"
+	  coutputportlabelstr	  "[\"encoder1\",\" encoder2\"]"
+	  outputportcount	  "2"
+	  outputporttypeid	  "[4  4]"
+	  incpath		  "{fullfile(pwd,'customcode')}"
+	  srcpath		  "{fullfile(pwd,'customcode')}"
+	  incfiles		  "{'stm32f4_io_customcode.h'}"
+	  srcfiles		  "{'stm32f4_io_customcode.c'}"
+	  enablefuncallstr	  "enable_customio();"
+	  outputfuncallstr	  "output_customio(in1,in2,out1,out2);"
+	  disablefuncallstr	  "disable_customio();"
+	  sampletime		  "0.001"
+	  sampletimestr		  "0.001"
+	  blockid		  "SCARAEncoder1QuadraturEncoder2"
+	  enablecustomportlabel	  on
+	  incfilestrarray	  "[\"stm32f4_io_customcode.h\"]"
+	  inputportdiminfo	  "[1  1  1  8;1  1  1  8]"
+	  outputportdiminfo	  "[1  1  1  4;1  1  1  4]"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  SID			  "379"
+	  Position		  [1155, 375, 1215, 415]
+	  ZOrder		  169
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch3"
+	  SID			  "414"
+	  Position		  [1155, 720, 1215, 760]
+	  ZOrder		  186
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Direction"
+	  SID			  "253"
+	  Position		  [1360, 263, 1390, 277]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Position"
+	  SID			  "254"
+	  Position		  [1360, 388, 1390, 402]
+	  ZOrder		  162
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Speed in Steps per loop"
+	  SID			  "255"
+	  Position		  [1360, 443, 1390, 457]
+	  ZOrder		  163
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Direction1"
+	  SID			  "416"
+	  Position		  [1360, 608, 1390, 622]
+	  ZOrder		  173
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Position1"
+	  SID			  "417"
+	  Position		  [1360, 733, 1390, 747]
+	  ZOrder		  181
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Speed in Steps per loop1"
+	  SID			  "418"
+	  Position		  [1360, 788, 1390, 802]
+	  ZOrder		  182
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Quadratur Encoder2"
+	  SrcPort		  1
+	  Points		  [177, 0; 0, -105]
+	  DstBlock		  "Data Type Conversion2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Memory"
+	  SrcPort		  1
+	  Points		  [21, 0]
+	  Branch {
+	    DstBlock		    "Position"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 43; -406, 0]
+	    DstBlock		    "Add"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 14; 132, 0; 0, -14]
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  " reset counter on read"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Quadratur Encoder2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Quadratur Encoder2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion2"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "reset position to 0"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [34, 0; 0, 35]
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  DstBlock		  "Memory"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Quadratur Encoder2"
+	  SrcPort		  2
+	  Points		  [62, 0; 0, 295]
+	  DstBlock		  "Data Type Conversion5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Memory1"
+	  SrcPort		  1
+	  Points		  [21, 0]
+	  Branch {
+	    DstBlock		    "Position1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 43; -406, 0]
+	    DstBlock		    "Add1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Add1"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 14; 132, 0; 0, -14]
+	  DstBlock		  "Switch3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "reset position to 0 1"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [34, 0; 0, 35]
+	  DstBlock		  "Switch3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch3"
+	  SrcPort		  1
+	  DstBlock		  "Memory1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion5"
+	  SrcPort		  1
+	  Points		  [173, 0; 0, -100; 77, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Speed in Steps per loop1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Add1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Speed in Steps per loop"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Add"
+	    DstPort		    1
+	  }
+	}
+	Annotation {
+	  SID			  "477"
+	  Name			  "Invert to make direction correct"
+	  Position		  [831, 447]
+	  ZOrder		  -1
+	}
+	Annotation {
+	  SID			  "221"
+	  Name			  "1) if rLeft or rRight is set to high, the encoder is reset on every read\n2) Timer 2 and 4 are used!!! \n"
+	  "2) The data type of the encoder output is int16.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n  \"e"
+	  "nc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n"
+	  Position		  [16, 411]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      "294"
+      Ports		      [2, 1]
+      Position		      [1335, 845, 1355, 865]
+      ZOrder		      157
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      AccumDataTypeStr	      "int32"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      SID		      "433"
+      Ports		      [2, 1]
+      Position		      [1485, 1080, 1505, 1100]
+      ZOrder		      175
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      AccumDataTypeStr	      "int32"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch"
+      SID		      "382"
+      Position		      [2035, 835, 2085, 875]
+      ZOrder		      169
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch1"
+      SID		      "434"
+      Position		      [2035, 1070, 2085, 1110]
+      ZOrder		      178
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Target Setup"
+      SID		      "2"
+      Ports		      []
+      Position		      [910, 185, 1148, 307]
+      ZOrder		      -12
+      Priority		      "100"
+      LibraryVersion	      "1.397"
+      SourceBlock	      "stm32f4_device_config_lib/Target Setup"
+      SourceType	      "stm32f4_target_setup"
+      compiler		      "GNU ARM"
+      previous_compiler	      "GNU ARM"
+      mcu		      "STM32F407VG (LQFP100); STM32F4DISCOVERY"
+      mcustr		      "STM32F407VG"
+      clockconfig	      "STM32F4DISCOVERY Default (HSEOSC-8MHz/HCLK-168MHz)"
+      system_stm32f4xx_c_path "C:\\Program Files\\MATLAB\\waijung14_12a\\targets\\stm32f4_target\\stm32f4\\utils\\STM3"
+      "2F4xx_AN3988_V1.0.1\\stm32f4_default\\hseosc8mhz"
+      showmemoryconfiguration on
+      stacksize		      "0x2000"
+      heapsize		      "0x2000"
+      enableautocompiledownload	on
+      fullchiperase	      off
+      programmerinterface     "ST-Link"
+      editctrlstr	      on
+      compilercontrolstr      "$(patsubst %, -I%, .) -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=hard -mfpu="
+      "fpv4-sp-d16 -ffast-math -Wall -Wextra -Ofast "
+      assemblercontrolstr     "$(patsubst %, -I%, .) -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=hard -mfpu="
+      "fpv4-sp-d16 -ffast-math -Wall -Wextra -Ofast -Wa,-amhls=$(<:.s=.lst) -D__STACK_SIZE=$(STACK_SIZE) -D__HEAP_SIZE="
+      "$(HEAP_SIZE) "
+      linkercontrolstr	      "-T$(LD_SCRIPT) -g -Wl,-Map=$(MAP),--cref,--no-warn-mismatch -mcpu=cortex-m4 -mthumb -mth"
+      "umb-interwork -mfloat-abi=hard -mfpu=fpv4-sp-d16 "
+      runafterdownload	      on
+      execprofile	      "None"
+      profileruart	      "1"
+      profilerbaud	      "115200"
+      profilertxpin	      "Not used"
+      profilerinitstr	      "0.001,168000000,168000,115200,0"
+      manualsetsampletime     off
+      sampletime	      "0.001"
+      blockid		      "TargetSetup"
+      systickreloadvalue      "168000"
+      hseval		      "8000000"
+      lastprofileruart	      "1"
+      hclk		      "168000000"
+      flashorigin	      "0x8000000"
+      flashlength	      "1M"
+      ramorigin		      "0x20000000"
+      ramlength		      "112k"
+      useextram		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "USB VCP Receiver STM32F4"
+      SID		      "18"
+      Ports		      [0, 7]
+      Position		      [20, 227, 185, 683]
+      ZOrder		      -5
+      ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
+      LibraryVersion	      "1.34"
+      SourceBlock	      "USBVCP_STM32F4/USB VCP Receiver STM32F4"
+      SourceType	      "USB_VCP_RECEIVER_STM32F4 High Speed Large Data Packet Size"
+      speed		      "USB 1.1   12Mbit/s"
+      data_size		      "2048 Bytes"
+      header_data	      "'7E 7E'"
+      binary_data	      "'double double int32 int32 int32 int32 int32'"
+      terminator_data	      "'03 03'"
+      sampletime	      "0.001"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "USB VCP Send STM32F4"
+      SID		      "1"
+      Ports		      [15]
+      Position		      [1500, 117, 1690, 673]
+      ZOrder		      -5
+      LibraryVersion	      "1.34"
+      SourceBlock	      "USBVCP_STM32F4/USB VCP Send STM32F4"
+      SourceType	      "USB_VCP_SEND_STM32F4 High Speed Large Data Packet Size"
+      speed		      "USB 1.1   12Mbit/s"
+      data_size		      "2048 Bytes"
+      header_data	      "'0E 0E'"
+      binary_data	      "'double int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32'"
+      terminator_data	      "'0A 0A'"
+      sampletime	      "0.005"
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      7
+      DstBlock		      "Rate Transition"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition"
+      SrcPort		      1
+      Points		      [1033, 0; 0, -15]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      15
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      1
+      DstBlock		      "Rate Transition1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SCARA Encoder 1"
+      SrcPort		      2
+      Points		      [247, 0]
+      Branch {
+	Points			[0, 425]
+	DstBlock		"Sum"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -215]
+	DstBlock		"USB VCP Send STM32F4"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "SCARA Encoder 1"
+      SrcPort		      3
+      Points		      [42, 0; 0, -90]
+      DstBlock		      "Data Type Conversion5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID Controller"
+      SrcPort		      1
+      Points		      [159, 0]
+      Branch {
+	Points			[0, 15]
+	DstBlock		"Switch"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, -93; -30, 0; 0, -746; -452, 0; 0, 129]
+	DstBlock		"USB VCP Send STM32F4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      3
+      Points		      [9, 0; 0, 10]
+      DstBlock		      "Rate Transition2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [44, 0; 0, -50]
+      Branch {
+	Points			[-90, 0; 0, -525]
+	DstBlock		"USB VCP Send STM32F4"
+	DstPort			5
+      }
+      Branch {
+	DstBlock		"Data Type Conversion7"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Switch"
+      SrcPort		      1
+      DstBlock		      "Motor 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Compare\nTo Constant"
+      SrcPort		      1
+      Points		      [9, 0; 0, -26; -82, 0; 0, 96]
+      DstBlock		      "Switch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "SCARA Encoder 1"
+      SrcPort		      5
+      Points		      [289, 0]
+      Branch {
+	Points			[0, 615]
+	DstBlock		"Sum1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -155]
+	DstBlock		"USB VCP Send STM32F4"
+	DstPort			6
+      }
+    }
+    Line {
+      SrcBlock		      "PID Controller1"
+      SrcPort		      1
+      DstBlock		      "Switch1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rate Transition3"
+      SrcPort		      1
+      Points		      [17, 0; 0, 41; -92, 0; 0, 649; 1205, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [44, 0; 0, -45]
+      Branch {
+	Points			[-186, 0; 0, -660]
+	DstBlock		"USB VCP Send STM32F4"
+	DstPort			8
+      }
+      Branch {
+	DstBlock		"Data Type Conversion4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion4"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "PID Controller1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion1"
+      SrcPort		      1
+      Points		      [266, 0]
+      Branch {
+	Points			[549, 0; 0, 269]
+	Branch {
+	  Points		  [402, 0; 0, -54]
+	  DstBlock		  "PID Controller"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 251]
+	  DstBlock		  "PID Controller1"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	Points			[0, -135]
+	Branch {
+	  Points		  [0, -50]
+	  DstBlock		  "SCARA Encoder 1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "SCARA Encoder 1"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Switch1"
+      SrcPort		      1
+      DstBlock		      "Motor 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Compare\nTo Constant1"
+      SrcPort		      1
+      Points		      [9, 0; 0, -26; -82, 0; 0, 96]
+      DstBlock		      "Switch1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      4
+      Points		      [9, 0; 0, -20]
+      DstBlock		      "Rate Transition3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SCARA Encoder 1"
+      SrcPort		      6
+      Points		      [16, 0; 0, 15]
+      DstBlock		      "Data Type Conversion3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      2
+      Points		      [9, 0; 0, -30]
+      DstBlock		      "Rate Transition4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      6
+      Points		      [9, 0; 0, 30]
+      DstBlock		      "Data Type Conversion1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      5
+      Points		      [2, 0; 0, 186; 1264, 0; 0, -111]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      14
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion5"
+      SrcPort		      1
+      Points		      [9, 0; 0, -105]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion3"
+      SrcPort		      1
+      Points		      [119, 0; 0, -150]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Rate Transition1"
+      SrcPort		      1
+      Points		      [30, 0; 0, -162; 1380, 0; 0, 687]
+      Branch {
+	DstBlock		"Switch"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Compare\nTo Constant"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Rate Transition4"
+      SrcPort		      1
+      Points		      [15, 0; 0, 966; 1475, 0; 0, -186]
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Compare\nTo Constant1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Switch1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion7"
+      SrcPort		      1
+      DstBlock		      "PID Controller"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition2"
+      SrcPort		      1
+      Points		      [51, 0; 0, 541; 844, 0]
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Annotation {
+      SID		      "438"
+      Name		      "Careful seems to not work with more outputs than now???!??!"
+      Position		      [458, 217]
+      ZOrder		      -1
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    :     8    (     0         %    \"     $    !     0         .    .     8    (    !     "
+    "     %    \"     $    '     0         0    !P   $]P96Y&8VX "
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:20
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "test"
+    created		    "28-Jul-2013 19:39:00"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    76014001.0015
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 3]
+  }
+  target {
+    id			    3
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 2 0]
+  }
+}
