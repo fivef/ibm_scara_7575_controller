@@ -64,33 +64,57 @@
 #define ENCR_TIMER              TIM4
 #define ENCR_TIMER_CLK          RCC_APB1Periph_TIM4
 
-#define LEFT_COUNT()            ENCL_TIMER->CNT
-#define RIGHT_COUNT()           ENCR_TIMER->CNT
-
 //TimerConfig
-#define TIM_EncoderMode_TI12              ((uint16_t)0x0003)
-#define TIM_ICPolarity_Rising             ((uint16_t)0x0000)
+#define TIM_EncoderMode_TI12	((uint16_t)0x0003)
+#define TIM_ICPolarity_Rising	((uint16_t)0x0000)
 
-#define outD12 Peripheral_BB(GPIOD->ODR, 12)
-#define outD13 Peripheral_BB(GPIOD->ODR, 13)
+//encoder settings
+ /*after how many encoder steps will there be a Z index signal*/
+#define STEPS_PER_REVOLUTION	2000
 
+/*The current counter value must be in the range counts per rev -  
+valid index threshold and counts per rev + valid index threshold to 
+be valid and to trigger a counter reset*/
+#define VALID_INDEX_THRESHOLD	20
+
+//vars
+
+int32_t encoder1_sum_old;
+int32_t encoder2_sum_old;
+
+int32_t encoder1_index_counter;
+int32_t encoder2_index_counter;
+
+//functions
 
 void enable_customio(void);
-
-void output_customio(boolean_T in1, boolean_T in2, int16_T * out1, int16_T * out2); 
-
 void disable_customio(void);
 
+void output_customio(boolean_T in1, boolean_T in2, int32_T * out1, int32_T * out2, int32_T * out3, int32_T * out4); 
+
+void ENCLZ_EXTI_HANDLER(void);
+void ENCRZ_EXTI_HANDLER(void);
+
+void encoder1Reset (void);
+void encoder2Reset (void);
+
+int32_t IsEncoderValueInExpectedRange(int16_t _current_encoder_value);
 
 
-static volatile int16_t encoder1;
+void Configure_Interrupt_Pin(uint32_t pin, 
+                              GPIO_TypeDef* port, 
+                              uint32_t gpio_clock, 
+                              uint8_t pin_source, 
+                              uint8_t port_source, 
+                              uint32_t line, 
+                              uint8_t vector);
 
-int16_t encoder1_sum;
-int16_t encoder2_sum;
-
-static volatile int16_t encoder2;
-
-
+//timer functions
+void TIM_EncoderInterfaceConfig2(TIM_TypeDef* TIMx, uint16_t TIM_EncoderMode,
+                                uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity);
+void TIM_SetAutoreload2(TIM_TypeDef* TIMx, uint32_t Autoreload);
+void TIM_Cmd2(TIM_TypeDef* TIMx, FunctionalState NewState);
 uint32_t TIM_GetCounter2(TIM_TypeDef* TIMx);
+void TIM_SetCounter2(TIM_TypeDef* TIMx, uint32_t Counter);
 
 #endif

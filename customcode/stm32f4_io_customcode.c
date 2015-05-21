@@ -1,6 +1,5 @@
 #include "stm32f4_io_customcode.h"
 
-
 void enable_customio(void)
 {
  /*
@@ -64,9 +63,9 @@ void enable_customio(void)
   // turn on the timer/counters
   TIM_Cmd2 (ENCL_TIMER, ENABLE);
   TIM_Cmd2 (ENCR_TIMER, ENABLE);
-  encodersReset();
 
-
+  encoder1Reset();
+  encoder2Reset();
 
   //Z index interrupt init
   Configure_Interrupt_Pin(ENCLZ_PIN, 
@@ -86,45 +85,109 @@ void enable_customio(void)
                           ENCRZ_EXTI_VECTOR);
 }
 
-void disable_customio(void)
+void output_customio(boolean_T in1, boolean_T in2, int32_T * out1, int32_T * out2, int32_T * out3, int32_T * out4){
+    
+    if(in1 == 1) encoder1Reset();
+    if(in2 == 1) encoder2Reset();
+
+    /*important step: interprete the uint16 values from the encoder as int16 values for
+    proper adding and substracting*/
+    int16_t current_encoder1_value = TIM_GetCounter2 (ENCL_TIMER);
+    int16_t current_encoder2_value = TIM_GetCounter2 (ENCR_TIMER);
+    
+    *out1 = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION; 
+	*out2 = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION; 
+    *out3 = encoder1_index_counter;
+    *out4 = encoder2_index_counter;
+}
+
+/* Set interrupt handlers */
+void ENCLZ_EXTI_HANDLER(void) {
+  /* Make sure that interrupt flag is set */
+  if (EXTI_GetITStatus(ENCLZ_EXTI_LINE) != RESET) {
+      
+    int16_t current_encoder1_value = TIM_GetCounter2 (ENCL_TIMER);
+    int32_t current_encoder1_sum = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION;
+
+    //get direction for index counting
+    if(current_encoder1_sum > encoder1_sum_old + VALID_INDEX_THRESHOLD){
+      encoder1_index_counter++;
+      TIM_SetCounter2 (ENCL_TIMER, 0);
+    }
+    else if (current_encoder1_sum < encoder1_sum_old - VALID_INDEX_THRESHOLD){
+      encoder1_index_counter--;
+      TIM_SetCounter2 (ENCL_TIMER, 0);
+    }else{
+     //do nothing   
+    }
+
+    encoder1_sum_old = current_encoder1_sum;
+    
+    /* Clear interrupt flag */
+    EXTI_ClearITPendingBit(ENCLZ_EXTI_LINE);
+  }
+}
+
+void ENCRZ_EXTI_HANDLER(void) {
+  /* Make sure that interrupt flag is set */
+  if (EXTI_GetITStatus(ENCRZ_EXTI_LINE) != RESET) {
+      
+    int16_t current_encoder2_value = TIM_GetCounter2 (ENCR_TIMER);
+    int32_t current_encoder2_sum = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION;
+
+    //get direction for index counting
+    if(current_encoder2_sum > encoder2_sum_old + VALID_INDEX_THRESHOLD){
+      encoder2_index_counter++;
+      TIM_SetCounter2 (ENCR_TIMER, 0);
+    }
+    else if (current_encoder2_sum < encoder2_sum_old - VALID_INDEX_THRESHOLD){
+      encoder2_index_counter--;
+      TIM_SetCounter2 (ENCR_TIMER, 0);
+    }else{
+     //do nothing   
+    }
+
+    encoder2_sum_old = current_encoder2_sum;
+    
+    /* Clear interrupt flag */
+    EXTI_ClearITPendingBit(ENCRZ_EXTI_LINE);
+  }
+}
+
+void encoder1Reset (void)
 {
-    // do nothing
+  __disable_irq();
+    
+  encoder1_sum_old = 0;
+  encoder1_index_counter = 0;
+  TIM_SetCounter2 (ENCL_TIMER, 0);
+
+  __enable_irq();
 }
 
-void output_customio(boolean_T in1, boolean_T in2, int16_T * out1, int16_T * out2){
-    
+void encoder2Reset (void)
+{
+  __disable_irq();
+   
+  encoder2_sum_old = 0;
+  encoder2_index_counter = 0;
+  TIM_SetCounter2 (ENCR_TIMER, 0);
 
-    encoder1 = TIM_GetCounter2 (ENCL_TIMER);
-    encoder2 = TIM_GetCounter2 (ENCR_TIMER);
-
-
-
-    encoder1_sum = encoder1 + encoder1_sum;
-    encoder2_sum = encoder2 + encoder2_sum;
-
-    
-    *out1 = encoder1_sum; 
-	  *out2 = encoder2_sum; 
-
-    TIM_SetCounter2 (ENCL_TIMER, 0);
-
-    TIM_SetCounter2 (ENCR_TIMER, 0);
+  __enable_irq();
+}
 /*
-    oldEncoder1 = encoder1;
-    encoder1 = TIM_GetCounter2 (ENCR_TIMER);
-    encoder1Count = encoder1 - oldEncoder1;
-    encoder1Total =  encoder1Total + encoder1Count;
+int32_t IsEncoderValueInExpectedRange(int16_t _current_encoder_value){
 
-    TIM_SetCounter2 (ENCL_TIMER, 0);
-
-    TIM_SetCounter2 (ENCR_TIMER, 0);
-
-    
-    *out1 = encoder1Total; 
-	*out2 = encoder1; 
- */
+  //check if this can be a valid index signal by checking if the current encoder value
+  //is inside the expected range STEPS_PER_REVOLUTION +- VALID_INDEX_THRESHOLD
+  if(abs(_current_encoder_value) > STEPS_PER_REVOLUTION - VALID_INDEX_THRESHOLD ||
+     abs(_current_encoder_value) < STEPS_PER_REVOLUTION + VALID_INDEX_THRESHOLD){    
+    return 1;
+  }else{
+    return 0;
+  }
 }
-
+*/
 
 void TIM_EncoderInterfaceConfig2(TIM_TypeDef* TIMx, uint16_t TIM_EncoderMode,
                                 uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)
@@ -197,24 +260,6 @@ void TIM_Cmd2(TIM_TypeDef* TIMx, FunctionalState NewState)
   }
 }
 
-void encodersReset (void)
-{
-  __disable_irq();
-    
-    encoder1 = 0;
-    encoder2 = 0;
-    /*
-    oldEncoder1 = 0;
-    encoder1Count = 0;
-    encoder1Total = 0;
-     */
-  TIM_SetCounter2 (ENCL_TIMER, 0);
-  TIM_SetCounter2 (ENCR_TIMER, 0);
-    __enable_irq();
-}
-
-
-
 uint32_t TIM_GetCounter2(TIM_TypeDef* TIMx)
 {
   /* Check the parameters */
@@ -232,7 +277,6 @@ void TIM_SetCounter2(TIM_TypeDef* TIMx, uint32_t Counter)
   /* Set the Counter Register value */
   TIMx->CNT = Counter;
 }
-
 
 /* Configure pins to be interrupts */
 void Configure_Interrupt_Pin(uint32_t pin, 
@@ -270,7 +314,7 @@ void Configure_Interrupt_Pin(uint32_t pin,
   /* Interrupt mode */
   EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
   /* Triggers on rising and falling edge */
-  EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
+  EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Rising;
   /* Add to EXTI */
   EXTI_Init(&EXTI_InitStruct);
 
@@ -287,29 +331,7 @@ void Configure_Interrupt_Pin(uint32_t pin,
   NVIC_Init(&NVIC_InitStruct);
 }
 
-/* Set interrupt handlers */
-void ENCLZ_EXTI_HANDLER(void) {
-  /* Make sure that interrupt flag is set */
-  if (EXTI_GetITStatus(ENCLZ_EXTI_LINE) != RESET) {
-    /* Do your stuff */
-
-   
-    
-    
-    /* Clear interrupt flag */
-    EXTI_ClearITPendingBit(ENCLZ_EXTI_LINE);
-  }
-}
-
-void ENCRZ_EXTI_HANDLER(void) {
-  /* Make sure that interrupt flag is set */
-  if (EXTI_GetITStatus(ENCRZ_EXTI_LINE) != RESET) {
-    /* Do your stuff */
-
-
-    
-    
-    /* Clear interrupt flag */
-    EXTI_ClearITPendingBit(ENCRZ_EXTI_LINE);
-  }
+void disable_customio(void)
+{
+    // do nothing
 }
