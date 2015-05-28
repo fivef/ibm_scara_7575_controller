@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.289"
+    ComputedModelVersion    "1.290"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -43,7 +43,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [102.0, 118.0, 1678.0, 1018.0]
+      Location		      [26.0, 16.0, 1856.0, 1133.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -66,11 +66,11 @@ Model {
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1628.0, 840.0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "251"
+	  Extents		  [1806.0, 955.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [658.30341163836943, 159.15742785670489]
+	  Offset		  [-1.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
@@ -100,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 20 20:55:47 2015"
-  RTWModifiedTimeStamp	  353802758
-  ModelVersionFormat	  "1.%<AutoIncrement:289>"
+  LastModifiedDate	  "Thu May 28 20:45:06 2015"
+  RTWModifiedTimeStamp	  354149370
+  ModelVersionFormat	  "1.%<AutoIncrement:290>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -1140,7 +1140,7 @@ Model {
   System {
     Name		    "test"
     Location		    [102, 118, 1780, 1136]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -4046,8 +4046,8 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"SCARA Encoder 1"
-	Location		[63, 88, 1741, 1106]
-	Open			off
+	Location		[26, 16, 1882, 1149]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4240,9 +4240,9 @@ Model {
 	}
 	Annotation {
 	  SID			  "221"
-	  Name			  "1) if rLeft or rRight is set to high, the encoder is reset on every read\n2) Timer 2 and 4 are used!!! \n"
-	  "2) The data type of the encoder output is int16.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n			In"
-	  "dex --> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
+	  Name			  "1) if rLeft or rRight is set to high, the encoder is resetted to 0\n2) Timer 2 and 4 are used!!! \n2) The"
+	  " data type of the encoder output is int32.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n			Index --"
+	  "> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
 	  Position		  [16, 411]
 	  HorizontalAlignment	  "left"
 	  BackgroundColor	  "yellow"

@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.87"
+    ComputedModelVersion    "1.88"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1912.0, 63.0, 1696.0, 1036.0]
+      Location		      [1.0, 2.0, 1678.0, 1018.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1646.0, 861.0]
+	Extents			[1628.0, 843.0]
 	ZoomFactor		[1.0]
-	Offset			[251.0, 95.0]
+	Offset			[269.0, 113.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri May 15 16:58:27 2015"
+  LastModifiedDate	  "Thu May 28 20:45:11 2015"
   RTWModifiedTimeStamp	  353506415
-  ModelVersionFormat	  "1.%<AutoIncrement:87>"
+  ModelVersionFormat	  "1.%<AutoIncrement:88>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -876,7 +876,7 @@ Model {
   }
   System {
     Name		    "host_test"
-    Location		    [1912, 63, 3608, 1099]
+    Location		    [1, 2, 1679, 1020]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -2633,8 +2633,8 @@ Model {
       Position		      [860, 218, 890, 252]
       ZOrder		      -16
       Floating		      off
-      Location		      [1956, 145, 3618, 1097]
-      Open		      off
+      Location		      [240, 158, 1902, 1110]
+      Open		      on
       NumInputPorts	      "4"
       List {
 	ListType		AxesTitles
@@ -2656,8 +2656,8 @@ Model {
       ShowLegends	      on
       LegendLocations	      "0.89972     0.94013    0.081829    0.021359\n0.89972     0.70273    0.081829    0.021359\n"
       "0.89972     0.46534    0.081829    0.021359\n0.89972     0.22794    0.081829    0.021359"
-      YMin		      "-1000~-5~-250~-1"
-      YMax		      "11000~5~250~1"
+      YMin		      "-1000~-1750~-250~-1"
+      YMax		      "11000~2000~250~1"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
