@@ -82,6 +82,9 @@ be valid and to trigger a counter reset*/
 int32_t encoder1_sum_old;
 int32_t encoder2_sum_old;
 
+int32_t encoder1_sum_old_for_speed;
+int32_t encoder2_sum_old_for_speed;
+
 int32_t encoder1_index_counter;
 int32_t encoder2_index_counter;
 
@@ -90,16 +93,20 @@ int32_t encoder2_index_counter;
 void enable_customio(void);
 void disable_customio(void);
 
-void output_customio(boolean_T in1, boolean_T in2, int32_T * out1, int32_T * out2, int32_T * out3, int32_T * out4); 
+void output_customio(boolean_T resetEncoder1, 
+        boolean_T resetEncoder2, 
+        int32_T * encoder1, 
+        int32_T * encoder2, 
+        int32_T * encoder1_speed, 
+        int32_T * encoder2_speed, 
+        int32_T * encoder1_index, 
+        int32_T * encoder2_index); 
 
 void ENCLZ_EXTI_HANDLER(void);
 void ENCRZ_EXTI_HANDLER(void);
 
 void encoder1Reset (void);
 void encoder2Reset (void);
-
-int32_t IsEncoderValueInExpectedRange(int16_t _current_encoder_value);
-
 
 void Configure_Interrupt_Pin(uint32_t pin, 
                               GPIO_TypeDef* port, 

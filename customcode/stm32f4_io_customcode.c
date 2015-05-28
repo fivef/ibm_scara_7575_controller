@@ -85,20 +85,35 @@ void enable_customio(void)
                           ENCRZ_EXTI_VECTOR);
 }
 
-void output_customio(boolean_T in1, boolean_T in2, int32_T * out1, int32_T * out2, int32_T * out3, int32_T * out4){
+void output_customio(boolean_T resetEncoder1, 
+        boolean_T resetEncoder2, 
+        int32_T * encoder1, 
+        int32_T * encoder2, 
+        int32_T * encoder1_speed, 
+        int32_T * encoder2_speed, 
+        int32_T * encoder1_index, 
+        int32_T * encoder2_index){
     
-    if(in1 == 1) encoder1Reset();
-    if(in2 == 1) encoder2Reset();
+    if(resetEncoder1 == 1) encoder1Reset();
+    if(resetEncoder2 == 1) encoder2Reset();
 
     /*important step: interprete the uint16 values from the encoder as int16 values for
     proper adding and substracting*/
     int16_t current_encoder1_value = TIM_GetCounter2 (ENCL_TIMER);
     int16_t current_encoder2_value = TIM_GetCounter2 (ENCR_TIMER);
     
-    *out1 = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION; 
-	*out2 = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION; 
-    *out3 = encoder1_index_counter;
-    *out4 = encoder2_index_counter;
+    int32_t encoder1_current_position = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION;
+    int32_t encoder2_current_position = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION;  
+    *encoder1 = encoder1_current_position;
+	*encoder2 = encoder2_current_position;   
+    *encoder1_speed = encoder1_current_position - encoder1_sum_old_for_speed;
+    *encoder2_speed = encoder2_current_position - encoder2_sum_old_for_speed;
+    *encoder1_index = encoder1_index_counter;
+    *encoder2_index = encoder2_index_counter;
+    
+    //save sum for speed calculation
+    encoder1_sum_old_for_speed = encoder1_current_position;
+    encoder2_sum_old_for_speed = encoder2_current_position;
 }
 
 /* Set interrupt handlers */
@@ -159,6 +174,7 @@ void encoder1Reset (void)
   __disable_irq();
     
   encoder1_sum_old = 0;
+  encoder1_sum_old_for_speed = 0;
   encoder1_index_counter = 0;
   TIM_SetCounter2 (ENCL_TIMER, 0);
 
@@ -170,24 +186,12 @@ void encoder2Reset (void)
   __disable_irq();
    
   encoder2_sum_old = 0;
+  encoder2_sum_old_for_speed = 0;
   encoder2_index_counter = 0;
   TIM_SetCounter2 (ENCR_TIMER, 0);
 
   __enable_irq();
 }
-/*
-int32_t IsEncoderValueInExpectedRange(int16_t _current_encoder_value){
-
-  //check if this can be a valid index signal by checking if the current encoder value
-  //is inside the expected range STEPS_PER_REVOLUTION +- VALID_INDEX_THRESHOLD
-  if(abs(_current_encoder_value) > STEPS_PER_REVOLUTION - VALID_INDEX_THRESHOLD ||
-     abs(_current_encoder_value) < STEPS_PER_REVOLUTION + VALID_INDEX_THRESHOLD){    
-    return 1;
-  }else{
-    return 0;
-  }
-}
-*/
 
 void TIM_EncoderInterfaceConfig2(TIM_TypeDef* TIMx, uint16_t TIM_EncoderMode,
                                 uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)

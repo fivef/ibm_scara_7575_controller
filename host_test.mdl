@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.88"
+    ComputedModelVersion    "1.90"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1.0, 2.0, 1678.0, 1018.0]
+      Location		      [1901.0, 79.0, 1678.0, 1018.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 28 20:45:11 2015"
-  RTWModifiedTimeStamp	  353506415
-  ModelVersionFormat	  "1.%<AutoIncrement:88>"
+  LastModifiedDate	  "Thu May 28 22:27:44 2015"
+  RTWModifiedTimeStamp	  354748399
+  ModelVersionFormat	  "1.%<AutoIncrement:90>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -876,7 +876,7 @@ Model {
   }
   System {
     Name		    "host_test"
-    Location		    [1, 2, 1679, 1020]
+    Location		    [1901, 79, 3579, 1097]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -890,43 +890,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "56"
-    Block {
-      BlockType		      Scope
-      Name		      "ADC Scope1"
-      SID		      "45"
-      Ports		      [1]
-      Position		      [810, 494, 840, 526]
-      ZOrder		      185
-      Floating		      off
-      Location		      [1921, 120, 3601, 1090]
-      Open		      off
-      NumInputPorts	      "1"
-      ZoomMode		      "xonly"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      List {
-	ListType		ScopeGraphics
-	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
-	AxesColor		"[0 0 0]"
-	AxesTickColor		"[1 1 1]"
-	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	LineStyles		"-|-|-|-|-|-"
-	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
-	MarkerStyles		"none|none|none|none|none|none"
-      }
-      ShowLegends	      off
-      TimeRange		      "5"
-      YMin		      "0"
-      YMax		      "4000"
-      SaveName		      "ScopeData6"
-      DataFormat	      "StructureWithTime"
-      LimitDataPoints	      off
-      SampleInput	      on
-      SampleTime	      "0.005"
-    }
+    SIDHighWatermark	    "59"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -2629,19 +2593,20 @@ Model {
       BlockType		      Scope
       Name		      "Pos Scope"
       SID		      "14"
-      Ports		      [4]
+      Ports		      [5]
       Position		      [860, 218, 890, 252]
       ZOrder		      -16
       Floating		      off
       Location		      [240, 158, 1902, 1110]
-      Open		      on
-      NumInputPorts	      "4"
+      Open		      off
+      NumInputPorts	      "5"
       List {
 	ListType		AxesTitles
 	axes1			"Position"
 	axes2			"Speed"
 	axes3			"Error"
 	axes4			"PID output"
+	axes5			"Index"
       }
       List {
 	ListType		ScopeGraphics
@@ -2654,28 +2619,30 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      LegendLocations	      "0.89972     0.94013    0.081829    0.021359\n0.89972     0.70273    0.081829    0.021359\n"
-      "0.89972     0.46534    0.081829    0.021359\n0.89972     0.22794    0.081829    0.021359"
-      YMin		      "-1000~-1750~-250~-1"
-      YMax		      "11000~2000~250~1"
+      YMin		      "-1000~-1750~-250~-1~-5"
+      YMax		      "11000~2000~250~1~5"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
     }
     Block {
       BlockType		      Scope
-      Name		      "Pos Scope1"
-      SID		      "47"
-      Ports		      [1]
-      Position		      [810, 384, 840, 416]
-      ZOrder		      180
+      Name		      "Pos Scope2"
+      SID		      "57"
+      Ports		      [5]
+      Position		      [850, 418, 880, 452]
+      ZOrder		      192
       Floating		      off
-      Location		      [71, 158, 1733, 1110]
+      Location		      [240, 158, 1902, 1110]
       Open		      off
-      NumInputPorts	      "1"
+      NumInputPorts	      "5"
       List {
 	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
+	axes1			"Position"
+	axes2			"Speed"
+	axes3			"Error"
+	axes4			"PID output"
+	axes5			"Index"
       }
       List {
 	ListType		ScopeGraphics
@@ -2687,10 +2654,10 @@ Model {
 	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
 	MarkerStyles		"none|none|none|none|none|none"
       }
-      ShowLegends	      off
-      YMin		      "-10000"
-      YMax		      "10000"
-      SaveName		      "ScopeData7"
+      ShowLegends	      on
+      YMin		      "-1000~-1750~-250~-1~-5"
+      YMax		      "11000~2000~250~1~5"
+      SaveName		      "ScopeData1"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
@@ -2763,40 +2730,6 @@ Model {
       Lockdown		      off
     }
     Block {
-      BlockType		      Scope
-      Name		      "Speed Scope1"
-      SID		      "49"
-      Ports		      [1]
-      Position		      [810, 439, 840, 471]
-      ZOrder		      183
-      Floating		      off
-      Location		      [1930, 129, 3592, 1081]
-      Open		      off
-      NumInputPorts	      "1"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      List {
-	ListType		ScopeGraphics
-	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
-	AxesColor		"[0 0 0]"
-	AxesTickColor		"[1 1 1]"
-	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	LineStyles		"-|-|-|-|-|-"
-	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
-	MarkerStyles		"none|none|none|none|none|none"
-      }
-      ShowLegends	      off
-      TimeRange		      "100"
-      YMin		      "-22.5"
-      YMax		      "20"
-      SaveName		      "ScopeData8"
-      DataFormat	      "StructureWithTime"
-      LimitDataPoints	      off
-      SampleTime	      "0"
-    }
-    Block {
       BlockType		      Display
       Name		      "Speed1"
       SID		      "48"
@@ -2843,6 +2776,28 @@ Model {
       Ports		      [1]
       Position		      [655, 500, 770, 520]
       ZOrder		      184
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "index"
+      SID		      "58"
+      Ports		      [1]
+      Position		      [665, 555, 780, 575]
+      ZOrder		      193
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "index1"
+      SID		      "59"
+      Ports		      [1]
+      Position		      [665, 600, 780, 620]
+      ZOrder		      194
       Format		      "bank"
       Decimation	      "1"
       Lockdown		      off
@@ -2937,7 +2892,7 @@ Model {
 	DstPort			1
       }
       Branch {
-	Points			[0, -21; 145, 0; 0, 6]
+	Points			[0, -21; 145, 0; 0, 11]
 	DstBlock		"Pos Scope"
 	DstPort			1
       }
@@ -2958,7 +2913,7 @@ Model {
 	DstPort			1
       }
       Branch {
-	Points			[0, -19; 152, 0; 0, -86]
+	Points			[0, -19; 152, 0; 0, -91]
 	DstBlock		"Pos Scope"
 	DstPort			3
       }
@@ -2972,7 +2927,7 @@ Model {
 	DstPort			1
       }
       Branch {
-	Points			[0, -31; 271, 0; 0, 235; -81, 0; 0, -79]
+	Points			[0, -31; 271, 0; 0, 235; -81, 0; 0, -89]
 	DstBlock		"Pos Scope"
 	DstPort			4
       }
@@ -3091,9 +3046,9 @@ Model {
       SrcPort		      7
       Points		      [245, 0]
       Branch {
-	Points			[0, -21; 151, 0; 0, 21]
-	DstBlock		"Speed Scope1"
-	DstPort			1
+	Points			[0, -21; 161, 0; 0, -4]
+	DstBlock		"Pos Scope2"
+	DstPort			2
       }
       Branch {
 	DstBlock		"Speed1"
@@ -3105,8 +3060,8 @@ Model {
       SrcPort		      6
       Points		      [245, 0]
       Branch {
-	Points			[0, -21; 145, 0; 0, 21]
-	DstBlock		"Pos Scope1"
+	Points			[0, -24; 195, 0]
+	DstBlock		"Pos Scope2"
 	DstPort			1
       }
       Branch {
@@ -3119,9 +3074,9 @@ Model {
       SrcPort		      8
       Points		      [245, 0]
       Branch {
-	Points			[0, -19; 150, 0; 0, 19]
-	DstBlock		"ADC Scope1"
-	DstPort			1
+	Points			[0, -21; 195, 0]
+	DstBlock		"Pos Scope2"
+	DstPort			3
       }
       Branch {
 	DstBlock		"error1"
@@ -3161,6 +3116,34 @@ Model {
       Branch {
 	DstBlock		"Manual Switch"
 	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Host Serial Rx"
+      SrcPort		      9
+      Points		      [247, 0]
+      Branch {
+	Points			[0, -21; 174, 0; 0, -299]
+	DstBlock		"Pos Scope"
+	DstPort			5
+      }
+      Branch {
+	DstBlock		"index"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Host Serial Rx"
+      SrcPort		      10
+      Points		      [132, 0; 0, -10; 117, 0]
+      Branch {
+	Points			[0, -16; 185, 0; 0, -154]
+	DstBlock		"Pos Scope2"
+	DstPort			4
+      }
+      Branch {
+	DstBlock		"index1"
+	DstPort			1
       }
     }
   }

@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.290"
+    ComputedModelVersion    "1.291"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -66,11 +66,11 @@ Model {
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "251"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1806.0, 955.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-1.0, 0.0]
+	  Offset		  [6.5534116383694254, 93.157427856704885]
 	}
 	Object {
 	  $ObjectID		  7
@@ -100,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 28 20:45:06 2015"
-  RTWModifiedTimeStamp	  354149370
-  ModelVersionFormat	  "1.%<AutoIncrement:290>"
+  LastModifiedDate	  "Thu May 28 21:10:14 2015"
+  RTWModifiedTimeStamp	  354748212
+  ModelVersionFormat	  "1.%<AutoIncrement:291>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -1139,8 +1139,8 @@ Model {
   }
   System {
     Name		    "test"
-    Location		    [102, 118, 1780, 1136]
-    Open		    off
+    Location		    [26, 16, 1882, 1149]
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1197,31 +1197,11 @@ Model {
     }
     Block {
       BlockType		      DataTypeConversion
-      Name		      "Data Type Conversion3"
-      SID		      "482"
-      Position		      [1150, 488, 1225, 522]
-      ZOrder		      191
-      OutDataTypeStr	      "int32"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      DataTypeConversion
       Name		      "Data Type Conversion4"
       SID		      "421"
       Position		      [1630, 1028, 1705, 1062]
       ZOrder		      176
       OutDataTypeStr	      "double"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      DataTypeConversion
-      Name		      "Data Type Conversion5"
-      SID		      "483"
-      Position		      [1140, 338, 1215, 372]
-      ZOrder		      192
-      OutDataTypeStr	      "int32"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
     }
@@ -3977,6 +3957,43 @@ Model {
       FilterRTWStateStorageClass "Auto"
     }
     Block {
+      BlockType		      Reference
+      Name		      "Quadratur Encoder2"
+      SID		      "474"
+      Ports		      [2, 6]
+      Position		      [765, 392, 940, 528]
+      ZOrder		      200
+      ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
+      LibraryVersion	      "1.179"
+      SourceBlock	      "waijung_customcode/Basic Custom Code"
+      SourceType	      "waijung_basic_customcode"
+      inputporttype	      "boolean,boolean"
+      cinputportlabel	      "resetEncoder1, resetEncoder2"
+      cinputportlabelstr      "[\"resetEncoder1\",\" resetEncoder2\"]"
+      inputportcount	      "2"
+      inputporttypeid	      "[8  8]"
+      outputporttype	      "int32,int32,int32,int32,int32,int32"
+      coutputportlabel	      "encoder1, encoder2, encoder1_speed, encoder2_speed, encoder1_index, encoder2_index"
+      coutputportlabelstr     "[\"encoder1\",\" encoder2\",\" encoder1_speed\",\" encoder2_speed\",\" encoder1_index\""
+      ",\" encoder2_index\"]"
+      outputportcount	      "6"
+      outputporttypeid	      "[6  6  6  6  6  6]"
+      incpath		      "{fullfile(pwd,'customcode')}"
+      srcpath		      "{fullfile(pwd,'customcode')}"
+      incfiles		      "{'stm32f4_io_customcode.h'}"
+      srcfiles		      "{'stm32f4_io_customcode.c'}"
+      enablefuncallstr	      "enable_customio();"
+      outputfuncallstr	      "output_customio(in1,in2,out1,out2,out3,out4,out5,out6);"
+      disablefuncallstr	      "disable_customio();"
+      sampletime	      "0.001"
+      sampletimestr	      "0.001"
+      blockid		      "SCARAEncoder1QuadraturEncoder2"
+      enablecustomportlabel   on
+      incfilestrarray	      "[\"stm32f4_io_customcode.h\"]"
+      inputportdiminfo	      "[1  1  1  8;1  1  1  8]"
+      outputportdiminfo	      "[1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6]"
+    }
+    Block {
       BlockType		      RateTransition
       Name		      "Rate Transition"
       SID		      "20"
@@ -4031,227 +4048,6 @@ Model {
       OutPortSampleTime	      "0.001"
     }
     Block {
-      BlockType		      SubSystem
-      Name		      "SCARA Encoder 1"
-      SID		      "251"
-      Ports		      [2, 6]
-      Position		      [810, 402, 1035, 503]
-      ZOrder		      153
-      MinAlgLoopOccurrences   off
-      PropExecContextOutsideSubsystem off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      Opaque		      off
-      RequestExecContextInheritance off
-      MaskHideContents	      off
-      System {
-	Name			"SCARA Encoder 1"
-	Location		[26, 16, 1882, 1149]
-	Open			on
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "reset position to 0"
-	  SID			  "377"
-	  Position		  [45, 498, 75, 512]
-	  ZOrder		  167
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "reset position to 0 1"
-	  SID			  "405"
-	  Position		  [45, 543, 75, 557]
-	  ZOrder		  184
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  DataTypeConversion
-	  Name			  "Data Type Conversion2"
-	  SID			  "292"
-	  Position		  [515, 483, 590, 517]
-	  ZOrder		  165
-	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
-	  OutDataTypeStr	  "int32"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  DataTypeConversion
-	  Name			  "Data Type Conversion5"
-	  SID			  "475"
-	  Position		  [620, 518, 695, 552]
-	  ZOrder		  188
-	  OutDataTypeStr	  "int32"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Quadratur Encoder2"
-	  SID			  "474"
-	  Ports			  [2, 4]
-	  Position		  [205, 485, 380, 620]
-	  ZOrder		  187
-	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
-	  LibraryVersion	  "1.179"
-	  SourceBlock		  "waijung_customcode/Basic Custom Code"
-	  SourceType		  "waijung_basic_customcode"
-	  inputporttype		  "boolean,boolean"
-	  cinputportlabel	  "resetEncoder1, resetEncoder2"
-	  cinputportlabelstr	  "[\"resetEncoder1\",\" resetEncoder2\"]"
-	  inputportcount	  "2"
-	  inputporttypeid	  "[8  8]"
-	  outputporttype	  "int32,int32,int32,int32"
-	  coutputportlabel	  "encoder1, encoder2, encoder1_speed, encoder2_speed"
-	  coutputportlabelstr	  "[\"encoder1\",\" encoder2\",\" encoder1_speed\",\" encoder2_speed\"]"
-	  outputportcount	  "4"
-	  outputporttypeid	  "[6  6  6  6]"
-	  incpath		  "{fullfile(pwd,'customcode')}"
-	  srcpath		  "{fullfile(pwd,'customcode')}"
-	  incfiles		  "{'stm32f4_io_customcode.h'}"
-	  srcfiles		  "{'stm32f4_io_customcode.c'}"
-	  enablefuncallstr	  "enable_customio();"
-	  outputfuncallstr	  "output_customio(in1,in2,out1,out2,out3,out4);"
-	  disablefuncallstr	  "disable_customio();"
-	  sampletime		  "0.001"
-	  sampletimestr		  "0.001"
-	  blockid		  "SCARAEncoder1QuadraturEncoder2"
-	  enablecustomportlabel	  on
-	  incfilestrarray	  "[\"stm32f4_io_customcode.h\"]"
-	  inputportdiminfo	  "[1  1  1  8;1  1  1  8]"
-	  outputportdiminfo	  "[1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6]"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Direction"
-	  SID			  "253"
-	  Position		  [820, 333, 850, 347]
-	  ZOrder		  -2
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Position"
-	  SID			  "254"
-	  Position		  [820, 393, 850, 407]
-	  ZOrder		  162
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Speed in Steps per loop"
-	  SID			  "255"
-	  Position		  [820, 458, 850, 472]
-	  ZOrder		  163
-	  Port			  "3"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Direction1"
-	  SID			  "416"
-	  Position		  [935, 508, 965, 522]
-	  ZOrder		  173
-	  Port			  "4"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Position1"
-	  SID			  "417"
-	  Position		  [820, 528, 850, 542]
-	  ZOrder		  181
-	  Port			  "5"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Speed in Steps per loop1"
-	  SID			  "418"
-	  Position		  [820, 598, 850, 612]
-	  ZOrder		  182
-	  Port			  "6"
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  SrcBlock		  "Quadratur Encoder2"
-	  SrcPort		  1
-	  DstBlock		  "Data Type Conversion2"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Data Type Conversion2"
-	  SrcPort		  1
-	  Points		  [93, 0; 0, -100]
-	  DstBlock		  "Position"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "reset position to 0"
-	  SrcPort		  1
-	  Points		  [110, 0]
-	  DstBlock		  "Quadratur Encoder2"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Quadratur Encoder2"
-	  SrcPort		  2
-	  DstBlock		  "Data Type Conversion5"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "reset position to 0 1"
-	  SrcPort		  1
-	  Points		  [110, 0]
-	  DstBlock		  "Quadratur Encoder2"
-	  DstPort		  2
-	}
-	Line {
-	  SrcBlock		  "Data Type Conversion5"
-	  SrcPort		  1
-	  DstBlock		  "Position1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Quadratur Encoder2"
-	  SrcPort		  3
-	  Points		  [181, 0; 0, -105]
-	  DstBlock		  "Speed in Steps per loop"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Quadratur Encoder2"
-	  SrcPort		  4
-	  DstBlock		  "Speed in Steps per loop1"
-	  DstPort		  1
-	}
-	Annotation {
-	  SID			  "221"
-	  Name			  "1) if rLeft or rRight is set to high, the encoder is resetted to 0\n2) Timer 2 and 4 are used!!! \n2) The"
-	  " data type of the encoder output is int32.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n			Index --"
-	  "> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
-	  Position		  [16, 411]
-	  HorizontalAlignment	  "left"
-	  BackgroundColor	  "yellow"
-	  DropShadow		  on
-	  ZOrder		  -1
-	}
-      }
-    }
-    Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "294"
@@ -4304,7 +4100,7 @@ Model {
       Name		      "Target Setup"
       SID		      "2"
       Ports		      []
-      Position		      [910, 185, 1148, 307]
+      Position		      [975, 175, 1213, 297]
       ZOrder		      -12
       Priority		      "100"
       LibraryVersion	      "1.397"
@@ -4405,26 +4201,19 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "SCARA Encoder 1"
-      SrcPort		      2
-      Points		      [247, 0]
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      1
+      Points		      [342, 0]
       Branch {
-	Points			[0, 425]
+	Points			[0, 445]
 	DstBlock		"Sum"
 	DstPort			1
       }
       Branch {
-	Points			[0, -215]
+	Points			[0, -195]
 	DstBlock		"USB VCP Send STM32F4"
 	DstPort			3
       }
-    }
-    Line {
-      SrcBlock		      "SCARA Encoder 1"
-      SrcPort		      3
-      Points		      [42, 0; 0, -90]
-      DstBlock		      "Data Type Conversion5"
-      DstPort		      1
     }
     Line {
       SrcBlock		      "PID Controller"
@@ -4476,16 +4265,16 @@ Model {
       DstPort		      2
     }
     Line {
-      SrcBlock		      "SCARA Encoder 1"
-      SrcPort		      5
-      Points		      [289, 0]
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      2
+      Points		      [384, 0]
       Branch {
-	Points			[0, 615]
+	Points			[0, 660]
 	DstBlock		"Sum1"
 	DstPort			1
       }
       Branch {
-	Points			[0, -155]
+	Points			[0, -110]
 	DstBlock		"USB VCP Send STM32F4"
 	DstPort			6
       }
@@ -4542,14 +4331,14 @@ Model {
 	}
       }
       Branch {
-	Points			[0, -135]
+	Points			[0, -120]
 	Branch {
-	  Points		  [0, -50]
-	  DstBlock		  "SCARA Encoder 1"
+	  Points		  [0, -70]
+	  DstBlock		  "Quadratur Encoder2"
 	  DstPort		  1
 	}
 	Branch {
-	  DstBlock		  "SCARA Encoder 1"
+	  DstBlock		  "Quadratur Encoder2"
 	  DstPort		  2
 	}
       }
@@ -4575,13 +4364,6 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "SCARA Encoder 1"
-      SrcPort		      6
-      Points		      [16, 0; 0, 15]
-      DstBlock		      "Data Type Conversion3"
-      DstPort		      1
-    }
-    Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      2
       Points		      [9, 0; 0, -30]
@@ -4603,16 +4385,16 @@ Model {
       DstPort		      14
     }
     Line {
-      SrcBlock		      "Data Type Conversion5"
-      SrcPort		      1
-      Points		      [9, 0; 0, -105]
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      3
+      Points		      [456, 0; 0, -195]
       DstBlock		      "USB VCP Send STM32F4"
       DstPort		      4
     }
     Line {
-      SrcBlock		      "Data Type Conversion3"
-      SrcPort		      1
-      Points		      [119, 0; 0, -150]
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      4
+      Points		      [489, 0; 0, -110]
       DstBlock		      "USB VCP Send STM32F4"
       DstPort		      7
     }
@@ -4656,10 +4438,35 @@ Model {
       DstBlock		      "Sum"
       DstPort		      2
     }
+    Line {
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      5
+      Points		      [522, 0; 0, -60]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "Quadratur Encoder2"
+      SrcPort		      6
+      Points		      [538, 0; 0, -45]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      10
+    }
     Annotation {
       SID		      "438"
       Name		      "Careful seems to not work with more outputs than now???!??!"
       Position		      [458, 217]
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "221"
+      Name		      "1) if rLeft or rRight is set to high, the encoder is resetted to 0\n2) Timer 2 and 4 are used!!! \n"
+      "2) The data type of the encoder output is int32.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n		"
+      "	Index --> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
+      Position		      [671, 261]
+      HorizontalAlignment     "left"
+      BackgroundColor	      "yellow"
+      DropShadow	      on
       ZOrder		      -1
     }
   }
