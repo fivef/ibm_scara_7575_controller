@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.90"
+    ComputedModelVersion    "1.100"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1901.0, 79.0, 1678.0, 1018.0]
+      Location		      [1920.0, 71.0, 1678.0, 1018.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -67,7 +67,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1628.0, 843.0]
 	ZoomFactor		[1.0]
-	Offset			[269.0, 113.0]
+	Offset			[397.54999999999927, 113.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 28 22:27:44 2015"
-  RTWModifiedTimeStamp	  354748399
-  ModelVersionFormat	  "1.%<AutoIncrement:90>"
+  LastModifiedDate	  "Thu Jun 18 23:29:46 2015"
+  RTWModifiedTimeStamp	  356566180
+  ModelVersionFormat	  "1.%<AutoIncrement:100>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -852,19 +852,6 @@ Model {
       SampleTime	      "-1"
     }
     Block {
-      BlockType		      Sin
-      SineType		      "Time based"
-      TimeSource	      "Use simulation time"
-      Amplitude		      "1"
-      Bias		      "0"
-      Frequency		      "1"
-      Phase		      "0"
-      Samples		      "10"
-      Offset		      "0"
-      SampleTime	      "-1"
-      VectorParams1D	      on
-    }
-    Block {
       BlockType		      Step
       Time		      "1"
       Before		      "0"
@@ -876,7 +863,7 @@ Model {
   }
   System {
     Name		    "host_test"
-    Location		    [1901, 79, 3579, 1097]
+    Location		    [1920, 71, 3598, 1089]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -890,7 +877,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "59"
+    SIDHighWatermark	    "63"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -902,7 +889,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant1"
       SID		      "29"
-      Position		      [1170, 455, 1200, 485]
+      Position		      [1190, 450, 1220, 480]
       ZOrder		      17
       OutDataTypeStr	      "int32"
     }
@@ -910,7 +897,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant2"
       SID		      "34"
-      Position		      [1400, 845, 1430, 875]
+      Position		      [1400, 820, 1430, 850]
       ZOrder		      21
       OutDataTypeStr	      "int32"
     }
@@ -918,7 +905,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant3"
       SID		      "35"
-      Position		      [1400, 790, 1430, 820]
+      Position		      [1400, 765, 1430, 795]
       ZOrder		      22
       Value		      "0"
       OutDataTypeStr	      "int32"
@@ -934,8 +921,25 @@ Model {
       BlockType		      Constant
       Name		      "Constant5"
       SID		      "40"
-      Position		      [1170, 530, 1200, 560]
+      Position		      [1190, 525, 1220, 555]
       ZOrder		      176
+      OutDataTypeStr	      "int32"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant6"
+      SID		      "61"
+      Position		      [1400, 660, 1430, 690]
+      ZOrder		      196
+      Value		      "0"
+      OutDataTypeStr	      "int32"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant7"
+      SID		      "62"
+      Position		      [1400, 710, 1430, 740]
+      ZOrder		      197
       OutDataTypeStr	      "int32"
     }
     Block {
@@ -945,16 +949,6 @@ Model {
       Position		      [1490, 533, 1565, 567]
       ZOrder		      179
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
-      OutDataTypeStr	      "int32"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      DataTypeConversion
-      Name		      "Data Type Conversion2"
-      SID		      "54"
-      Position		      [1490, 758, 1565, 792]
-      ZOrder		      189
       OutDataTypeStr	      "int32"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
@@ -995,7 +989,7 @@ Model {
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-1"
-      gain		      "0"
+      gain		      "0.013824"
       high		      "1"
     }
     Block {
@@ -1084,13 +1078,20 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace"
       SID		      "56"
-      Position		      [1185, 348, 1250, 372]
+      Position		      [1265, 373, 1330, 397]
       ZOrder		      191
       VariableName	      "wave"
       SampleTime	      "0.001"
       Interpolate	      off
       ZeroCross		      on
       OutputAfterFinalValue   "Cyclic repetition"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Home Axis 1"
+      SID		      "60"
+      Position		      [1470, 667, 1500, 703]
+      ZOrder		      195
     }
     Block {
       BlockType		      S-Function
@@ -1146,7 +1147,8 @@ Model {
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
-	      Dimension		      1
+	      Dimension		      2
+	      Cell		      "COM3"
 	      Cell		      "COM7"
 	      PropName		      "TypeOptions"
 	    }
@@ -1624,7 +1626,8 @@ Model {
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
-	      Dimension		      1
+	      Dimension		      2
+	      Cell		      "COM3"
 	      Cell		      "COM7"
 	      PropName		      "TypeOptions"
 	    }
@@ -2112,7 +2115,8 @@ Model {
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
-	      Dimension		      1
+	      Dimension		      2
+	      Cell		      "COM3"
 	      Cell		      "COM7"
 	      PropName		      "TypeOptions"
 	    }
@@ -2583,7 +2587,7 @@ Model {
       Name		      "Pos Counter1"
       SID		      "46"
       Ports		      [1]
-      Position		      [655, 385, 770, 415]
+      Position		      [655, 386, 770, 414]
       ZOrder		      181
       Format		      "bank"
       Decimation	      "1"
@@ -2593,13 +2597,13 @@ Model {
       BlockType		      Scope
       Name		      "Pos Scope"
       SID		      "14"
-      Ports		      [5]
-      Position		      [860, 218, 890, 252]
+      Ports		      [6]
+      Position		      [860, 220, 890, 255]
       ZOrder		      -16
       Floating		      off
-      Location		      [240, 158, 1902, 1110]
-      Open		      off
-      NumInputPorts	      "5"
+      Location		      [641, 158, 1902, 1110]
+      Open		      on
+      NumInputPorts	      "6"
       List {
 	ListType		AxesTitles
 	axes1			"Position"
@@ -2607,6 +2611,7 @@ Model {
 	axes3			"Error"
 	axes4			"PID output"
 	axes5			"Index"
+	axes6			"Encoder Reset"
       }
       List {
 	ListType		ScopeGraphics
@@ -2619,8 +2624,11 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      YMin		      "-1000~-1750~-250~-1~-5"
-      YMax		      "11000~2000~250~1~5"
+      LegendLocations	      "0.90002      0.9396     0.10785    0.021359\n0.90002     0.78099     0.10785    0.021359\n"
+      "0.90002     0.62237     0.10785    0.021359\n0.90002     0.46481     0.10785    0.021359\n0.90002      0.3062   "
+      "  0.10785    0.021359\n0.89641     0.14863     0.11261    0.021359"
+      YMin		      "-90000~-1750~-250~-1~-200~-5"
+      YMax		      "90000~2000~250~1~200~5"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
@@ -2630,7 +2638,7 @@ Model {
       Name		      "Pos Scope2"
       SID		      "57"
       Ports		      [5]
-      Position		      [850, 418, 880, 452]
+      Position		      [850, 428, 880, 462]
       ZOrder		      192
       Floating		      off
       Location		      [240, 158, 1902, 1110]
@@ -2663,10 +2671,44 @@ Model {
       SampleTime	      "0"
     }
     Block {
+      BlockType		      Scope
+      Name		      "Position"
+      SID		      "63"
+      Ports		      [1]
+      Position		      [920, 199, 950, 231]
+      ZOrder		      198
+      Floating		      off
+      Location		      [149, 118, 1829, 1088]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "60"
+      YMin		      "-10000"
+      YMax		      "10000"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
       BlockType		      ManualSwitch
       Name		      "Position Reset"
       SID		      "33"
-      Position		      [1510, 817, 1540, 853]
+      Position		      [1510, 792, 1540, 828]
       ZOrder		      20
     }
     Block {
@@ -2674,13 +2716,13 @@ Model {
       Name		      "Position Setpoint"
       SID		      "30"
       Ports		      [1, 1]
-      Position		      [1235, 452, 1310, 488]
+      Position		      [1235, 447, 1310, 483]
       ZOrder		      16
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-10000"
-      gain		      "0"
+      gain		      "4930.88"
       high		      "10000"
     }
     Block {
@@ -2688,7 +2730,7 @@ Model {
       Name		      "Position Setpoint1"
       SID		      "43"
       Ports		      [1, 1]
-      Position		      [1235, 527, 1310, 563]
+      Position		      [1235, 522, 1310, 558]
       ZOrder		      175
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -2706,17 +2748,6 @@ Model {
       Integrity		      off
       Deterministic	      off
       OutPortSampleTime	      "0.001"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine Wave"
-      SID		      "51"
-      Ports		      [0, 1]
-      Position		      [1255, 760, 1285, 790]
-      ZOrder		      186
-      SineType		      "Sample based"
-      Amplitude		      "100"
-      SampleTime	      "0.1"
     }
     Block {
       BlockType		      Display
@@ -2744,7 +2775,7 @@ Model {
       BlockType		      Step
       Name		      "Step"
       SID		      "31"
-      Position		      [965, 455, 1120, 525]
+      Position		      [985, 430, 1140, 500]
       ZOrder		      18
       After		      "1000"
       SampleTime	      "0.001"
@@ -2753,7 +2784,7 @@ Model {
       BlockType		      Step
       Name		      "Step1"
       SID		      "44"
-      Position		      [965, 530, 1120, 600]
+      Position		      [985, 530, 1140, 600]
       ZOrder		      177
       After		      "1000"
       SampleTime	      "0.001"
@@ -2763,7 +2794,7 @@ Model {
       Name		      "error"
       SID		      "19"
       Ports		      [1]
-      Position		      [655, 335, 770, 355]
+      Position		      [655, 331, 770, 359]
       ZOrder		      6
       Format		      "bank"
       Decimation	      "1"
@@ -2774,7 +2805,7 @@ Model {
       Name		      "error1"
       SID		      "50"
       Ports		      [1]
-      Position		      [655, 500, 770, 520]
+      Position		      [655, 497, 770, 523]
       ZOrder		      184
       Format		      "bank"
       Decimation	      "1"
@@ -2785,7 +2816,7 @@ Model {
       Name		      "index"
       SID		      "58"
       Ports		      [1]
-      Position		      [665, 555, 780, 575]
+      Position		      [655, 552, 770, 578]
       ZOrder		      193
       Format		      "bank"
       Decimation	      "1"
@@ -2796,7 +2827,7 @@ Model {
       Name		      "index1"
       SID		      "59"
       Ports		      [1]
-      Position		      [665, 600, 780, 620]
+      Position		      [655, 607, 770, 633]
       ZOrder		      194
       Format		      "bank"
       Decimation	      "1"
@@ -2888,12 +2919,20 @@ Model {
       SrcPort		      3
       Points		      [245, 0]
       Branch {
-	DstBlock		"Pos Counter"
-	DstPort			1
+	Points			[0, -21; 145, 0]
+	Branch {
+	  Points		  [113, 0; 0, 1]
+	  DstBlock		  "Position"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 11]
+	  DstBlock		  "Pos Scope"
+	  DstPort		  1
+	}
       }
       Branch {
-	Points			[0, -21; 145, 0; 0, 11]
-	DstBlock		"Pos Scope"
+	DstBlock		"Pos Counter"
 	DstPort			1
       }
     }
@@ -2960,12 +2999,12 @@ Model {
     Line {
       SrcBlock		      "Step"
       SrcPort		      1
-      Points		      [18, 0; 0, 26; 182, 0; 0, -14]
+      Points		      [-5, 0; 21, 0]
     }
     Line {
       SrcBlock		      "Position Reset"
       SrcPort		      1
-      Points		      [72, 0; 0, -55]
+      Points		      [9, 0; 0, -30]
       DstBlock		      "Host Serial Tx"
       DstPort		      6
     }
@@ -2993,7 +3032,6 @@ Model {
     Line {
       SrcBlock		      "Position Setpoint"
       SrcPort		      1
-      Points		      [27, 0; 0, -5]
       DstBlock		      "Manual Switch"
       DstPort		      1
     }
@@ -3025,12 +3063,11 @@ Model {
     Line {
       SrcBlock		      "Step1"
       SrcPort		      1
-      Points		      [18, 0; 0, 47; 144, 0]
+      Points		      [-5, 0; 23, 0]
     }
     Line {
       SrcBlock		      "Position Setpoint1"
       SrcPort		      1
-      Points		      [27, 0; 0, -5]
       DstBlock		      "Manual Switch1"
       DstPort		      1
     }
@@ -3046,7 +3083,7 @@ Model {
       SrcPort		      7
       Points		      [245, 0]
       Branch {
-	Points			[0, -21; 161, 0; 0, -4]
+	Points			[0, -21; 139, 0; 0, 6]
 	DstBlock		"Pos Scope2"
 	DstPort			2
       }
@@ -3098,18 +3135,18 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Data Type Conversion2"
+      SrcBlock		      "Home Axis 1"
       SrcPort		      1
-      Points		      [30, 0; 0, -100]
+      Points		      [115, 0]
       DstBlock		      "Host Serial Tx"
       DstPort		      5
     }
     Line {
       SrcBlock		      "From\nWorkspace"
       SrcPort		      1
-      Points		      [71, 0; 0, 125; 17, 0]
+      Points		      [9, 0; 0, 100]
       Branch {
-	Points			[0, 20; 13, 0; 0, 55]
+	Points			[-1, 0; 0, 75]
 	DstBlock		"Manual Switch1"
 	DstPort			2
       }
@@ -3121,9 +3158,9 @@ Model {
     Line {
       SrcBlock		      "Host Serial Rx"
       SrcPort		      9
-      Points		      [247, 0]
+      Points		      [245, 0]
       Branch {
-	Points			[0, -21; 174, 0; 0, -299]
+	Points			[0, -21; 176, 0; 0, -299]
 	DstBlock		"Pos Scope"
 	DstPort			5
       }
@@ -3135,9 +3172,9 @@ Model {
     Line {
       SrcBlock		      "Host Serial Rx"
       SrcPort		      10
-      Points		      [132, 0; 0, -10; 117, 0]
+      Points		      [245, 0]
       Branch {
-	Points			[0, -16; 185, 0; 0, -154]
+	Points			[0, -20; 189, 0; 0, -150]
 	DstBlock		"Pos Scope2"
 	DstPort			4
       }
@@ -3145,6 +3182,26 @@ Model {
 	DstBlock		"index1"
 	DstPort			1
       }
+    }
+    Line {
+      SrcBlock		      "Constant6"
+      SrcPort		      1
+      DstBlock		      "Home Axis 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant7"
+      SrcPort		      1
+      Points		      [9, 0; 0, -30]
+      DstBlock		      "Home Axis 1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Host Serial Rx"
+      SrcPort		      11
+      Points		      [392, 0; 0, -425]
+      DstBlock		      "Pos Scope"
+      DstPort		      6
     }
   }
 }
