@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.109"
+    ComputedModelVersion    "1.115"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -67,7 +67,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1628.0, 845.0]
 	ZoomFactor		[1.0]
-	Offset			[137.0, 99.625]
+	Offset			[168.0, 91.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 22 23:22:02 2015"
-  RTWModifiedTimeStamp	  356915644
-  ModelVersionFormat	  "1.%<AutoIncrement:109>"
+  LastModifiedDate	  "Tue Jun 23 22:14:56 2015"
+  RTWModifiedTimeStamp	  356998482
+  ModelVersionFormat	  "1.%<AutoIncrement:115>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -818,6 +818,15 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      X0		      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
@@ -868,7 +877,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "64"
+    SIDHighWatermark	    "68"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -1072,7 +1081,7 @@ Model {
       Position		      [1220, 333, 1285, 357]
       ZOrder		      191
       VariableName	      "wave1"
-      SampleTime	      "0.01"
+      SampleTime	      "0.1"
       Interpolate	      off
       ZeroCross		      on
       OutputAfterFinalValue   "Cyclic repetition"
@@ -2085,9 +2094,9 @@ Model {
 	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
 	Initialization		"amg_usbconverter_n_serial_callback('init');"
 	SelfModifiable		"on"
-	Display			"text(0.95, 0.5, 'Port: COM7\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.01','ver','middle','hor','"
-	"right');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'int32');port_label('in"
-	"put', 4,'int32');port_label('input', 5,'int32');port_label('input', 6,'int32');port_label('input', 7,'int32');"
+	Display			"text(0.95, 0.5, 'Port: COM7\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.001','ver','middle','hor',"
+	"'right');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'int32');port_label('i"
+	"nput', 4,'int32');port_label('input', 5,'int32');port_label('input', 6,'int32');port_label('input', 7,'int32');"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -2514,7 +2523,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "sampletime"
 	    Prompt		    "Sample time (sec)"
-	    Value		    "0.01"
+	    Value		    "0.001"
 	    Tunable		    "off"
 	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
 	  }
@@ -2602,7 +2611,7 @@ Model {
       ZOrder		      -16
       Floating		      off
       Location		      [641, 158, 1902, 1110]
-      Open		      off
+      Open		      on
       NumInputPorts	      "7"
       List {
 	ListType		AxesTitles
@@ -2627,9 +2636,9 @@ Model {
       ShowLegends	      on
       LegendLocations	      "0.86783     0.94013     0.10785    0.021359\n0.86783     0.80357     0.10785    0.021359\n"
       "0.86783     0.66807     0.10785    0.021359\n0.86783     0.53256     0.10785    0.021359\n0.86783     0.39706   "
-      "  0.10785    0.021359\n0.86307     0.26155     0.11261    0.021359\n0.86545     0.12605     0.10151    0.021359"
-      YMin		      "-1000~-12.5~-8000~-1~-200~-5~0"
-      YMax		      "11000~12.5~1000~1~200~5~10000"
+      "  0.10785    0.021359\n0.86307     0.26155     0.11261    0.021359\n0.86545     0.12605     0.10785    0.021359"
+      YMin		      "-17000~-12.5~-8000~-1~-200~-5~-17500"
+      YMax		      "-5000~12.5~1000~1~200~5~0"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
@@ -2688,7 +2697,7 @@ Model {
       }
       Floating		      on
       Location		      [189, 143, 1869, 1113]
-      Open		      off
+      Open		      on
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -2706,8 +2715,8 @@ Model {
       }
       ShowLegends	      off
       TimeRange		      "60"
-      YMin		      "-10000"
-      YMax		      "10000"
+      YMin		      "-18000"
+      YMax		      "-5000"
       SaveName		      "ScopeData2"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
@@ -2747,6 +2756,47 @@ Model {
       low		      "-10000"
       gain		      "0"
       high		      "10000"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition1"
+      SID		      "66"
+      Position		      [1325, 629, 1365, 671]
+      ZOrder		      241
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      OutPortSampleTimeOpt    "Inherit"
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition2"
+      SID		      "67"
+      Position		      [1340, 379, 1380, 421]
+      ZOrder		      242
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      OutPortSampleTimeOpt    "Inherit"
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition3"
+      SID		      "68"
+      Position		      [880, 544, 920, 586]
+      ZOrder		      243
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      OutPortSampleTimeOpt    "Inherit"
+      OutPortSampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition5"
+      SID		      "65"
+      Position		      [930, 874, 970, 916]
+      ZOrder		      240
+      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Integrity		      off
+      OutPortSampleTime	      "0.001"
     }
     Block {
       BlockType		      Display
@@ -2923,9 +2973,8 @@ Model {
     Line {
       SrcBlock		      "Host Serial Rx"
       SrcPort		      15
-      Points		      [1225, 0]
-      DstBlock		      "Host Serial Tx"
-      DstPort		      7
+      DstBlock		      "Rate Transition5"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "Host Serial Rx"
@@ -2979,9 +3028,9 @@ Model {
       SrcPort		      1
       Points		      [44, 0]
       Branch {
-	Points			[0, 152; -631, 0; 0, -372]
-	DstBlock		"Pos Scope"
-	DstPort			7
+	Points			[0, 284; -574, 0; 0, -98; -27, 0; 0, -96]
+	DstBlock		"Rate Transition3"
+	DstPort			1
       }
       Branch {
 	DstBlock		"Data Type Conversion3"
@@ -3184,16 +3233,44 @@ Model {
     Line {
       SrcBlock		      "From\nWorkspace"
       SrcPort		      1
-      Points		      [62, 0; 0, 140]
-      DstBlock		      "Manual Switch"
-      DstPort		      2
+      Points		      [35, 0]
+      DstBlock		      "Rate Transition2"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "From\nWorkspace1"
       SrcPort		      1
-      Points		      [34, 0; 0, -115]
+      Points		      [10, 0]
+      DstBlock		      "Rate Transition1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition5"
+      SrcPort		      1
+      Points		      [327, 0; 0, -10]
+      DstBlock		      "Host Serial Tx"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Rate Transition1"
+      SrcPort		      1
+      Points		      [9, 0; 0, -55; -35, 0; 0, -35]
       DstBlock		      "Manual Switch1"
       DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Rate Transition2"
+      SrcPort		      1
+      Points		      [22, 0; 0, 45; -51, 0; 0, 40]
+      DstBlock		      "Manual Switch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Rate Transition3"
+      SrcPort		      1
+      Points		      [37, 0; 0, 158; -139, 0; 0, -468]
+      DstBlock		      "Pos Scope"
+      DstPort		      7
     }
   }
 }
