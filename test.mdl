@@ -69,8 +69,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1806.0, 955.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-317.56996653581552, 216.784673434488]
+	  ZoomFactor		  [1.0]
+	  Offset		  [216.43528702627847, 332.70863173412158]
 	}
 	Object {
 	  $ObjectID		  7
@@ -91,7 +91,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jun 23 20:30:29 2015"
+  LastModifiedDate	  "Mon Jun 29 16:11:14 2015"
   RTWModifiedTimeStamp	  356992228
   ModelVersionFormat	  "1.%<AutoIncrement:310>"
   ConfigurationManager	  "None"
@@ -1198,7 +1198,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "558"
     Block {
@@ -1530,7 +1530,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 1"
-	Location		[26, 16, 1882, 1149]
+	Location		[46, 16, 1902, 1149]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1594,8 +1594,8 @@ Model {
 	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
 	    Initialization	    "stm32f4_basicpwm_callback('init');"
 	    SelfModifiable	    "on"
-	    Display		    "text(0.95, 0.5, 'Timer: 3\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
-	    "le','hor','right');port_label('input', 1,'CH1 (A6)')"
+	    Display		    "text(0.95, 0.5, 'Timer: 3\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0','ver','middle'"
+	    ",'hor','right');port_label('input', 1,'CH1 (A6)')"
 	    IconUnits		    "normalized"
 	    Array {
 	      Type		      "Simulink.MaskParameter"

@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.115"
+    ComputedModelVersion    "1.117"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -67,7 +67,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1628.0, 845.0]
 	ZoomFactor		[1.0]
-	Offset			[168.0, 91.0]
+	Offset			[269.0, 99.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jun 23 22:14:56 2015"
+  LastModifiedDate	  "Mon Jun 29 16:10:07 2015"
   RTWModifiedTimeStamp	  356998482
-  ModelVersionFormat	  "1.%<AutoIncrement:115>"
+  ModelVersionFormat	  "1.%<AutoIncrement:117>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2561,6 +2561,7 @@ Model {
       SID		      "32"
       Position		      [1375, 457, 1405, 493]
       ZOrder		      19
+      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2610,7 +2611,7 @@ Model {
       Position		      [860, 222, 890, 258]
       ZOrder		      -16
       Floating		      off
-      Location		      [641, 158, 1902, 1110]
+      Location		      [564, 140, 1825, 1093]
       Open		      on
       NumInputPorts	      "7"
       List {
@@ -2634,9 +2635,9 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      LegendLocations	      "0.86783     0.94013     0.10785    0.021359\n0.86783     0.80357     0.10785    0.021359\n"
-      "0.86783     0.66807     0.10785    0.021359\n0.86783     0.53256     0.10785    0.021359\n0.86783     0.39706   "
-      "  0.10785    0.021359\n0.86307     0.26155     0.11261    0.021359\n0.86545     0.12605     0.10785    0.021359"
+      LegendLocations	      "0.86783     0.94014     0.10785    0.021336\n0.86783     0.80358     0.10785    0.021336\n"
+      "0.86783     0.66808     0.10785    0.021336\n0.86783     0.53257     0.10785    0.021336\n0.86783     0.39707   "
+      "  0.10785    0.021336\n0.86307     0.26157     0.11261    0.021336\n0.86783     0.12606     0.10785    0.021336"
       YMin		      "-17000~-12.5~-8000~-1~-200~-5~-17500"
       YMax		      "-5000~12.5~1000~1~200~5~0"
       DataFormat	      "StructureWithTime"
@@ -2692,8 +2693,8 @@ Model {
       ZOrder		      198
       List {
 	ListType		IOSignalStrings
-	set0ParseKeys		"17,17"
-	set0Sigs		"Host Serial Rx:o3From Workspace:o1"
+	set0ParseKeys		"17,19"
+	set0Sigs		"Host Serial Rx:o3Rate Transition2:o1"
       }
       Floating		      on
       Location		      [189, 143, 1869, 1113]
@@ -2714,7 +2715,7 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
-      TimeRange		      "60"
+      TimeRange		      "20"
       YMin		      "-18000"
       YMax		      "-5000"
       SaveName		      "ScopeData2"
