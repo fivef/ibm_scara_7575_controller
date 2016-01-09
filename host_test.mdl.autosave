@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1918.0, 71.0, 1678.0, 1020.0]
+      Location		      [63.0, 267.0, 2971.0, 1730.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1628.0, 845.0]
+	Extents			[2919.0, 1528.0]
 	ZoomFactor		[1.0]
-	Offset			[-166.2086701378995, 104.55190604972205]
+	Offset			[-458.11224156647063, 127.84952509734114]
       }
     }
   }
@@ -78,7 +78,7 @@ Model {
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
   LastModifiedDate	  "Mon Jul 13 19:37:23 2015"
-  RTWModifiedTimeStamp	  358716528
+  RTWModifiedTimeStamp	  374256978
   ModelVersionFormat	  "1.%<AutoIncrement:146>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
@@ -856,7 +856,7 @@ Model {
   }
   System {
     Name		    "host_test"
-    Location		    [1918, 71, 3596, 1091]
+    Location		    [63, 267, 3034, 1997]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1130,57 +1130,6 @@ Model {
     }
     Block {
       BlockType		      Reference
-      Name		      "Host Serial Rx"
-      SID		      "92"
-      Ports		      [0, 2]
-      Position		      [20, 345, 180, 440]
-      ZOrder		      266
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Rx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "rx"
-      port		      "<auto>"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "5"
-      packetmode	      "Ascii"
-      enableinitialvalues     off
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialRx"
-      inputporttype	      "[]"
-      inputportwidth	      "[]"
-      inputportlabel	      "{}"
-      outputporttype	      "[6 1]"
-      outputportwidth	      "[1 1]"
-      outputportlabel	      "{'(int32) %d','(single) %f'}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
-    }
-    Block {
-      BlockType		      Reference
       Name		      "Host Serial Rx1"
       SID		      "89"
       Ports		      [0, 15]
@@ -1190,7 +1139,7 @@ Model {
       SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Rx"
       SourceType	      "amg_usbconverter_n_connect"
       conf		      "rx"
-      port		      "COM7"
+      port		      "<auto>"
       baudrate		      "115200"
       databits		      "8"
       parity		      "None"
@@ -1229,107 +1178,7 @@ Model {
       ",'int32','int32','int32','int32'}"
       compat		      "0"
       optionstring	      "[]"
-      autoport		      "'COM7'"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Host Serial Setup"
-      SID		      "95"
-      Ports		      []
-      Position		      [20, 215, 180, 305]
-      ZOrder		      269
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Setup"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "setup"
-      port		      "COM7"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "2"
-      packetmode	      "Binary"
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "1"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d %u %x'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialSetup"
-      inputporttype	      "[]"
-      inputportwidth	      "[]"
-      inputportlabel	      "{}"
-      outputporttype	      "[]"
-      outputportwidth	      "[]"
-      outputportlabel	      "{}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Host Serial Tx"
-      SID		      "93"
-      Ports		      [2]
-      Position		      [20, 542, 180, 638]
-      ZOrder		      267
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Tx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "tx"
-      port		      "<auto>"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "2"
-      packetmode	      "Ascii"
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialTx"
-      inputporttype	      "[6 1]"
-      inputportwidth	      "[1 1]"
-      inputportlabel	      "{'%d (int32)','%f (single)'}"
-      outputporttype	      "[]"
-      outputportwidth	      "[]"
-      outputportlabel	      "{}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
+      autoport		      "'COM6'"
     }
     Block {
       BlockType		      Reference
@@ -1342,7 +1191,7 @@ Model {
       SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Tx"
       SourceType	      "amg_usbconverter_n_connect"
       conf		      "tx"
-      port		      "COM7"
+      port		      "<auto>"
       baudrate		      "115200"
       databits		      "8"
       parity		      "None"
@@ -1379,7 +1228,7 @@ Model {
       outputportlabel	      "{}"
       compat		      "0"
       optionstring	      "[]"
-      autoport		      "'COM7'"
+      autoport		      "'COM6'"
     }
     Block {
       BlockType		      Reference

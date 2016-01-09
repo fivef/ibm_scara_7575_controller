@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.310"
+    ComputedModelVersion    "1.348"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -43,7 +43,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [46.0, 16.0, 1856.0, 1133.0]
+      Location		      [1329.0, 683.0, 1998.0, 1319.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -68,16 +68,16 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1806.0, 955.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [216.43528702627847, 332.70863173412158]
+	  Extents		  [1946.0, 1113.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-209.58992750084008, 168.11411603027375]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "256"
-	  Extents		  [1806.0, 955.0]
+	  Extents		  [1852.0, 873.0]
 	  ZoomFactor		  [1.7499999999999993]
 	  Offset		  [0.0, 4.5474735088646412e-13]
 	}
@@ -91,9 +91,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 29 16:11:14 2015"
-  RTWModifiedTimeStamp	  356992228
-  ModelVersionFormat	  "1.%<AutoIncrement:310>"
+  LastModifiedDate	  "Sat Jan 09 16:21:32 2016"
+  RTWModifiedTimeStamp	  359917164
+  ModelVersionFormat	  "1.%<AutoIncrement:348>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -980,6 +980,17 @@ Model {
       CodeGenStateStorageClass "Auto"
     }
     Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
       BlockType		      EnablePort
       StatesWhenEnabling      "held"
       PropagateVarSize	      "Only when enabling"
@@ -991,15 +1002,6 @@ Model {
       OutMax		      "[]"
       OutDataTypeStr	      "double"
       Interpolate	      on
-    }
-    Block {
-      BlockType		      FromWorkspace
-      VariableName	      "simulink_input"
-      OutDataTypeStr	      "Inherit: auto"
-      SampleTime	      "-1"
-      Interpolate	      on
-      ZeroCross		      off
-      OutputAfterFinalValue   "Extrapolation"
     }
     Block {
       BlockType		      Gain
@@ -1083,6 +1085,21 @@ Model {
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      RateTransition
@@ -1186,7 +1203,7 @@ Model {
   }
   System {
     Name		    "test"
-    Location		    [46, 16, 1902, 1149]
+    Location		    [1329, 683, 3327, 2002]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1198,15 +1215,15 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "558"
+    SIDHighWatermark	    "601"
     Block {
       BlockType		      Reference
       Name		      "Compare\nTo Constant"
       SID		      "383"
       Ports		      [1, 1]
-      Position		      [2045, 770, 2075, 800]
+      Position		      [2260, 770, 2290, 800]
       ZOrder		      170
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
@@ -1221,7 +1238,7 @@ Model {
       Name		      "Compare\nTo Constant1"
       SID		      "419"
       Ports		      [1, 1]
-      Position		      [2080, 1240, 2110, 1270]
+      Position		      [2295, 1240, 2325, 1270]
       ZOrder		      179
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
@@ -1235,15 +1252,23 @@ Model {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "508"
-      Position		      [2135, 820, 2165, 850]
+      Position		      [2350, 820, 2380, 850]
       ZOrder		      210
+      Value		      "0.2"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      "587"
+      Position		      [2390, 1225, 2420, 1255]
+      ZOrder		      255
       Value		      "0.2"
     }
     Block {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion1"
       SID		      "375"
-      Position		      [315, 598, 390, 632]
+      Position		      [530, 598, 605, 632]
       ZOrder		      182
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "boolean"
@@ -1254,7 +1279,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion2"
       SID		      "533"
-      Position		      [1170, 568, 1245, 602]
+      Position		      [1385, 568, 1460, 602]
       ZOrder		      232
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "int32"
@@ -1265,7 +1290,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion3"
       SID		      "506"
-      Position		      [580, 968, 655, 1002]
+      Position		      [595, 688, 670, 722]
       ZOrder		      208
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "boolean"
@@ -1276,7 +1301,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion4"
       SID		      "421"
-      Position		      [1665, 1263, 1740, 1297]
+      Position		      [1880, 1263, 1955, 1297]
       ZOrder		      176
       OutDataTypeStr	      "double"
       RndMeth		      "Floor"
@@ -1284,20 +1309,9 @@ Model {
     }
     Block {
       BlockType		      DataTypeConversion
-      Name		      "Data Type Conversion5"
-      SID		      "553"
-      Position		      [1230, 948, 1305, 982]
-      ZOrder		      235
-      ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
-      OutDataTypeStr	      "int32"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      DataTypeConversion
       Name		      "Data Type Conversion7"
       SID		      "491"
-      Position		      [1510, 788, 1585, 822]
+      Position		      [1725, 788, 1800, 822]
       ZOrder		      199
       OutDataTypeStr	      "double"
       RndMeth		      "Floor"
@@ -1308,7 +1322,7 @@ Model {
       Name		      "Enabled\nSubsystem"
       SID		      "534"
       Ports		      [1, 1, 1]
-      Position		      [830, 739, 930, 781]
+      Position		      [1045, 739, 1145, 781]
       ZOrder		      233
       TreatAsAtomicUnit	      on
       MinAlgLoopOccurrences   off
@@ -1384,7 +1398,7 @@ Model {
 	  usedpinarray		  "[0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0]"
 	  bitbandingstr		  "\n#define EnabledSubsystemAxis1HomeSwitch_A10 Peripheral_BB(GPIOA->IDR, 10)  /* Output pin */"
 	  sampletime		  "0.01"
-	  sampletimestr		  "0.01"
+	  sampletimestr		  "0"
 	  blockid		  "EnabledSubsystemAxis1HomeSwitch"
 	  enablecustomportlabel	  off
 	  glabalinit		  off
@@ -1492,25 +1506,170 @@ Model {
       }
     }
     Block {
-      BlockType		      FromWorkspace
-      Name		      "From\nWorkspace"
-      SID		      "552"
-      Position		      [1025, 918, 1090, 942]
-      ZOrder		      234
-      VariableName	      "wave1"
-      SampleTime	      "0.01"
-      Interpolate	      off
-      ZeroCross		      on
-      OutputAfterFinalValue   "Cyclic repetition"
+      BlockType		      SubSystem
+      Name		      "Enabled\nSubsystem1"
+      SID		      "567"
+      Ports		      [1, 1, 1]
+      Position		      [815, 1164, 915, 1206]
+      ZOrder		      249
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Enabled\nSubsystem1"
+	Location		[50, 12, 1906, 1145]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "568"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "569"
+	  Ports			  []
+	  Position		  [235, 20, 255, 40]
+	  ZOrder		  -2
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator"
+	  SID			  "566"
+	  Ports			  [0, 1]
+	  Position		  [230, 144, 260, 176]
+	  ZOrder		  249
+	  Period		  "1"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "570"
+	  Position		  [360, 103, 390, 117]
+	  ZOrder		  -3
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -50]
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Enabled\nSubsystem2"
+      SID		      "591"
+      Ports		      [1, 1, 1]
+      Position		      [815, 1004, 915, 1046]
+      ZOrder		      258
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Enabled\nSubsystem2"
+	Location		[50, 12, 1906, 1145]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "592"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "593"
+	  Ports			  []
+	  Position		  [235, 20, 255, 40]
+	  ZOrder		  -2
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator"
+	  SID			  "594"
+	  Ports			  [0, 1]
+	  Position		  [230, 144, 260, 176]
+	  ZOrder		  249
+	  Period		  "1"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "595"
+	  Position		  [360, 103, 390, 117]
+	  ZOrder		  -3
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -50]
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
     }
     Block {
       BlockType		      Logic
       Name		      "Logical\nOperator"
       SID		      "502"
       Ports		      [2, 1]
-      Position		      [685, 407, 715, 438]
+      Position		      [900, 407, 930, 438]
       ZOrder		      204
       Operator		      "OR"
+      AllPortsSameDT	      off
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Logic
+      Name		      "Logical\nOperator1"
+      SID		      "600"
+      Ports		      [1, 1]
+      Position		      [815, 919, 845, 951]
+      ZOrder		      263
+      Operator		      "NOT"
       AllPortsSameDT	      off
       OutDataTypeStr	      "boolean"
     }
@@ -1519,7 +1678,7 @@ Model {
       Name		      "Motor 1"
       SID		      "256"
       Ports		      [1]
-      Position		      [2205, 884, 2320, 926]
+      Position		      [2420, 884, 2535, 926]
       ZOrder		      154
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -1530,7 +1689,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 1"
-	Location		[46, 16, 1902, 1149]
+	Location		[0, 282, 1904, 1361]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1752,7 +1911,7 @@ Model {
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
-		Value			"0.01"
+		Value			"0"
 		Evaluate		"off"
 		Tunable			"off"
 		Enabled			"off"
@@ -2109,7 +2268,7 @@ Model {
       Name		      "Motor 2"
       SID		      "422"
       Ports		      [1]
-      Position		      [2150, 1304, 2265, 1346]
+      Position		      [2480, 1289, 2595, 1331]
       ZOrder		      173
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -2120,7 +2279,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 2"
-	Location		[1, 0, 1919, 1169]
+	Location		[50, 12, 1906, 1145]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -2136,9 +2295,9 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Motor Speed"
-	  SID			  "423"
-	  Position		  [270, 208, 300, 222]
-	  ZOrder		  -1
+	  SID			  "576"
+	  Position		  [80, 228, 110, 242]
+	  ZOrder		  214
 	  IconDisplay		  "Port number"
 	  OutMin		  "[-1]"
 	  OutMax		  "[1]"
@@ -2147,9 +2306,20 @@ Model {
 	Block {
 	  BlockType		  Abs
 	  Name			  "Abs"
-	  SID			  "424"
-	  Position		  [480, 130, 510, 160]
-	  ZOrder		  129
+	  SID			  "577"
+	  Position		  [155, 220, 185, 250]
+	  ZOrder		  221
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  "578"
+	  Ports			  [2, 1]
+	  Position		  [325, 197, 355, 228]
+	  ZOrder		  218
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
@@ -2173,8 +2343,8 @@ Model {
 	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
 	    Initialization	    "stm32f4_basicpwm_callback('init');"
 	    SelfModifiable	    "on"
-	    Display		    "text(0.95, 0.5, 'Timer: 5\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
-	    "le','hor','right');port_label('input', 1,'CH1 (A0)')"
+	    Display		    "text(0.95, 0.5, 'Timer: 5\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0','ver','middle'"
+	    ",'hor','right');port_label('input', 1,'CH1 (A0)')"
 	    IconUnits		    "normalized"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
@@ -2325,7 +2495,7 @@ Model {
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
-		Value			"0.01"
+		Value			"0"
 		Evaluate		"off"
 		Tunable			"off"
 		Enabled			"off"
@@ -2464,10 +2634,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Compare\nTo Constant"
-	  SID			  "426"
+	  SID			  "579"
 	  Ports			  [1, 1]
-	  Position		  [480, 285, 510, 315]
-	  ZOrder		  130
+	  Position		  [450, 305, 480, 335]
+	  ZOrder		  216
 	  LibraryVersion	  "1.274"
 	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 	  SourceType		  "Compare To Constant"
@@ -2475,6 +2645,24 @@ Model {
 	  const			  "0"
 	  OutDataTypeStr	  "boolean"
 	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion6"
+	  SID			  "580"
+	  Position		  [515, 148, 590, 182]
+	  ZOrder		  220
+	  OutDataTypeStr	  "double"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Deadband offset"
+	  SID			  "581"
+	  Position		  [235, 150, 265, 180]
+	  ZOrder		  219
+	  Value			  "15"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2522,10 +2710,10 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain"
-	  SID			  "494"
-	  Position		  [420, 125, 460, 165]
-	  ZOrder		  198
-	  Gain			  "100"
+	  SID			  "582"
+	  Position		  [215, 215, 255, 255]
+	  ZOrder		  217
+	  Gain			  "87"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -2533,32 +2721,60 @@ Model {
 	Block {
 	  BlockType		  Logic
 	  Name			  "Logical\nOperator"
-	  SID			  "430"
+	  SID			  "583"
 	  Ports			  [1, 1]
-	  Position		  [565, 324, 595, 356]
-	  ZOrder		  126
+	  Position		  [535, 344, 565, 376]
+	  ZOrder		  215
 	  Operator		  "NOT"
 	  AllPortsSameDT	  off
 	  OutDataTypeStr	  "boolean"
 	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Threshold Switch"
+	  SID			  "584"
+	  Position		  [410, 160, 460, 200]
+	  ZOrder		  222
+	  Criteria		  "u2 > Threshold"
+	  Threshold		  "17"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Zero"
+	  SID			  "585"
+	  Position		  [375, 240, 405, 270]
+	  ZOrder		  223
+	  Value			  "0"
+	}
 	Line {
 	  SrcBlock		  "Logical\nOperator"
 	  SrcPort		  1
+	  Points		  [25, 0; 0, -20]
 	  DstBlock		  "Direction"
 	  DstPort		  2
 	}
 	Line {
-	  SrcBlock		  "Abs"
+	  SrcBlock		  "Add"
 	  SrcPort		  1
-	  Points		  [55, 0; 0, 20]
-	  DstBlock		  "Basic PWM"
-	  DstPort		  1
+	  Points		  [8, 0; 0, -35; 16, 0]
+	  Branch {
+	    Points		    [0, -15]
+	    DstBlock		    "Threshold Switch"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Threshold Switch"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  SrcBlock		  "Compare\nTo Constant"
 	  SrcPort		  1
 	  Points		  [22, 0]
 	  Branch {
+	    Points		    [0, -20]
 	    DstBlock		    "Direction"
 	    DstPort		    1
 	  }
@@ -2571,10 +2787,9 @@ Model {
 	Line {
 	  SrcBlock		  "Motor Speed"
 	  SrcPort		  1
-	  Points		  [51, 0]
+	  Points		  [13, 0]
 	  Branch {
-	    Points		    [0, -70]
-	    DstBlock		    "Gain"
+	    DstBlock		    "Abs"
 	    DstPort		    1
 	  }
 	  Branch {
@@ -2584,15 +2799,58 @@ Model {
 	  }
 	}
 	Line {
+	  SrcBlock		  "Deadband offset"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 40]
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
 	  SrcBlock		  "Gain"
 	  SrcPort		  1
-	  DstBlock		  "Abs"
+	  Points		  [30, 0; 0, -15]
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Threshold Switch"
+	  SrcPort		  1
+	  Points		  [22, 0; 0, -15]
+	  DstBlock		  "Data Type Conversion6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero"
+	  SrcPort		  1
+	  Points		  [3, 0; 0, -40; -18, 0]
+	  DstBlock		  "Threshold Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Data Type Conversion6"
+	  SrcPort		  1
+	  DstBlock		  "Basic PWM"
 	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "431"
 	  Name			  "-1 to 1 to pwm and motor direction converter\n"
 	  Position		  [516, 86]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  ZOrder		  -1
+	}
+	Annotation {
+	  SID			  "586"
+	  Name			  "-1 to 1 to pwm and motor direction converter\nadds gain, deadband offset and threshold"
+	  Position		  [236, 101]
 	  HorizontalAlignment	  "left"
 	  BackgroundColor	  "yellow"
 	  DropShadow		  on
@@ -2605,7 +2863,7 @@ Model {
       Name		      "PID Controller"
       SID		      "293"
       Ports		      [5, 1]
-      Position		      [1630, 798, 1805, 922]
+      Position		      [1845, 798, 2020, 922]
       ZOrder		      156
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       DialogController	      "pidpack.PIDConfig.pidDDGCreate"
@@ -2735,14 +2993,14 @@ Model {
 	    Type		    "edit"
 	    Name		    "P"
 	    Prompt		    "Simulink:masks:ProportionalP_MP"
-	    Value		    "0.003"
+	    Value		    "0.0005"
 	  }
 	  Object {
 	    $ObjectID		    83
 	    Type		    "edit"
 	    Name		    "I"
 	    Prompt		    "Simulink:masks:IntegralI_MP"
-	    Value		    "0.003"
+	    Value		    "0.0005"
 	  }
 	  Object {
 	    $ObjectID		    84
@@ -2756,7 +3014,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "N"
 	    Prompt		    "Simulink:masks:FilterCoefficientN_MP"
-	    Value		    "100"
+	    Value		    "20"
 	  }
 	  Object {
 	    $ObjectID		    86
@@ -3616,7 +3874,7 @@ Model {
       }
       System {
 	Name			"PID Controller"
-	Location		[26, 16, 1882, 1149]
+	Location		[50, 12, 1906, 1145]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -3629,7 +3887,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"200"
-	SIDHighWatermark	"1795"
+	SIDHighWatermark	"1802"
 	SIDPrevWatermark	"1689"
 	Block {
 	  BlockType		  Inport
@@ -3650,7 +3908,7 @@ Model {
 	}
 	Block {
 	  BlockType		  Inport
-	  Name			  "u1"
+	  Name			  "p"
 	  SID			  "293:1690"
 	  Position		  [45, 20, 65, 40]
 	  ZOrder		  14
@@ -3659,18 +3917,19 @@ Model {
 	}
 	Block {
 	  BlockType		  Inport
-	  Name			  "u2"
+	  Name			  "i"
 	  SID			  "293:1691"
 	  Position		  [85, 110, 105, 130]
 	  ZOrder		  15
+	  ForegroundColor	  "[1.000000, 0.258824, 0.819608]"
 	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
-	  Name			  "u3"
+	  Name			  "d"
 	  SID			  "293:1692"
-	  Position		  [105, 315, 125, 335]
+	  Position		  [45, 315, 65, 335]
 	  ZOrder		  16
 	  Port			  "5"
 	  IconDisplay		  "Port number"
@@ -3932,7 +4191,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Derivative Gain"
 	  SID			  "293:1775"
-	  Position		  [105, 250, 135, 280]
+	  Position		  [190, 350, 220, 380]
 	  ZOrder		  62
 	  DisableCoverage	  on
 	  Gain			  "D"
@@ -3975,8 +4234,9 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Integral Gain"
 	  SID			  "293:1774"
-	  Position		  [105, 145, 135, 175]
+	  Position		  [120, 160, 150, 190]
 	  ZOrder		  61
+	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
 	  DisableCoverage	  on
 	  Gain			  "I"
 	  ParamMin		  "IParamMin"
@@ -3996,6 +4256,42 @@ Model {
 	  ZOrder		  63
 	  ExternalReset		  "rising"
 	  InitialCondition	  "InitialConditionForIntegrator"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "293:1797"
+	  Ports			  [2, 1]
+	  Position		  [155, 22, 185, 53]
+	  ZOrder		  72
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  "293:1799"
+	  Ports			  [2, 1]
+	  Position		  [120, 112, 150, 143]
+	  ZOrder		  74
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  SID			  "293:1800"
+	  Ports			  [2, 1]
+	  Position		  [105, 252, 135, 283]
+	  ZOrder		  75
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Gain
@@ -4078,33 +4374,38 @@ Model {
 	  InitialOutput		  "0"
 	}
 	Line {
-	  SrcBlock		  "u1"
+	  SrcBlock		  "p"
 	  SrcPort		  1
-	  Points		  [15, 0]
+	  DstBlock		  "Product"
+	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "u"
 	  SrcPort		  1
 	  Points		  [20, 0]
 	  Branch {
-	    DstBlock		    "Integral Gain"
-	    DstPort		    1
+	    Points		    [0, 14]
+	    Branch {
+	      Points		      [0, 101]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [29, 0; 0, -39]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
 	  }
 	  Branch {
-	    Points		    [0, 105]
-	    DstBlock		    "Derivative Gain"
-	    DstPort		    1
-	  }
-	  Branch {
-	    Points		    [0, -90]
-	    DstBlock		    "Proportional Gain"
-	    DstPort		    1
+	    Points		    [0, -115]
+	    DstBlock		    "Product"
+	    DstPort		    2
 	  }
 	}
 	Line {
-	  SrcBlock		  "Integral Gain"
+	  SrcBlock		  "Product1"
 	  SrcPort		  1
-	  Points		  [105, 0]
+	  Points		  [36, 0; 0, 30; 54, 0]
 	  Branch {
 	    Points		    [5, 0; 0, 35; 15, 0; 0, 30]
 	    DstBlock		    "Clamping circuit"
@@ -4116,8 +4417,9 @@ Model {
 	  }
 	}
 	Line {
-	  SrcBlock		  "Derivative Gain"
+	  SrcBlock		  "Product2"
 	  SrcPort		  1
+	  Points		  [52, 0; 0, -5]
 	  DstBlock		  "SumD"
 	  DstPort		  1
 	}
@@ -4156,9 +4458,9 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  SrcBlock		  "Proportional Gain"
+	  SrcBlock		  "Product"
 	  SrcPort		  1
-	  Points		  [285, 0]
+	  Points		  [235, 0]
 	  DstBlock		  "Sum"
 	  DstPort		  1
 	}
@@ -4216,6 +4518,19 @@ Model {
 	  DstBlock		  "Integrator"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "i"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "d"
+	  SrcPort		  1
+	  Points		  [16, 0; 0, -65]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -4223,7 +4538,7 @@ Model {
       Name		      "PID Controller1"
       SID		      "432"
       Ports		      [2, 1]
-      Position		      [1785, 1281, 1940, 1399]
+      Position		      [2000, 1281, 2155, 1399]
       ZOrder		      174
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       LibraryVersion	      "1.274"
@@ -4235,8 +4550,8 @@ Model {
       IntegratorMethod	      "Forward Euler"
       FilterMethod	      "Forward Euler"
       Form		      "Parallel"
-      P			      "0.003"
-      I			      "0.003"
+      P			      "0.0005"
+      I			      "0.0005"
       D			      "0"
       N			      "100"
       InitialConditionSource  "internal"
@@ -4333,7 +4648,7 @@ Model {
       Name		      "Quadratur Encoder2"
       SID		      "474"
       Ports		      [2, 6]
-      Position		      [765, 392, 940, 528]
+      Position		      [980, 392, 1155, 528]
       ZOrder		      200
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       LibraryVersion	      "1.179"
@@ -4358,7 +4673,7 @@ Model {
       outputfuncallstr	      "output_customio(in1,in2,out1,out2,out3,out4,out5,out6);"
       disablefuncallstr	      "disable_customio();"
       sampletime	      "0.001"
-      sampletimestr	      "0.001"
+      sampletimestr	      "0"
       blockid		      "QuadraturEncoder2"
       enablecustomportlabel   on
       incfilestrarray	      "[\"stm32f4_io_customcode.h\"]"
@@ -4366,20 +4681,31 @@ Model {
       outputportdiminfo	      "[1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6]"
     }
     Block {
-      BlockType		      RateTransition
-      Name		      "Rate Transition"
-      SID		      "20"
-      Position		      [400, 629, 440, 671]
-      ZOrder		      -10
-      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
-      Integrity		      off
-      OutPortSampleTime	      "0.01"
+      BlockType		      Reference
+      Name		      "Queue"
+      SID		      "565"
+      Ports		      [3, 3]
+      Position		      [975, 1012, 1070, 1078]
+      ZOrder		      247
+      LibraryVersion	      "1.413"
+      SourceBlock	      "dspbuff3/Queue"
+      SourceType	      "Queue"
+      depth		      "5000"
+      trigger		      "Non-zero sample"
+      overflow		      "Ignore"
+      pes		      "Warning"
+      eso		      on
+      fso		      off
+      nso		      on
+      clr		      off
+      clrOutport	      off
+      adf		      off
     }
     Block {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "216"
-      Position		      [565, 239, 605, 281]
+      Position		      [780, 239, 820, 281]
       ZOrder		      119
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -4388,18 +4714,9 @@ Model {
     }
     Block {
       BlockType		      RateTransition
-      Name		      "Rate Transition2"
-      SID		      "295"
-      Position		      [405, 379, 445, 421]
-      ZOrder		      158
-      ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
-      OutPortSampleTime	      "0.01"
-    }
-    Block {
-      BlockType		      RateTransition
       Name		      "Rate Transition3"
       SID		      "435"
-      Position		      [320, 414, 360, 456]
+      Position		      [535, 414, 575, 456]
       ZOrder		      180
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTime	      "0.01"
@@ -4408,7 +4725,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition4"
       SID		      "436"
-      Position		      [485, 274, 525, 316]
+      Position		      [700, 274, 740, 316]
       ZOrder		      181
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -4417,20 +4734,19 @@ Model {
     }
     Block {
       BlockType		      RateTransition
-      Name		      "Rate Transition6"
-      SID		      "558"
-      Position		      [1070, 799, 1110, 841]
-      ZOrder		      240
+      Name		      "Rate Transition5"
+      SID		      "560"
+      Position		      [845, 629, 885, 671]
+      ZOrder		      235
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
-      Integrity		      off
-      OutPortSampleTime	      "0.005"
+      OutPortSampleTime	      "0.01"
     }
     Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "294"
       Ports		      [2, 1]
-      Position		      [1335, 845, 1355, 865]
+      Position		      [1550, 845, 1570, 865]
       ZOrder		      157
       ShowName		      off
       IconShape		      "round"
@@ -4445,7 +4761,7 @@ Model {
       Name		      "Sum1"
       SID		      "433"
       Ports		      [2, 1]
-      Position		      [1520, 1315, 1540, 1335]
+      Position		      [1735, 1315, 1755, 1335]
       ZOrder		      175
       ShowName		      off
       IconShape		      "round"
@@ -4459,7 +4775,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch"
       SID		      "382"
-      Position		      [2035, 835, 2085, 875]
+      Position		      [2250, 835, 2300, 875]
       ZOrder		      169
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
@@ -4468,7 +4784,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch1"
       SID		      "434"
-      Position		      [2070, 1305, 2120, 1345]
+      Position		      [2285, 1305, 2335, 1345]
       ZOrder		      178
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
@@ -4477,8 +4793,18 @@ Model {
       BlockType		      Switch
       Name		      "Switch2"
       SID		      "507"
-      Position		      [2125, 885, 2175, 925]
+      Position		      [2340, 885, 2390, 925]
       ZOrder		      209
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch4"
+      SID		      "588"
+      Position		      [2380, 1290, 2430, 1330]
+      ZOrder		      254
       Criteria		      "u2 > Threshold"
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
@@ -4488,7 +4814,7 @@ Model {
       Name		      "Target Setup"
       SID		      "2"
       Ports		      []
-      Position		      [975, 175, 1213, 297]
+      Position		      [1190, 175, 1428, 297]
       ZOrder		      -12
       Priority		      "100"
       LibraryVersion	      "1.397"
@@ -4520,11 +4846,11 @@ Model {
       profileruart	      "1"
       profilerbaud	      "115200"
       profilertxpin	      "Not used"
-      profilerinitstr	      "0.001,168000000,168000,115200,0"
+      profilerinitstr	      "0.01,168000000,1680000,115200,0"
       manualsetsampletime     off
-      sampletime	      "0.001"
+      sampletime	      "0.01"
       blockid		      "TargetSetup"
-      systickreloadvalue      "168000"
+      systickreloadvalue      "1680000"
       hseval		      "8000000"
       lastprofileruart	      "1"
       hclk		      "168000000"
@@ -4538,17 +4864,17 @@ Model {
       BlockType		      Reference
       Name		      "USB VCP Receiver STM32F4"
       SID		      "18"
-      Ports		      [0, 7]
-      Position		      [20, 227, 185, 683]
+      Ports		      [0, 10]
+      Position		      [20, 240, 185, 705]
       ZOrder		      -5
-      ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
+      ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       LibraryVersion	      "1.34"
       SourceBlock	      "USBVCP_STM32F4/USB VCP Receiver STM32F4"
       SourceType	      "USB_VCP_RECEIVER_STM32F4 High Speed Large Data Packet Size"
       speed		      "USB 1.1   12Mbit/s"
       data_size		      "2048 Bytes"
       header_data	      "'7E 7E'"
-      binary_data	      "'double double int32 int32 int32 int32 int32'"
+      binary_data	      "'double double double double double int32 int32 int32 int32 int32'"
       terminator_data	      "'03 03'"
       sampletime	      "0.001"
     }
@@ -4557,7 +4883,7 @@ Model {
       Name		      "USB VCP Send STM32F4"
       SID		      "1"
       Ports		      [15]
-      Position		      [1500, 117, 1690, 673]
+      Position		      [1715, 117, 1905, 673]
       ZOrder		      -5
       LibraryVersion	      "1.34"
       SourceBlock	      "USBVCP_STM32F4/USB VCP Send STM32F4"
@@ -4571,20 +4897,8 @@ Model {
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      7
-      DstBlock		      "Rate Transition"
-      DstPort		      1
-    }
-    Line {
-      SrcBlock		      "Rate Transition"
       SrcPort		      1
-      Points		      [1033, 0; 0, -15]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      15
-    }
-    Line {
-      SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      1
+      Points		      [0, -10]
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
@@ -4617,13 +4931,6 @@ Model {
 	DstBlock		"Switch"
 	DstPort			3
       }
-    }
-    Line {
-      SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      3
-      Points		      [9, 0; 0, 10]
-      DstBlock		      "Rate Transition2"
-      DstPort		      1
     }
     Line {
       SrcBlock		      "Sum"
@@ -4707,15 +5014,15 @@ Model {
       SrcPort		      1
       Points		      [266, 0]
       Branch {
-	Points			[549, 0; 0, 269]
+	Points			[549, 0; 0, 226]
 	Branch {
-	  Points		  [402, 0; 0, -49]
-	  DstBlock		  "PID Controller"
+	  Points		  [0, 529]
+	  DstBlock		  "PID Controller1"
 	  DstPort		  2
 	}
 	Branch {
-	  Points		  [0, 486]
-	  DstBlock		  "PID Controller1"
+	  Points		  [402, 0; 0, -6]
+	  DstBlock		  "PID Controller"
 	  DstPort		  2
 	}
       }
@@ -4735,8 +5042,8 @@ Model {
     Line {
       SrcBlock		      "Switch1"
       SrcPort		      1
-      DstBlock		      "Motor 2"
-      DstPort		      1
+      DstBlock		      "Switch4"
+      DstPort		      3
     }
     Line {
       SrcBlock		      "Compare\nTo Constant1"
@@ -4747,22 +5054,22 @@ Model {
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      4
-      Points		      [9, 0; 0, -20]
+      SrcPort		      7
+      Points		      [270, 0; 0, -105]
       DstBlock		      "Rate Transition3"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      2
-      Points		      [9, 0; 0, -30]
+      Points		      [9, 0; 0, -20]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      6
-      Points		      [9, 0; 0, 30]
+      SrcPort		      9
+      Points		      [3, 0; 0, -15]
       DstBlock		      "Data Type Conversion1"
       DstPort		      1
     }
@@ -4860,8 +5167,8 @@ Model {
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      5
-      Points		      [55, 0; 0, 465]
+      SrcPort		      8
+      Points		      [12, 0; 0, 120]
       DstBlock		      "Data Type Conversion3"
       DstPort		      1
     }
@@ -4886,35 +5193,110 @@ Model {
       DstPort		      11
     }
     Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      6
+      Points		      [116, 0; 0, 385]
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      10
+      Points		      [618, 0; 0, -25]
+      DstBlock		      "Rate Transition5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition5"
+      SrcPort		      1
+      Points		      [759, 0; 0, -10]
+      DstBlock		      "USB VCP Send STM32F4"
+      DstPort		      15
+    }
+    Line {
+      SrcBlock		      "Queue"
+      SrcPort		      1
+      Points		      [51, 0; 0, 8]
+    }
+    Line {
+      SrcBlock		      "Enabled\nSubsystem1"
+      SrcPort		      1
+      Points		      [25, 0; 0, -120]
+      DstBlock		      "Queue"
+      DstPort		      3
+    }
+    Line {
+      Points		      [649, 1000; 61, 0]
+      Branch {
+	Points			[0, -65]
+	DstBlock		"Logical\nOperator1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 20; 77, 0; 0, 75; 92, 0; 0, 54]
+	DstBlock		"Enabled\nSubsystem1"
+	DstPort			enable
+      }
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [11, 0; 0, 45; -86, 0; 0, 10]
+      DstBlock		      "Switch4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Switch4"
+      SrcPort		      1
+      DstBlock		      "Motor 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Enabled\nSubsystem2"
+      SrcPort		      1
+      Points		      [14, 0; 0, 20]
+      DstBlock		      "Queue"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Logical\nOperator1"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Enabled\nSubsystem2"
+      DstPort		      enable
+    }
+    Line {
       SrcBlock		      "Data Type Conversion3"
       SrcPort		      1
-      Points		      [0, -279; 220, 0]
+      Points		      [420, 0]
       DstBlock		      "Enabled\nSubsystem"
       DstPort		      enable
     }
     Line {
-      SrcBlock		      "From\nWorkspace"
-      SrcPort		      1
-      Points		      [55, 0; 0, 35]
-      DstBlock		      "Data Type Conversion5"
-      DstPort		      1
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      3
+      Points		      [0, -200; 1387, 0; 0, 700]
+      DstBlock		      "PID Controller"
+      DstPort		      3
     }
     Line {
-      SrcBlock		      "Data Type Conversion5"
-      SrcPort		      1
-      Points		      [6, 0; 0, -12]
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      4
+      Points		      [530, 0; 0, 470; 1110, 0]
+      DstBlock		      "PID Controller"
+      DstPort		      4
     }
     Line {
-      SrcBlock		      "Rate Transition2"
-      SrcPort		      1
-      Points		      [51, 0; 0, 982; 844, 0]
-      DstBlock		      "Sum"
-      DstPort		      2
+      SrcBlock		      "USB VCP Receiver STM32F4"
+      SrcPort		      5
+      Points		      [196, 0; 0, 446; 1444, 0]
+      DstBlock		      "PID Controller"
+      DstPort		      5
     }
     Annotation {
       SID		      "438"
       Name		      "Careful seems to not work with more outputs than now???!??!"
-      Position		      [458, 217]
+      Position		      [673, 217]
       ZOrder		      -1
     }
     Annotation {
@@ -4922,7 +5304,7 @@ Model {
       Name		      "1) if rLeft or rRight is set to high, the encoder is resetted to 0\n2) Timer 2 and 4 are used!!! \n"
       "2) The data type of the encoder output is int32.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n		"
       "	Index --> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
-      Position		      [671, 261]
+      Position		      [886, 251]
       HorizontalAlignment     "left"
       BackgroundColor	      "yellow"
       DropShadow	      on
