@@ -1,12 +1,12 @@
 Model {
-  Name			  "test"
+  Name			  "scara_controller"
   Version		  8.1
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.348"
+    ComputedModelVersion    "1.349"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -18,7 +18,7 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "test"
+      Cell		      "scara_controller"
       PropName		      "mdlProps"
     }
   }
@@ -43,7 +43,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1648.0, 649.0, 1998.0, 1319.0]
+      Location		      [1912.0, 1061.0, 1936.0, 1069.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -68,9 +68,9 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1946.0, 1113.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [38.436522777769731, -15.394700729262849]
+	  Extents		  [1884.0, 863.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [237.68652277776982, 37.855299270737191]
 	}
 	Object {
 	  $ObjectID		  7
@@ -91,9 +91,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jan 11 14:10:15 2016"
-  RTWModifiedTimeStamp	  359917164
-  ModelVersionFormat	  "1.%<AutoIncrement:348>"
+  LastModifiedDate	  "Mon Jan 11 15:24:07 2016"
+  RTWModifiedTimeStamp	  374426579
+  ModelVersionFormat	  "1.%<AutoIncrement:349>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -1202,8 +1202,8 @@ Model {
     }
   }
   System {
-    Name		    "test"
-    Location		    [1648, 649, 3646, 1968]
+    Name		    "scara_controller"
+    Location		    [1912, 1061, 3848, 2130]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1215,7 +1215,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "601"
     Block {
@@ -1689,7 +1689,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 1"
-	Location		[1329, 683, 3327, 2002]
+	Location		[1648, 649, 3646, 1968]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -4667,7 +4667,7 @@ Model {
       outputporttypeid	      "[6  6  6  6  6  6]"
       incpath		      "{fullfile(pwd,'customcode')}"
       srcpath		      "{fullfile(pwd,'customcode')}"
-      incfiles		      "{'stm32f4_io_customcode.h'}"
+      incfiles		      "{''}"
       srcfiles		      "{'stm32f4_io_customcode.c'}"
       enablefuncallstr	      "enable_customio();"
       outputfuncallstr	      "output_customio(in1,in2,out1,out2,out3,out4,out5,out6);"
@@ -4676,7 +4676,7 @@ Model {
       sampletimestr	      "0.001"
       blockid		      "QuadraturEncoder2"
       enablecustomportlabel   on
-      incfilestrarray	      "[\"stm32f4_io_customcode.h\"]"
+      incfilestrarray	      "[\"\"]"
       inputportdiminfo	      "[1  1  1  8;1  1  1  8]"
       outputportdiminfo	      "[1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6]"
     }
@@ -4820,8 +4820,8 @@ Model {
       LibraryVersion	      "1.397"
       SourceBlock	      "stm32f4_device_config_lib/Target Setup"
       SourceType	      "stm32f4_target_setup"
-      compiler		      "GNU ARM"
-      previous_compiler	      "GNU ARM"
+      compiler		      "MDK-ARM"
+      previous_compiler	      "MDK-ARM"
       mcu		      "STM32F407VG (LQFP100); STM32F4DISCOVERY"
       mcustr		      "STM32F407VG"
       clockconfig	      "STM32F4DISCOVERY Default (HSEOSC-8MHz/HCLK-168MHz)"
@@ -4834,13 +4834,11 @@ Model {
       fullchiperase	      off
       programmerinterface     "ST-Link"
       editctrlstr	      on
-      compilercontrolstr      "$(patsubst %, -I%, .) -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=hard -mfpu="
-      "fpv4-sp-d16 -ffast-math -Wall -Wextra -Ofast "
-      assemblercontrolstr     "$(patsubst %, -I%, .) -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=hard -mfpu="
-      "fpv4-sp-d16 -ffast-math -Wall -Wextra -Ofast -Wa,-amhls=$(<:.s=.lst) -D__STACK_SIZE=$(STACK_SIZE) -D__HEAP_SIZE="
-      "$(HEAP_SIZE) "
-      linkercontrolstr	      "-T$(LD_SCRIPT) -g -Wl,-Map=$(MAP),--cref,--no-warn-mismatch -mcpu=cortex-m4 -mthumb -mth"
-      "umb-interwork -mfloat-abi=hard -mfpu=fpv4-sp-d16 "
+      compilercontrolstr      "-c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections $(INCLUDES) "
+      assemblercontrolstr     "--cpu Cortex-M4.fp -g --apcs=interwork  --xref $(INCLUDES) "
+      linkercontrolstr	      "--cpu Cortex-M4.fp --strict --scatter \"$(MODELNAME).sct\" --summary_stderr --info summa"
+      "rysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers  --list \".\\"
+      "$(MODELNAME).map\" -o $(MODELNAME).axf "
       runafterdownload	      on
       execprofile	      "None"
       profileruart	      "1"
@@ -4854,10 +4852,10 @@ Model {
       hseval		      "8000000"
       lastprofileruart	      "1"
       hclk		      "168000000"
-      flashorigin	      "0x8000000"
-      flashlength	      "1M"
+      flashorigin	      "0x08000000"
+      flashlength	      "0x00100000"
       ramorigin		      "0x20000000"
-      ramlength		      "112k"
+      ramlength		      "0x00020000"
       useextram		      off
     }
     Block {
@@ -5329,7 +5327,7 @@ MatData {
 Stateflow {
   machine {
     id			    1
-    name		    "test"
+    name		    "scara_controller"
     created		    "28-Jul-2013 19:39:00"
     isLibrary		    0
     firstTarget		    2

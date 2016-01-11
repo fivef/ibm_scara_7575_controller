@@ -66,8 +66,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1626.0, 818.0]
-	ZoomFactor		[0.5]
-	Offset			[-328.92370737304185, -285.51395063492788]
+	ZoomFactor		[1.0]
+	Offset			[338.0, 8.0]
       }
     }
   }
@@ -77,7 +77,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jan 11 14:09:15 2016"
+  LastModifiedDate	  "Mon Jan 11 15:24:09 2016"
   RTWModifiedTimeStamp	  374422152
   ModelVersionFormat	  "1.%<AutoIncrement:147>"
   ConfigurationManager	  "None"
@@ -875,7 +875,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "50"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "98"
     Block {
@@ -1155,12 +1155,12 @@ Model {
 	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
 	Initialization		"amg_usbconverter_n_serial_callback('init');"
 	SelfModifiable		"on"
-	Display			"text(0.05, 0.5, 'Obsolete !!!\\nPort: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0','ver','mid"
-	"dle','hor','left');port_label('output', 1,'double');port_label('output', 2,'int32');port_label('output', 3,'int32');p"
-	"ort_label('output', 4,'int32');port_label('output', 5,'int32');port_label('output', 6,'int32');port_label('output', 7"
-	",'int32');port_label('output', 8,'int32');port_label('output', 9,'int32');port_label('output', 10,'int32');port_label"
-	"('output', 11,'int32');port_label('output', 12,'int32');port_label('output', 13,'int32');port_label('output', 14,'int"
-	"32');port_label('output', 15,'int32');"
+	Display			"text(0.05, 0.5, 'Obsolete !!!\\nPort: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.005','ver',"
+	"'middle','hor','left');port_label('output', 1,'double');port_label('output', 2,'int32');port_label('output', 3,'int32"
+	"');port_label('output', 4,'int32');port_label('output', 5,'int32');port_label('output', 6,'int32');port_label('output"
+	"', 7,'int32');port_label('output', 8,'int32');port_label('output', 9,'int32');port_label('output', 10,'int32');port_l"
+	"abel('output', 11,'int32');port_label('output', 12,'int32');port_label('output', 13,'int32');port_label('output', 14,"
+	"'int32');port_label('output', 15,'int32');"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -2124,10 +2124,10 @@ Model {
 	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
 	Initialization		"amg_usbconverter_n_serial_callback('init');"
 	SelfModifiable		"on"
-	Display			"text(0.95, 0.5, 'Port: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0','ver','middle','hor','rig"
-	"ht');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'double');port_label('inpu"
-	"t', 4,'double');port_label('input', 5,'double');port_label('input', 6,'int32');port_label('input', 7,'int32');port_la"
-	"bel('input', 8,'int32');port_label('input', 9,'int32');port_label('input', 10,'int32');"
+	Display			"text(0.95, 0.5, 'Port: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.1','ver','middle','hor','r"
+	"ight');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'double');port_label('in"
+	"put', 4,'double');port_label('input', 5,'double');port_label('input', 6,'int32');port_label('input', 7,'int32');port_"
+	"label('input', 8,'int32');port_label('input', 9,'int32');port_label('input', 10,'int32');"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
