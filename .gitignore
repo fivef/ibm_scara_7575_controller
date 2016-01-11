@@ -1,4 +1,5 @@
 host_test_grt_rtw
+scara_controller_stm32f4
 slprj
-test_stm32f4
 trash
+*.autosave
