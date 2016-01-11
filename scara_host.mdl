@@ -1,12 +1,12 @@
 Model {
-  Name			  "host_test"
+  Name			  "scara_host"
   Version		  8.1
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.146"
+    ComputedModelVersion    "1.147"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -18,7 +18,7 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "host_test"
+      Cell		      "scara_host"
       PropName		      "mdlProps"
     }
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1918.0, 71.0, 1678.0, 1020.0]
+      Location		      [97.0, 1066.0, 1678.0, 1020.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1628.0, 845.0]
-	ZoomFactor		[1.0]
-	Offset			[-166.2086701378995, 104.55190604972205]
+	Extents			[1626.0, 818.0]
+	ZoomFactor		[0.5]
+	Offset			[-328.92370737304185, -285.51395063492788]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jul 13 19:37:23 2015"
-  RTWModifiedTimeStamp	  358716528
-  ModelVersionFormat	  "1.%<AutoIncrement:146>"
+  LastModifiedDate	  "Mon Jan 11 14:09:15 2016"
+  RTWModifiedTimeStamp	  374422152
+  ModelVersionFormat	  "1.%<AutoIncrement:147>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -827,6 +827,13 @@ Model {
       OutPortSampleTime	      "-1"
     }
     Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
       BlockType		      Scope
       ModelBased	      off
       TickLabels	      "OneTimeTick"
@@ -855,8 +862,8 @@ Model {
     }
   }
   System {
-    Name		    "host_test"
-    Location		    [1918, 71, 3596, 1091]
+    Name		    "scara_host"
+    Location		    [97, 1066, 1775, 2086]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -868,21 +875,21 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "50"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "95"
+    SIDHighWatermark	    "98"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "27"
-      Position		      [1615, 65, 1645, 95]
+      Position		      [1615, 105, 1645, 135]
       ZOrder		      14
     }
     Block {
       BlockType		      Constant
       Name		      "Constant1"
       SID		      "29"
-      Position		      [1380, 450, 1410, 480]
+      Position		      [1380, 490, 1410, 520]
       ZOrder		      17
       OutDataTypeStr	      "int32"
     }
@@ -890,14 +897,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant10"
       SID		      "78"
-      Position		      [1315, 305, 1345, 335]
+      Position		      [1315, 345, 1345, 375]
       ZOrder		      254
     }
     Block {
       BlockType		      Constant
       Name		      "Constant2"
       SID		      "34"
-      Position		      [1590, 820, 1620, 850]
+      Position		      [1590, 860, 1620, 890]
       ZOrder		      21
       OutDataTypeStr	      "int32"
     }
@@ -905,7 +912,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant3"
       SID		      "35"
-      Position		      [1590, 765, 1620, 795]
+      Position		      [1590, 805, 1620, 835]
       ZOrder		      22
       Value		      "0"
       OutDataTypeStr	      "int32"
@@ -914,14 +921,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant4"
       SID		      "38"
-      Position		      [1615, 125, 1645, 155]
+      Position		      [1615, 165, 1645, 195]
       ZOrder		      174
     }
     Block {
       BlockType		      Constant
       Name		      "Constant5"
       SID		      "40"
-      Position		      [1380, 525, 1410, 555]
+      Position		      [1380, 565, 1410, 595]
       ZOrder		      176
       OutDataTypeStr	      "int32"
     }
@@ -929,7 +936,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant6"
       SID		      "61"
-      Position		      [1590, 660, 1620, 690]
+      Position		      [1590, 700, 1620, 730]
       ZOrder		      196
       Value		      "0"
       OutDataTypeStr	      "int32"
@@ -938,7 +945,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant7"
       SID		      "62"
-      Position		      [1590, 710, 1620, 740]
+      Position		      [1590, 750, 1620, 780]
       ZOrder		      197
       OutDataTypeStr	      "int32"
     }
@@ -946,14 +953,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant8"
       SID		      "75"
-      Position		      [1315, 170, 1345, 200]
+      Position		      [1315, 210, 1345, 240]
       ZOrder		      250
     }
     Block {
       BlockType		      Constant
       Name		      "Constant9"
       SID		      "76"
-      Position		      [1315, 230, 1345, 260]
+      Position		      [1315, 270, 1345, 300]
       ZOrder		      252
     }
     Block {
@@ -961,7 +968,7 @@ Model {
       Name		      "D\nGain1"
       SID		      "79"
       Ports		      [1, 1]
-      Position		      [1380, 305, 1445, 335]
+      Position		      [1380, 345, 1445, 375]
       ZOrder		      253
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -974,7 +981,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion1"
       SID		      "41"
-      Position		      [1680, 533, 1755, 567]
+      Position		      [1680, 573, 1755, 607]
       ZOrder		      179
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       OutDataTypeStr	      "int32"
@@ -985,7 +992,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion3"
       SID		      "36"
-      Position		      [1680, 458, 1755, 492]
+      Position		      [1680, 498, 1755, 532]
       ZOrder		      171
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       OutDataTypeStr	      "int32"
@@ -997,7 +1004,7 @@ Model {
       Name		      "Direct Speed set"
       SID		      "25"
       Ports		      [1, 1]
-      Position		      [1695, 62, 1770, 98]
+      Position		      [1695, 102, 1770, 138]
       ZOrder		      12
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1011,7 +1018,7 @@ Model {
       Name		      "Direct Speed set1"
       SID		      "39"
       Ports		      [1, 1]
-      Position		      [1695, 122, 1770, 158]
+      Position		      [1695, 162, 1770, 198]
       ZOrder		      173
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1025,7 +1032,7 @@ Model {
       Name		      "Direction"
       SID		      "5"
       Ports		      [1]
-      Position		      [845, 165, 960, 195]
+      Position		      [845, 205, 960, 235]
       ZOrder		      -1
       Format		      "long"
       Decimation	      "1"
@@ -1036,7 +1043,7 @@ Model {
       Name		      "Direction Scope"
       SID		      "21"
       Ports		      [1]
-      Position		      [1040, 164, 1070, 196]
+      Position		      [1040, 204, 1070, 236]
       ZOrder		      8
       Floating		      off
       Location		      [1921, 120, 3601, 1090]
@@ -1069,7 +1076,7 @@ Model {
       Name		      "Floating\nScope"
       SID		      "24"
       Ports		      []
-      Position		      [985, 19, 1015, 51]
+      Position		      [985, 59, 1015, 91]
       ZOrder		      11
       Floating		      on
       Location		      [1921, 120, 3601, 1090]
@@ -1101,7 +1108,7 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace"
       SID		      "56"
-      Position		      [1220, 358, 1285, 382]
+      Position		      [1220, 398, 1285, 422]
       ZOrder		      191
       VariableName	      "wave1"
       SampleTime	      "0.01"
@@ -1113,7 +1120,7 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace1"
       SID		      "64"
-      Position		      [1420, 663, 1485, 687]
+      Position		      [1420, 703, 1485, 727]
       ZOrder		      199
       VariableName	      "wave2"
       SampleTime	      "0.01"
@@ -1125,268 +1132,1466 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Home Axis 1"
       SID		      "60"
-      Position		      [1660, 667, 1690, 703]
+      Position		      [1660, 707, 1690, 743]
       ZOrder		      195
     }
     Block {
-      BlockType		      Reference
+      BlockType		      S-Function
       Name		      "Host Serial Rx"
-      SID		      "92"
-      Ports		      [0, 2]
-      Position		      [20, 345, 180, 440]
-      ZOrder		      266
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Rx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "rx"
-      port		      "<auto>"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "5"
-      packetmode	      "Ascii"
-      enableinitialvalues     off
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialRx"
-      inputporttype	      "[]"
-      inputportwidth	      "[]"
-      inputportlabel	      "{}"
-      outputporttype	      "[6 1]"
-      outputportwidth	      "[1 1]"
-      outputportlabel	      "{'(int32) %d','(single) %f'}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Host Serial Rx1"
-      SID		      "89"
+      SID		      "97"
       Ports		      [0, 15]
-      Position		      [265, 91, 525, 889]
-      ZOrder		      263
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Rx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "rx"
-      port		      "COM7"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "5"
-      packetmode	      "Binary"
-      enableinitialvalues     off
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "1"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "14"
-      porttype_uint32	      "0"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "0.01"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialRx1"
-      inputporttype	      "[]"
-      inputportwidth	      "[]"
-      inputportlabel	      "{}"
-      outputporttype	      "[0 6 6 6 6 6 6 6 6 6 6 6 6 6 6]"
-      outputportwidth	      "[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]"
-      outputportlabel	      "{'double','int32','int32','int32','int32','int32','int32','int32','int32','int32','int32'"
-      ",'int32','int32','int32','int32'}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
+      Position		      [350, 130, 520, 930]
+      ZOrder		      271
+      Priority		      "1"
+      FunctionName	      "amg_usbconverter_n_serial"
+      Parameters	      "configuration,port,transfer,baudrate,stopbit,inputtype,outputtype,binheaderarray,binterminator"
+      "array,asciiheader,asciiterminator,bindatalength,packetmode,timeout,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		21
+	$ClassName		"Simulink.Mask"
+	Type			"amg_usbconverter_n_serial"
+	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
+	Initialization		"amg_usbconverter_n_serial_callback('init');"
+	SelfModifiable		"on"
+	Display			"text(0.05, 0.5, 'Obsolete !!!\\nPort: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0','ver','mid"
+	"dle','hor','left');port_label('output', 1,'double');port_label('output', 2,'int32');port_label('output', 3,'int32');p"
+	"ort_label('output', 4,'int32');port_label('output', 5,'int32');port_label('output', 6,'int32');port_label('output', 7"
+	",'int32');port_label('output', 8,'int32');port_label('output', 9,'int32');port_label('output', 10,'int32');port_label"
+	"('output', 11,'int32');port_label('output', 12,'int32');port_label('output', 13,'int32');port_label('output', 14,'int"
+	"32');port_label('output', 15,'int32');"
+	IconUnits		"normalized"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  36
+	  Object {
+	    $ObjectID		    22
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Setup"
+	      Cell		      "Tx"
+	      Cell		      "Rx"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "configuration"
+	    Prompt		    "Configuration"
+	    Value		    "Rx"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('configuration');"
+	  }
+	  Object {
+	    $ObjectID		    23
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "COM6"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "port"
+	    Prompt		    "Port"
+	    Value		    "COM6"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('port');"
+	  }
+	  Object {
+	    $ObjectID		    24
+	    Type		    "edit"
+	    Name		    "baudrate"
+	    Prompt		    "Baud rate (bps)"
+	    Value		    "115200"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('baudrate');"
+	  }
+	  Object {
+	    $ObjectID		    25
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "databits"
+	    Prompt		    "Data bits"
+	    Value		    "8"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    26
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "parity"
+	    Prompt		    "Parity"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    27
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "1"
+	      Cell		      "1.5"
+	      Cell		      "2"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "stopbit"
+	    Prompt		    "Stop bit"
+	    Value		    "1"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    28
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "None"
+	      Cell		      "RTS"
+	      Cell		      "CTS"
+	      Cell		      "RTS/CTS"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "flowcontrol"
+	    Prompt		    "Hardware flow control"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('flowcontrol');"
+	  }
+	  Object {
+	    $ObjectID		    29
+	    Type		    "checkbox"
+	    Name		    "advanceoptions"
+	    Prompt		    "Advance options"
+	    Value		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('advanceoptions');"
+	  }
+	  Object {
+	    $ObjectID		    30
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rxbuffersize"
+	    Prompt		    "Rx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    31
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "txbuffersize"
+	    Prompt		    "Tx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    32
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Blocking"
+	      Cell		      "Non-Blocking"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "transfer"
+	    Prompt		    "Transfer"
+	    Value		    "Blocking"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('transfer');"
+	  }
+	  Object {
+	    $ObjectID		    33
+	    Type		    "edit"
+	    Name		    "timeout"
+	    Prompt		    "Wait time-out (Seconds)"
+	    Value		    "2"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    34
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Ascii"
+	      Cell		      "Binary"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "packetmode"
+	    Prompt		    "Packet mode"
+	    Value		    "Binary"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('packetmode');"
+	  }
+	  Object {
+	    $ObjectID		    35
+	    Type		    "edit"
+	    Name		    "binheader"
+	    Prompt		    "Binary header (example: '7E 7E')"
+	    Value		    "'0E 0E'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binheader');"
+	  }
+	  Object {
+	    $ObjectID		    36
+	    Type		    "edit"
+	    Name		    "binterminator"
+	    Prompt		    "Binary terminator (example: '03 03')"
+	    Value		    "'0A 0A'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binterminator');"
+	  }
+	  Object {
+	    $ObjectID		    37
+	    Type		    "edit"
+	    Name		    "porttype_double"
+	    Prompt		    "Number of data port, type DOUBLE"
+	    Value		    "1"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    38
+	    Type		    "edit"
+	    Name		    "porttype_single"
+	    Prompt		    "Number of data port, type SINGLE"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    39
+	    Type		    "edit"
+	    Name		    "porttype_int8"
+	    Prompt		    "Number of data port, type INT8"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    40
+	    Type		    "edit"
+	    Name		    "porttype_uint8"
+	    Prompt		    "Number of data port, type UINT8"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    41
+	    Type		    "edit"
+	    Name		    "porttype_int16"
+	    Prompt		    "Number of data port, type INT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    42
+	    Type		    "edit"
+	    Name		    "porttype_uint16"
+	    Prompt		    "Number of data port, type UINT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    43
+	    Type		    "edit"
+	    Name		    "porttype_int32"
+	    Prompt		    "Number of data port, type INT32"
+	    Value		    "14"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    44
+	    Type		    "edit"
+	    Name		    "porttype_uint32"
+	    Prompt		    "Number of data port, type UINT32"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    45
+	    Type		    "edit"
+	    Name		    "asciiformat"
+	    Prompt		    "Ascii format"
+	    Value		    "'%d,%f'"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('asciiformat');"
+	  }
+	  Object {
+	    $ObjectID		    46
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "LF (0x0A - \"\\n\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('rx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    47
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "tx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "LF (0x0A - \"\\n\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('tx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    48
+	    Type		    "edit"
+	    Name		    "inputtype"
+	    Prompt		    "Input data type"
+	    Value		    "[0]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    49
+	    Type		    "edit"
+	    Name		    "outputtype"
+	    Prompt		    "Output data type"
+	    Value		    "[15  0 6 6 6 6 6 6 6 6 6 6 6 6 6 6]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    50
+	    Type		    "edit"
+	    Name		    "binheaderarray"
+	    Prompt		    "Binary header"
+	    Value		    "[2 14  14]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    51
+	    Type		    "edit"
+	    Name		    "binterminatorarray"
+	    Prompt		    "Binary terminator"
+	    Value		    "[2 10  10]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    52
+	    Type		    "edit"
+	    Name		    "bindatalength"
+	    Prompt		    "Binary data length"
+	    Value		    "64"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    53
+	    Type		    "edit"
+	    Name		    "asciiheader"
+	    Prompt		    "Ascii header (printf format)"
+	    Value		    "['%d,%f' uint8(10)]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    54
+	    Type		    "edit"
+	    Name		    "asciiterminator"
+	    Prompt		    "Ascii terminator"
+	    Value		    "[1 10]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    55
+	    Type		    "edit"
+	    Name		    "sampletime"
+	    Prompt		    "Sample time (sec)"
+	    Value		    "0.005"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
+	  }
+	  Object {
+	    $ObjectID		    56
+	    Type		    "edit"
+	    Name		    "sampletimestr"
+	    Prompt		    "Compiled sample time (sec) in string"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletimestr');"
+	  }
+	  Object {
+	    $ObjectID		    57
+	    Type		    "edit"
+	    Name		    "blockid"
+	    Prompt		    "BlockID"
+	    Value		    "HostSerialRx"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('blockid');"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
     }
     Block {
-      BlockType		      Reference
+      BlockType		      S-Function
       Name		      "Host Serial Setup"
-      SID		      "95"
+      SID		      "96"
       Ports		      []
-      Position		      [20, 215, 180, 305]
-      ZOrder		      269
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Setup"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "setup"
-      port		      "COM7"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "2"
-      packetmode	      "Binary"
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "1"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d %u %x'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialSetup"
-      inputporttype	      "[]"
-      inputportwidth	      "[]"
-      inputportlabel	      "{}"
-      outputporttype	      "[]"
-      outputportwidth	      "[]"
-      outputportlabel	      "{}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
+      Position		      [350, 20, 505, 100]
+      ZOrder		      270
+      Priority		      "1"
+      FunctionName	      "amg_usbconverter_n_serial"
+      Parameters	      "configuration,port,transfer,baudrate,stopbit,inputtype,outputtype,binheaderarray,binterminator"
+      "array,asciiheader,asciiterminator,bindatalength,packetmode,timeout,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		58
+	$ClassName		"Simulink.Mask"
+	Type			"amg_usbconverter_n_serial"
+	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
+	Initialization		"amg_usbconverter_n_serial_callback('init');"
+	SelfModifiable		"on"
+	Display			"text(0.5, 0.5, 'Port: COM6\\nBaud (Bps): 10000000\\nFrame: 8-None-1','ver','middle','hor','center');"
+	IconUnits		"normalized"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  36
+	  Object {
+	    $ObjectID		    59
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Setup"
+	      Cell		      "Tx"
+	      Cell		      "Rx"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "configuration"
+	    Prompt		    "Configuration"
+	    Value		    "Setup"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('configuration');"
+	  }
+	  Object {
+	    $ObjectID		    60
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "COM6"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "port"
+	    Prompt		    "Port"
+	    Value		    "COM6"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('port');"
+	  }
+	  Object {
+	    $ObjectID		    61
+	    Type		    "edit"
+	    Name		    "baudrate"
+	    Prompt		    "Baud rate (bps)"
+	    Value		    "10000000"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('baudrate');"
+	  }
+	  Object {
+	    $ObjectID		    62
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "databits"
+	    Prompt		    "Data bits"
+	    Value		    "8"
+	  }
+	  Object {
+	    $ObjectID		    63
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "parity"
+	    Prompt		    "Parity"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    64
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "1"
+	      Cell		      "1.5"
+	      Cell		      "2"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "stopbit"
+	    Prompt		    "Stop bit"
+	    Value		    "1"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    65
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "None"
+	      Cell		      "RTS"
+	      Cell		      "CTS"
+	      Cell		      "RTS/CTS"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "flowcontrol"
+	    Prompt		    "Hardware flow control"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('flowcontrol');"
+	  }
+	  Object {
+	    $ObjectID		    66
+	    Type		    "checkbox"
+	    Name		    "advanceoptions"
+	    Prompt		    "Advance options"
+	    Value		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('advanceoptions');"
+	  }
+	  Object {
+	    $ObjectID		    67
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rxbuffersize"
+	    Prompt		    "Rx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    68
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "txbuffersize"
+	    Prompt		    "Tx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    69
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Blocking"
+	      Cell		      "Non-Blocking"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "transfer"
+	    Prompt		    "Transfer"
+	    Value		    "Blocking"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('transfer');"
+	  }
+	  Object {
+	    $ObjectID		    70
+	    Type		    "edit"
+	    Name		    "timeout"
+	    Prompt		    "Wait time-out (Seconds)"
+	    Value		    "5"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    71
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Ascii"
+	      Cell		      "Binary"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "packetmode"
+	    Prompt		    "Packet mode"
+	    Value		    "Binary"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('packetmode');"
+	  }
+	  Object {
+	    $ObjectID		    72
+	    Type		    "edit"
+	    Name		    "binheader"
+	    Prompt		    "Binary header (example: '7E 7E')"
+	    Value		    "'7E 7E'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binheader');"
+	  }
+	  Object {
+	    $ObjectID		    73
+	    Type		    "edit"
+	    Name		    "binterminator"
+	    Prompt		    "Binary terminator (example: '03 03')"
+	    Value		    "'03 03'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binterminator');"
+	  }
+	  Object {
+	    $ObjectID		    74
+	    Type		    "edit"
+	    Name		    "porttype_double"
+	    Prompt		    "Number of data port, type DOUBLE"
+	    Value		    "1"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    75
+	    Type		    "edit"
+	    Name		    "porttype_single"
+	    Prompt		    "Number of data port, type SINGLE"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    76
+	    Type		    "edit"
+	    Name		    "porttype_int8"
+	    Prompt		    "Number of data port, type INT8"
+	    Value		    "1"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    77
+	    Type		    "edit"
+	    Name		    "porttype_uint8"
+	    Prompt		    "Number of data port, type UINT8"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    78
+	    Type		    "edit"
+	    Name		    "porttype_int16"
+	    Prompt		    "Number of data port, type INT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    79
+	    Type		    "edit"
+	    Name		    "porttype_uint16"
+	    Prompt		    "Number of data port, type UINT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    80
+	    Type		    "edit"
+	    Name		    "porttype_int32"
+	    Prompt		    "Number of data port, type INT32"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    81
+	    Type		    "edit"
+	    Name		    "porttype_uint32"
+	    Prompt		    "Number of data port, type UINT32"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    82
+	    Type		    "edit"
+	    Name		    "asciiformat"
+	    Prompt		    "Ascii format"
+	    Value		    "'%d,%f'"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('asciiformat');"
+	  }
+	  Object {
+	    $ObjectID		    83
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('rx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    84
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "tx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "CR (0x0D - \"\\r\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('tx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    85
+	    Type		    "edit"
+	    Name		    "inputtype"
+	    Prompt		    "Input data type"
+	    Value		    "[0]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    86
+	    Type		    "edit"
+	    Name		    "outputtype"
+	    Prompt		    "Output data type"
+	    Value		    "[0]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    87
+	    Type		    "edit"
+	    Name		    "binheaderarray"
+	    Prompt		    "Binary header"
+	    Value		    "[2 126  126]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    88
+	    Type		    "edit"
+	    Name		    "binterminatorarray"
+	    Prompt		    "Binary terminator"
+	    Value		    "[2 3  3]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    89
+	    Type		    "edit"
+	    Name		    "bindatalength"
+	    Prompt		    "Binary data length"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    90
+	    Type		    "edit"
+	    Name		    "asciiheader"
+	    Prompt		    "Ascii header (printf format)"
+	    Value		    "''"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    91
+	    Type		    "edit"
+	    Name		    "asciiterminator"
+	    Prompt		    "Ascii terminator"
+	    Value		    "[0]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    92
+	    Type		    "edit"
+	    Name		    "sampletime"
+	    Prompt		    "Sample time (sec)"
+	    Value		    "inf"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
+	  }
+	  Object {
+	    $ObjectID		    93
+	    Type		    "edit"
+	    Name		    "sampletimestr"
+	    Prompt		    "Compiled sample time (sec) in string"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletimestr');"
+	  }
+	  Object {
+	    $ObjectID		    94
+	    Type		    "edit"
+	    Name		    "blockid"
+	    Prompt		    "BlockID"
+	    Value		    "HostSerialSetup"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('blockid');"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
     }
     Block {
-      BlockType		      Reference
-      Name		      "Host Serial Tx"
-      SID		      "93"
-      Ports		      [2]
-      Position		      [20, 542, 180, 638]
-      ZOrder		      267
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Tx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "tx"
-      port		      "<auto>"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "2"
-      packetmode	      "Ascii"
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "0"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "0"
-      porttype_uint32	      "2"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "-1"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialTx"
-      inputporttype	      "[6 1]"
-      inputportwidth	      "[1 1]"
-      inputportlabel	      "{'%d (int32)','%f (single)'}"
-      outputporttype	      "[]"
-      outputportwidth	      "[]"
-      outputportlabel	      "{}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Host Serial Tx1"
-      SID		      "88"
+      BlockType		      S-Function
+      Name		      "Host Serial Tx2"
+      SID		      "98"
       Ports		      [10]
-      Position		      [2325, 56, 2580, 819]
-      ZOrder		      262
-      LibraryVersion	      "1.122"
-      SourceBlock	      "amg_usbconverter_n_connect_lib/Host Serial Tx"
-      SourceType	      "amg_usbconverter_n_connect"
-      conf		      "tx"
-      port		      "COM7"
-      baudrate		      "115200"
-      databits		      "8"
-      parity		      "None"
-      stopbit		      "1"
-      flowcontrol	      "None"
-      transfer		      "Blocking"
-      timeout		      "2"
-      packetmode	      "Binary"
-      initialvalues	      "[]"
-      binheader		      "'7E 7E'"
-      binterminator	      "'03 03'"
-      porttype_double	      "5"
-      porttype_single	      "0"
-      porttype_int8	      "0"
-      porttype_uint8	      "0"
-      porttype_int16	      "0"
-      porttype_uint16	      "0"
-      porttype_int32	      "5"
-      porttype_uint32	      "0"
-      asciiformat	      "'%d,%f'"
-      rx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      tx_asciiterminator      "CRLF (0x0D 0x0A - \"\\r\\n\")"
-      sampletime	      "0.001"
-      enablecustomportlabel   off
-      cinputportlabel	      "0"
-      coutputportlabel	      "A"
-      portpinstr	      "0"
-      blockid		      "HostSerialTx1"
-      inputporttype	      "[0 0 0 0 0 6 6 6 6 6]"
-      inputportwidth	      "[1 1 1 1 1 1 1 1 1 1]"
-      inputportlabel	      "{'double','double','double','double','double','int32','int32','int32','int32','int32'}"
-      outputporttype	      "[]"
-      outputportwidth	      "[]"
-      outputportlabel	      "{}"
-      compat		      "0"
-      optionstring	      "[]"
-      autoport		      "'COM7'"
+      Position		      [2385, 63, 2545, 822]
+      ZOrder		      272
+      Priority		      "1"
+      FunctionName	      "amg_usbconverter_n_serial"
+      Parameters	      "configuration,port,transfer,baudrate,stopbit,inputtype,outputtype,binheaderarray,binterminator"
+      "array,asciiheader,asciiterminator,bindatalength,packetmode,timeout,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		95
+	$ClassName		"Simulink.Mask"
+	Type			"amg_usbconverter_n_serial"
+	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
+	Initialization		"amg_usbconverter_n_serial_callback('init');"
+	SelfModifiable		"on"
+	Display			"text(0.95, 0.5, 'Port: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0','ver','middle','hor','rig"
+	"ht');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'double');port_label('inpu"
+	"t', 4,'double');port_label('input', 5,'double');port_label('input', 6,'int32');port_label('input', 7,'int32');port_la"
+	"bel('input', 8,'int32');port_label('input', 9,'int32');port_label('input', 10,'int32');"
+	IconUnits		"normalized"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  36
+	  Object {
+	    $ObjectID		    96
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "Setup"
+	      Cell		      "Tx"
+	      Cell		      "Rx"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "configuration"
+	    Prompt		    "Configuration"
+	    Value		    "Tx"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('configuration');"
+	  }
+	  Object {
+	    $ObjectID		    97
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "COM6"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "port"
+	    Prompt		    "Port"
+	    Value		    "COM6"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('port');"
+	  }
+	  Object {
+	    $ObjectID		    98
+	    Type		    "edit"
+	    Name		    "baudrate"
+	    Prompt		    "Baud rate (bps)"
+	    Value		    "115200"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('baudrate');"
+	  }
+	  Object {
+	    $ObjectID		    99
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "8"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "databits"
+	    Prompt		    "Data bits"
+	    Value		    "8"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    100
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      1
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "parity"
+	    Prompt		    "Parity"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    101
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "1"
+	      Cell		      "1.5"
+	      Cell		      "2"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "stopbit"
+	    Prompt		    "Stop bit"
+	    Value		    "1"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    102
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "None"
+	      Cell		      "RTS"
+	      Cell		      "CTS"
+	      Cell		      "RTS/CTS"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "flowcontrol"
+	    Prompt		    "Hardware flow control"
+	    Value		    "None"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('flowcontrol');"
+	  }
+	  Object {
+	    $ObjectID		    103
+	    Type		    "checkbox"
+	    Name		    "advanceoptions"
+	    Prompt		    "Advance options"
+	    Value		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('advanceoptions');"
+	  }
+	  Object {
+	    $ObjectID		    104
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rxbuffersize"
+	    Prompt		    "Rx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    105
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      8
+	      Cell		      "16"
+	      Cell		      "32"
+	      Cell		      "64"
+	      Cell		      "128"
+	      Cell		      "256"
+	      Cell		      "512"
+	      Cell		      "1024"
+	      Cell		      "2048"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "txbuffersize"
+	    Prompt		    "Tx buffer size (bytes)"
+	    Value		    "2048"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    106
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Blocking"
+	      Cell		      "Non-Blocking"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "transfer"
+	    Prompt		    "Transfer"
+	    Value		    "Blocking"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('transfer');"
+	  }
+	  Object {
+	    $ObjectID		    107
+	    Type		    "edit"
+	    Name		    "timeout"
+	    Prompt		    "Wait time-out (Seconds)"
+	    Value		    "2"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    108
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      2
+	      Cell		      "Ascii"
+	      Cell		      "Binary"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "packetmode"
+	    Prompt		    "Packet mode"
+	    Value		    "Binary"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('packetmode');"
+	  }
+	  Object {
+	    $ObjectID		    109
+	    Type		    "edit"
+	    Name		    "binheader"
+	    Prompt		    "Binary header (example: '7E 7E')"
+	    Value		    "'7E 7E'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binheader');"
+	  }
+	  Object {
+	    $ObjectID		    110
+	    Type		    "edit"
+	    Name		    "binterminator"
+	    Prompt		    "Binary terminator (example: '03 03')"
+	    Value		    "'03 03'"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('binterminator');"
+	  }
+	  Object {
+	    $ObjectID		    111
+	    Type		    "edit"
+	    Name		    "porttype_double"
+	    Prompt		    "Number of data port, type DOUBLE"
+	    Value		    "5"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    112
+	    Type		    "edit"
+	    Name		    "porttype_single"
+	    Prompt		    "Number of data port, type SINGLE"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    113
+	    Type		    "edit"
+	    Name		    "porttype_int8"
+	    Prompt		    "Number of data port, type INT8"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    114
+	    Type		    "edit"
+	    Name		    "porttype_uint8"
+	    Prompt		    "Number of data port, type UINT8"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    115
+	    Type		    "edit"
+	    Name		    "porttype_int16"
+	    Prompt		    "Number of data port, type INT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    116
+	    Type		    "edit"
+	    Name		    "porttype_uint16"
+	    Prompt		    "Number of data port, type UINT16"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    117
+	    Type		    "edit"
+	    Name		    "porttype_int32"
+	    Prompt		    "Number of data port, type INT32"
+	    Value		    "5"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    118
+	    Type		    "edit"
+	    Name		    "porttype_uint32"
+	    Prompt		    "Number of data port, type UINT32"
+	    Value		    "0"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
+	  }
+	  Object {
+	    $ObjectID		    119
+	    Type		    "edit"
+	    Name		    "asciiformat"
+	    Prompt		    "Ascii format"
+	    Value		    "'%d,%f'"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('asciiformat');"
+	  }
+	  Object {
+	    $ObjectID		    120
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      3
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "rx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('rx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    121
+	    Type		    "popup"
+	    Array {
+	      Type		      "Cell"
+	      Dimension		      4
+	      Cell		      "CR (0x0D - \"\\r\")"
+	      Cell		      "LF (0x0A - \"\\n\")"
+	      Cell		      "CRLF (0x0D 0x0A - \"\\r\\n\")"
+	      Cell		      "None"
+	      PropName		      "TypeOptions"
+	    }
+	    Name		    "tx_asciiterminator"
+	    Prompt		    "End of packet"
+	    Value		    "LF (0x0A - \"\\n\")"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('tx_asciiterminator');"
+	  }
+	  Object {
+	    $ObjectID		    122
+	    Type		    "edit"
+	    Name		    "inputtype"
+	    Prompt		    "Input data type"
+	    Value		    "[10  0 0 0 0 0 6 6 6 6 6]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    123
+	    Type		    "edit"
+	    Name		    "outputtype"
+	    Prompt		    "Output data type"
+	    Value		    "[0]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    124
+	    Type		    "edit"
+	    Name		    "binheaderarray"
+	    Prompt		    "Binary header"
+	    Value		    "[2 126  126]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    125
+	    Type		    "edit"
+	    Name		    "binterminatorarray"
+	    Prompt		    "Binary terminator"
+	    Value		    "[2 3  3]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    126
+	    Type		    "edit"
+	    Name		    "bindatalength"
+	    Prompt		    "Binary data length"
+	    Value		    "60"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    127
+	    Type		    "edit"
+	    Name		    "asciiheader"
+	    Prompt		    "Ascii header (printf format)"
+	    Value		    "['%d,%f' uint8(10)]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    128
+	    Type		    "edit"
+	    Name		    "asciiterminator"
+	    Prompt		    "Ascii terminator"
+	    Value		    "[1 10]"
+	    Tunable		    "off"
+	    Visible		    "off"
+	  }
+	  Object {
+	    $ObjectID		    129
+	    Type		    "edit"
+	    Name		    "sampletime"
+	    Prompt		    "Sample time (sec)"
+	    Value		    "0.1"
+	    Tunable		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
+	  }
+	  Object {
+	    $ObjectID		    130
+	    Type		    "edit"
+	    Name		    "sampletimestr"
+	    Prompt		    "Compiled sample time (sec) in string"
+	    Value		    ""
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('sampletimestr');"
+	  }
+	  Object {
+	    $ObjectID		    131
+	    Type		    "edit"
+	    Name		    "blockid"
+	    Prompt		    "BlockID"
+	    Value		    "HostSerialTx2"
+	    Evaluate		    "off"
+	    Tunable		    "off"
+	    Enabled		    "off"
+	    Visible		    "off"
+	    Callback		    "amg_usbconverter_n_serial_callback('blockid');"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
     }
     Block {
       BlockType		      Reference
       Name		      "I\nGain1"
       SID		      "77"
       Ports		      [1, 1]
-      Position		      [1380, 230, 1445, 260]
+      Position		      [1380, 270, 1445, 300]
       ZOrder		      251
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1399,7 +2604,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Manual Switch"
       SID		      "32"
-      Position		      [1565, 457, 1595, 493]
+      Position		      [1565, 497, 1595, 533]
       ZOrder		      19
       CurrentSetting	      "0"
     }
@@ -1407,7 +2612,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Manual Switch1"
       SID		      "42"
-      Position		      [1565, 532, 1595, 568]
+      Position		      [1565, 572, 1595, 608]
       ZOrder		      178
       CurrentSetting	      "0"
     }
@@ -1416,7 +2621,7 @@ Model {
       Name		      "P\nGain"
       SID		      "74"
       Ports		      [1, 1]
-      Position		      [1380, 170, 1445, 200]
+      Position		      [1380, 210, 1445, 240]
       ZOrder		      249
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1430,7 +2635,7 @@ Model {
       Name		      "PID output"
       SID		      "23"
       Ports		      [1]
-      Position		      [845, 109, 960, 141]
+      Position		      [845, 149, 960, 181]
       ZOrder		      9
       Format		      "long"
       Decimation	      "1"
@@ -1441,7 +2646,7 @@ Model {
       Name		      "Pos Counter"
       SID		      "4"
       Ports		      [1]
-      Position		      [845, 220, 960, 250]
+      Position		      [845, 260, 960, 290]
       ZOrder		      -1
       Format		      "bank"
       Decimation	      "1"
@@ -1452,7 +2657,7 @@ Model {
       Name		      "Pos Counter1"
       SID		      "46"
       Ports		      [1]
-      Position		      [845, 386, 960, 414]
+      Position		      [845, 426, 960, 454]
       ZOrder		      181
       Format		      "bank"
       Decimation	      "1"
@@ -1463,7 +2668,7 @@ Model {
       Name		      "Pos Scope"
       SID		      "14"
       Ports		      [7]
-      Position		      [1050, 222, 1080, 258]
+      Position		      [1050, 262, 1080, 298]
       ZOrder		      -16
       Floating		      off
       Location		      [501, 192, 1762, 1145]
@@ -1504,7 +2709,7 @@ Model {
       Name		      "Pos Scope2"
       SID		      "57"
       Ports		      [5]
-      Position		      [1040, 428, 1070, 462]
+      Position		      [1040, 468, 1070, 502]
       ZOrder		      192
       Floating		      off
       Location		      [249, 157, 1911, 1109]
@@ -1544,7 +2749,7 @@ Model {
       Name		      "Position"
       SID		      "63"
       Ports		      []
-      Position		      [1150, 199, 1180, 231]
+      Position		      [1150, 239, 1180, 271]
       ZOrder		      198
       List {
 	ListType		IOSignalStrings
@@ -1582,7 +2787,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Position Reset"
       SID		      "33"
-      Position		      [1700, 792, 1730, 828]
+      Position		      [1700, 832, 1730, 868]
       ZOrder		      20
     }
     Block {
@@ -1590,7 +2795,7 @@ Model {
       Name		      "Position Setpoint"
       SID		      "30"
       Ports		      [1, 1]
-      Position		      [1425, 447, 1500, 483]
+      Position		      [1425, 487, 1500, 523]
       ZOrder		      16
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1604,7 +2809,7 @@ Model {
       Name		      "Position Setpoint1"
       SID		      "43"
       Ports		      [1, 1]
-      Position		      [1425, 522, 1500, 558]
+      Position		      [1425, 562, 1500, 598]
       ZOrder		      175
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1617,7 +2822,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "66"
-      Position		      [1515, 629, 1555, 671]
+      Position		      [1515, 669, 1555, 711]
       ZOrder		      241
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -1627,7 +2832,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition2"
       SID		      "67"
-      Position		      [1340, 379, 1380, 421]
+      Position		      [1340, 419, 1380, 461]
       ZOrder		      242
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -1637,7 +2842,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition3"
       SID		      "68"
-      Position		      [1070, 544, 1110, 586]
+      Position		      [1070, 584, 1110, 626]
       ZOrder		      243
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -1648,7 +2853,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition4"
       SID		      "73"
-      Position		      [1290, 874, 1330, 916]
+      Position		      [1290, 914, 1330, 956]
       ZOrder		      248
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -1659,7 +2864,7 @@ Model {
       Name		      "Speed"
       SID		      "3"
       Ports		      [1]
-      Position		      [845, 276, 960, 304]
+      Position		      [845, 316, 960, 344]
       ZOrder		      -1
       Format		      "long"
       Decimation	      "1"
@@ -1670,7 +2875,7 @@ Model {
       Name		      "Speed1"
       SID		      "48"
       Ports		      [1]
-      Position		      [845, 441, 960, 469]
+      Position		      [845, 481, 960, 509]
       ZOrder		      182
       Format		      "long"
       Decimation	      "1"
@@ -1680,7 +2885,7 @@ Model {
       BlockType		      Step
       Name		      "Step"
       SID		      "31"
-      Position		      [1175, 430, 1330, 500]
+      Position		      [1175, 470, 1330, 540]
       ZOrder		      18
       After		      "10000"
       SampleTime	      "0.001"
@@ -1689,7 +2894,7 @@ Model {
       BlockType		      Step
       Name		      "Step1"
       SID		      "44"
-      Position		      [1175, 530, 1330, 600]
+      Position		      [1175, 570, 1330, 640]
       ZOrder		      177
       After		      "1000"
       SampleTime	      "0.001"
@@ -1699,7 +2904,7 @@ Model {
       Name		      "error"
       SID		      "19"
       Ports		      [1]
-      Position		      [845, 331, 960, 359]
+      Position		      [845, 371, 960, 399]
       ZOrder		      6
       Format		      "bank"
       Decimation	      "1"
@@ -1710,7 +2915,7 @@ Model {
       Name		      "error1"
       SID		      "50"
       Ports		      [1]
-      Position		      [845, 497, 960, 523]
+      Position		      [845, 537, 960, 563]
       ZOrder		      184
       Format		      "bank"
       Decimation	      "1"
@@ -1721,7 +2926,7 @@ Model {
       Name		      "index"
       SID		      "58"
       Ports		      [1]
-      Position		      [845, 552, 960, 578]
+      Position		      [845, 592, 960, 618]
       ZOrder		      193
       Format		      "bank"
       Decimation	      "1"
@@ -1732,7 +2937,7 @@ Model {
       Name		      "index1"
       SID		      "59"
       Ports		      [1]
-      Position		      [845, 607, 960, 633]
+      Position		      [845, 647, 960, 673]
       ZOrder		      194
       Format		      "bank"
       Decimation	      "1"
@@ -1743,7 +2948,7 @@ Model {
       Name		      "siine"
       SID		      "53"
       Ports		      [1]
-      Position		      [785, 830, 900, 850]
+      Position		      [785, 870, 900, 890]
       ZOrder		      187
       Format		      "bank"
       Decimation	      "1"
@@ -1754,7 +2959,7 @@ Model {
       Name		      "sine"
       SID		      "52"
       Ports		      [1]
-      Position		      [940, 824, 970, 856]
+      Position		      [940, 864, 970, 896]
       ZOrder		      188
       Floating		      off
       Location		      [235, 120, 1915, 1090]
@@ -1785,9 +2990,9 @@ Model {
       SampleTime	      "0.01"
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      2
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"Direction"
 	DstPort			1
@@ -1799,9 +3004,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      4
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"Speed"
 	DstPort			1
@@ -1813,9 +3018,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      3
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"Pos Counter"
 	DstPort			1
@@ -1827,9 +3032,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      5
-      Points		      [300, 0; 0, 1]
+      Points		      [305, 0; 0, 1]
       Branch {
 	DstBlock		"error"
 	DstPort			1
@@ -1841,9 +3046,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      1
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"PID output"
 	DstPort			1
@@ -1857,8 +3062,8 @@ Model {
     Line {
       SrcBlock		      "Direct Speed set"
       SrcPort		      1
-      Points		      [272, 0; 0, 20]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [302, 0; 0, -15]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      1
     }
     Line {
@@ -1895,8 +3100,8 @@ Model {
     Line {
       SrcBlock		      "Position Reset"
       SrcPort		      1
-      Points		      [175, 0; 0, -110]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [190, 0; 0, -145]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      9
     }
     Line {
@@ -1916,7 +3121,8 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion3"
       SrcPort		      1
-      DstBlock		      "Host Serial Tx1"
+      Points		      [310, 0; 0, -35]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      6
     }
     Line {
@@ -1928,8 +3134,7 @@ Model {
     Line {
       SrcBlock		      "Direct Speed set1"
       SrcPort		      1
-      Points		      [272, 0; 0, 35]
-      DstBlock		      "Host Serial Tx1"
+      DstBlock		      "Host Serial Tx2"
       DstPort		      2
     }
     Line {
@@ -1964,13 +3169,14 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion1"
       SrcPort		      1
-      DstBlock		      "Host Serial Tx1"
+      Points		      [310, 0; 0, -35]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      7
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      7
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"Speed1"
 	DstPort			1
@@ -1982,9 +3188,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      6
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"Pos Counter1"
 	DstPort			1
@@ -1996,9 +3202,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      8
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"error1"
 	DstPort			1
@@ -2010,9 +3216,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      14
-      Points		      [237, 0]
+      Points		      [242, 0]
       Branch {
 	Points			[0, -5; 158, 0]
 	DstBlock		"sine"
@@ -2027,14 +3233,14 @@ Model {
     Line {
       SrcBlock		      "Home Axis 1"
       SrcPort		      1
-      Points		      [312, 0; 0, -60]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [315, 0; 0, -95]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      8
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      9
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"index"
 	DstPort			1
@@ -2046,9 +3252,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      10
-      Points		      [300, 0]
+      Points		      [305, 0]
       Branch {
 	DstBlock		"index1"
 	DstPort			1
@@ -2073,9 +3279,9 @@ Model {
       DstPort		      2
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      11
-      Points		      [446, 0; 0, -405]
+      Points		      [451, 0; 0, -405]
       DstBlock		      "Pos Scope"
       DstPort		      6
     }
@@ -2115,17 +3321,17 @@ Model {
       DstPort		      7
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
+      SrcBlock		      "Host Serial Rx"
       SrcPort		      15
-      Points		      [377, 0; 0, 20]
+      Points		      [380, 0; 0, 20]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Rate Transition4"
       SrcPort		      1
-      Points		      [782, 0; 0, -120]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [785, 0; 0, -155]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      10
     }
     Line {
@@ -2137,8 +3343,8 @@ Model {
     Line {
       SrcBlock		      "P\nGain"
       SrcPort		      1
-      Points		      [435, 0; 0, 65]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [657, 0; 0, 30]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      3
     }
     Line {
@@ -2150,8 +3356,8 @@ Model {
     Line {
       SrcBlock		      "I\nGain1"
       SrcPort		      1
-      Points		      [435, 0; 0, 80]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [458, 0; 0, 45]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      4
     }
     Line {
@@ -2163,8 +3369,8 @@ Model {
     Line {
       SrcBlock		      "D\nGain1"
       SrcPort		      1
-      Points		      [435, 0; 0, 80]
-      DstBlock		      "Host Serial Tx1"
+      Points		      [259, 0; 0, 45]
+      DstBlock		      "Host Serial Tx2"
       DstPort		      5
     }
   }

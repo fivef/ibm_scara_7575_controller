@@ -43,7 +43,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1329.0, 683.0, 1998.0, 1319.0]
+      Location		      [1648.0, 649.0, 1998.0, 1319.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -70,14 +70,14 @@ Model {
 	  LoadSaveID		  "0"
 	  Extents		  [1946.0, 1113.0]
 	  ZoomFactor		  [0.8]
-	  Offset		  [-209.58992750084008, 168.11411603027375]
+	  Offset		  [38.436522777769731, -15.394700729262849]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "256"
-	  Extents		  [1852.0, 873.0]
+	  Extents		  [1946.0, 1113.0]
 	  ZoomFactor		  [1.7499999999999993]
 	  Offset		  [0.0, 4.5474735088646412e-13]
 	}
@@ -91,7 +91,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jan 09 16:21:32 2016"
+  LastModifiedDate	  "Mon Jan 11 14:10:15 2016"
   RTWModifiedTimeStamp	  359917164
   ModelVersionFormat	  "1.%<AutoIncrement:348>"
   ConfigurationManager	  "None"
@@ -1203,7 +1203,7 @@ Model {
   }
   System {
     Name		    "test"
-    Location		    [1329, 683, 3327, 2002]
+    Location		    [1648, 649, 3646, 1968]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1398,7 +1398,7 @@ Model {
 	  usedpinarray		  "[0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0]"
 	  bitbandingstr		  "\n#define EnabledSubsystemAxis1HomeSwitch_A10 Peripheral_BB(GPIOA->IDR, 10)  /* Output pin */"
 	  sampletime		  "0.01"
-	  sampletimestr		  "0"
+	  sampletimestr		  "0.01"
 	  blockid		  "EnabledSubsystemAxis1HomeSwitch"
 	  enablecustomportlabel	  off
 	  glabalinit		  off
@@ -1689,7 +1689,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 1"
-	Location		[0, 282, 1904, 1361]
+	Location		[1329, 683, 3327, 2002]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1753,8 +1753,8 @@ Model {
 	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
 	    Initialization	    "stm32f4_basicpwm_callback('init');"
 	    SelfModifiable	    "on"
-	    Display		    "text(0.95, 0.5, 'Timer: 3\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0','ver','middle'"
-	    ",'hor','right');port_label('input', 1,'CH1 (A6)')"
+	    Display		    "text(0.95, 0.5, 'Timer: 3\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
+	    "le','hor','right');port_label('input', 1,'CH1 (A6)')"
 	    IconUnits		    "normalized"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
@@ -1911,7 +1911,7 @@ Model {
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
-		Value			"0"
+		Value			"0.01"
 		Evaluate		"off"
 		Tunable			"off"
 		Enabled			"off"
@@ -2343,8 +2343,8 @@ Model {
 	    Help		    "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
 	    Initialization	    "stm32f4_basicpwm_callback('init');"
 	    SelfModifiable	    "on"
-	    Display		    "text(0.95, 0.5, 'Timer: 5\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0','ver','middle'"
-	    ",'hor','right');port_label('input', 1,'CH1 (A0)')"
+	    Display		    "text(0.95, 0.5, 'Timer: 5\\nPolarity: Active High\\nPeriod (sec) 4e-5\\nTs (sec): 0.01','ver','midd"
+	    "le','hor','right');port_label('input', 1,'CH1 (A0)')"
 	    IconUnits		    "normalized"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
@@ -2495,7 +2495,7 @@ Model {
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
-		Value			"0"
+		Value			"0.01"
 		Evaluate		"off"
 		Tunable			"off"
 		Enabled			"off"
@@ -4673,7 +4673,7 @@ Model {
       outputfuncallstr	      "output_customio(in1,in2,out1,out2,out3,out4,out5,out6);"
       disablefuncallstr	      "disable_customio();"
       sampletime	      "0.001"
-      sampletimestr	      "0"
+      sampletimestr	      "0.001"
       blockid		      "QuadraturEncoder2"
       enablecustomportlabel   on
       incfilestrarray	      "[\"stm32f4_io_customcode.h\"]"
@@ -4846,11 +4846,11 @@ Model {
       profileruart	      "1"
       profilerbaud	      "115200"
       profilertxpin	      "Not used"
-      profilerinitstr	      "0.01,168000000,1680000,115200,0"
+      profilerinitstr	      "0.001,168000000,168000,115200,0"
       manualsetsampletime     off
-      sampletime	      "0.01"
+      sampletime	      "0.001"
       blockid		      "TargetSetup"
-      systickreloadvalue      "1680000"
+      systickreloadvalue      "168000"
       hseval		      "8000000"
       lastprofileruart	      "1"
       hclk		      "168000000"
@@ -4865,7 +4865,7 @@ Model {
       Name		      "USB VCP Receiver STM32F4"
       SID		      "18"
       Ports		      [0, 10]
-      Position		      [20, 240, 185, 705]
+      Position		      [20, 244, 185, 711]
       ZOrder		      -5
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       LibraryVersion	      "1.34"
@@ -4898,7 +4898,7 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      1
-      Points		      [0, -10]
+      Points		      [0, -15]
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
@@ -5055,21 +5055,21 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      7
-      Points		      [270, 0; 0, -105]
+      Points		      [270, 0; 0, -110]
       DstBlock		      "Rate Transition3"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      2
-      Points		      [9, 0; 0, -20]
+      Points		      [9, 0; 0, -25]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      9
-      Points		      [3, 0; 0, -15]
+      Points		      [3, 0; 0, -20]
       DstBlock		      "Data Type Conversion1"
       DstPort		      1
     }
@@ -5168,7 +5168,7 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      8
-      Points		      [12, 0; 0, 120]
+      Points		      [12, 0; 0, 115]
       DstBlock		      "Data Type Conversion3"
       DstPort		      1
     }
@@ -5195,14 +5195,14 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      6
-      Points		      [116, 0; 0, 385]
+      Points		      [116, 0; 0, 380]
       DstBlock		      "Sum"
       DstPort		      2
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      10
-      Points		      [618, 0; 0, -25]
+      Points		      [618, 0; 0, -30]
       DstBlock		      "Rate Transition5"
       DstPort		      1
     }
@@ -5275,21 +5275,21 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      3
-      Points		      [0, -200; 1387, 0; 0, 700]
+      Points		      [0, -205; 1387, 0; 0, 700]
       DstBlock		      "PID Controller"
       DstPort		      3
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      4
-      Points		      [530, 0; 0, 470; 1110, 0]
+      Points		      [530, 0; 0, 465; 1110, 0]
       DstBlock		      "PID Controller"
       DstPort		      4
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      5
-      Points		      [196, 0; 0, 446; 1444, 0]
+      Points		      [196, 0; 0, 441; 1444, 0]
       DstBlock		      "PID Controller"
       DstPort		      5
     }
