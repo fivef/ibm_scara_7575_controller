@@ -94,16 +94,22 @@ void output_customio(boolean_T resetEncoder1,
         int32_T * encoder1_index, 
         int32_T * encoder2_index){
     
+    int16_t current_encoder1_value = 0;
+    int16_t current_encoder2_value = 0;
+    
+    int32_t encoder1_current_position = 0;
+    int32_t encoder2_current_position = 0;
+    
     if(resetEncoder1 == 1) encoder1Reset();
     if(resetEncoder2 == 1) encoder2Reset();
 
     /*important step: interprete the uint16 values from the encoder as int16 values for
     proper adding and substracting*/
-    int16_t current_encoder1_value = TIM_GetCounter2 (ENCL_TIMER);
-    int16_t current_encoder2_value = TIM_GetCounter2 (ENCR_TIMER);
+    current_encoder1_value = TIM_GetCounter2 (ENCL_TIMER);
+    current_encoder2_value = TIM_GetCounter2 (ENCR_TIMER);
     
-    int32_t encoder1_current_position = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION;
-    int32_t encoder2_current_position = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION;  
+    encoder1_current_position = current_encoder1_value + encoder1_index_counter * STEPS_PER_REVOLUTION;
+    encoder2_current_position = current_encoder2_value + encoder2_index_counter * STEPS_PER_REVOLUTION;  
     *encoder1 = encoder1_current_position;
 	*encoder2 = encoder2_current_position;   
     *encoder1_speed = encoder1_current_position - encoder1_sum_old_for_speed;
