@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.147"
+    ComputedModelVersion    "1.153"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [97.0, 1066.0, 1678.0, 1020.0]
+      Location		      [59.0, 1019.0, 1936.0, 1069.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1626.0, 818.0]
+	Extents			[1884.0, 867.0]
 	ZoomFactor		[1.0]
-	Offset			[338.0, 8.0]
+	Offset			[714.15371881552483, 19.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jan 11 15:24:09 2016"
-  RTWModifiedTimeStamp	  374422152
-  ModelVersionFormat	  "1.%<AutoIncrement:147>"
+  LastModifiedDate	  "Mon Jan 25 16:15:02 2016"
+  RTWModifiedTimeStamp	  375638423
+  ModelVersionFormat	  "1.%<AutoIncrement:153>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -863,7 +863,7 @@ Model {
   }
   System {
     Name		    "scara_host"
-    Location		    [97, 1066, 1775, 2086]
+    Location		    [59, 1019, 1995, 2088]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -877,19 +877,19 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "98"
+    SIDHighWatermark	    "103"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "27"
-      Position		      [1615, 105, 1645, 135]
+      Position		      [1640, 175, 1670, 205]
       ZOrder		      14
     }
     Block {
       BlockType		      Constant
       Name		      "Constant1"
       SID		      "29"
-      Position		      [1380, 490, 1410, 520]
+      Position		      [1405, 560, 1435, 590]
       ZOrder		      17
       OutDataTypeStr	      "int32"
     }
@@ -897,14 +897,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant10"
       SID		      "78"
-      Position		      [1315, 345, 1345, 375]
+      Position		      [1340, 415, 1370, 445]
       ZOrder		      254
     }
     Block {
       BlockType		      Constant
       Name		      "Constant2"
       SID		      "34"
-      Position		      [1590, 860, 1620, 890]
+      Position		      [1615, 930, 1645, 960]
       ZOrder		      21
       OutDataTypeStr	      "int32"
     }
@@ -912,7 +912,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant3"
       SID		      "35"
-      Position		      [1590, 805, 1620, 835]
+      Position		      [1615, 875, 1645, 905]
       ZOrder		      22
       Value		      "0"
       OutDataTypeStr	      "int32"
@@ -921,14 +921,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant4"
       SID		      "38"
-      Position		      [1615, 165, 1645, 195]
+      Position		      [1640, 235, 1670, 265]
       ZOrder		      174
     }
     Block {
       BlockType		      Constant
       Name		      "Constant5"
       SID		      "40"
-      Position		      [1380, 565, 1410, 595]
+      Position		      [1405, 635, 1435, 665]
       ZOrder		      176
       OutDataTypeStr	      "int32"
     }
@@ -936,7 +936,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant6"
       SID		      "61"
-      Position		      [1590, 700, 1620, 730]
+      Position		      [1615, 770, 1645, 800]
       ZOrder		      196
       Value		      "0"
       OutDataTypeStr	      "int32"
@@ -945,7 +945,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant7"
       SID		      "62"
-      Position		      [1590, 750, 1620, 780]
+      Position		      [1615, 820, 1645, 850]
       ZOrder		      197
       OutDataTypeStr	      "int32"
     }
@@ -953,14 +953,14 @@ Model {
       BlockType		      Constant
       Name		      "Constant8"
       SID		      "75"
-      Position		      [1315, 210, 1345, 240]
+      Position		      [1340, 280, 1370, 310]
       ZOrder		      250
     }
     Block {
       BlockType		      Constant
       Name		      "Constant9"
       SID		      "76"
-      Position		      [1315, 270, 1345, 300]
+      Position		      [1340, 340, 1370, 370]
       ZOrder		      252
     }
     Block {
@@ -968,7 +968,7 @@ Model {
       Name		      "D\nGain1"
       SID		      "79"
       Ports		      [1, 1]
-      Position		      [1380, 345, 1445, 375]
+      Position		      [1405, 415, 1470, 445]
       ZOrder		      253
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -981,7 +981,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion1"
       SID		      "41"
-      Position		      [1680, 573, 1755, 607]
+      Position		      [1705, 643, 1780, 677]
       ZOrder		      179
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       OutDataTypeStr	      "int32"
@@ -992,7 +992,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion3"
       SID		      "36"
-      Position		      [1680, 498, 1755, 532]
+      Position		      [1705, 568, 1780, 602]
       ZOrder		      171
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       OutDataTypeStr	      "int32"
@@ -1004,7 +1004,7 @@ Model {
       Name		      "Direct Speed set"
       SID		      "25"
       Ports		      [1, 1]
-      Position		      [1695, 102, 1770, 138]
+      Position		      [1720, 172, 1795, 208]
       ZOrder		      12
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1018,7 +1018,7 @@ Model {
       Name		      "Direct Speed set1"
       SID		      "39"
       Ports		      [1, 1]
-      Position		      [1695, 162, 1770, 198]
+      Position		      [1720, 232, 1795, 268]
       ZOrder		      173
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
@@ -1032,7 +1032,7 @@ Model {
       Name		      "Direction"
       SID		      "5"
       Ports		      [1]
-      Position		      [845, 205, 960, 235]
+      Position		      [870, 275, 985, 305]
       ZOrder		      -1
       Format		      "long"
       Decimation	      "1"
@@ -1043,7 +1043,7 @@ Model {
       Name		      "Direction Scope"
       SID		      "21"
       Ports		      [1]
-      Position		      [1040, 204, 1070, 236]
+      Position		      [1065, 274, 1095, 306]
       ZOrder		      8
       Floating		      off
       Location		      [1921, 120, 3601, 1090]
@@ -1076,11 +1076,11 @@ Model {
       Name		      "Floating\nScope"
       SID		      "24"
       Ports		      []
-      Position		      [985, 59, 1015, 91]
+      Position		      [1010, 129, 1040, 161]
       ZOrder		      11
       Floating		      on
       Location		      [1921, 120, 3601, 1090]
-      Open		      off
+      Open		      on
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -1108,10 +1108,10 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace"
       SID		      "56"
-      Position		      [1220, 398, 1285, 422]
+      Position		      [1245, 468, 1310, 492]
       ZOrder		      191
       VariableName	      "wave1"
-      SampleTime	      "0.01"
+      SampleTime	      "0.001"
       Interpolate	      off
       ZeroCross		      on
       OutputAfterFinalValue   "Cyclic repetition"
@@ -1120,7 +1120,7 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace1"
       SID		      "64"
-      Position		      [1420, 703, 1485, 727]
+      Position		      [1445, 773, 1510, 797]
       ZOrder		      199
       VariableName	      "wave2"
       SampleTime	      "0.01"
@@ -1132,16 +1132,16 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Home Axis 1"
       SID		      "60"
-      Position		      [1660, 707, 1690, 743]
+      Position		      [1685, 777, 1715, 813]
       ZOrder		      195
     }
     Block {
       BlockType		      S-Function
-      Name		      "Host Serial Rx"
-      SID		      "97"
-      Ports		      [0, 15]
-      Position		      [350, 130, 520, 930]
-      ZOrder		      271
+      Name		      "Host Serial Rx1"
+      SID		      "102"
+      Ports		      [0, 18]
+      Position		      [235, 31, 400, 1004]
+      ZOrder		      276
       Priority		      "1"
       FunctionName	      "amg_usbconverter_n_serial"
       Parameters	      "configuration,port,transfer,baudrate,stopbit,inputtype,outputtype,binheaderarray,binterminator"
@@ -1155,12 +1155,13 @@ Model {
 	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
 	Initialization		"amg_usbconverter_n_serial_callback('init');"
 	SelfModifiable		"on"
-	Display			"text(0.05, 0.5, 'Obsolete !!!\\nPort: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.005','ver',"
-	"'middle','hor','left');port_label('output', 1,'double');port_label('output', 2,'int32');port_label('output', 3,'int32"
-	"');port_label('output', 4,'int32');port_label('output', 5,'int32');port_label('output', 6,'int32');port_label('output"
-	"', 7,'int32');port_label('output', 8,'int32');port_label('output', 9,'int32');port_label('output', 10,'int32');port_l"
-	"abel('output', 11,'int32');port_label('output', 12,'int32');port_label('output', 13,'int32');port_label('output', 14,"
-	"'int32');port_label('output', 15,'int32');"
+	Display			"text(0.05, 0.5, 'Obsolete !!!\\nPort: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.001','ver',"
+	"'middle','hor','left');port_label('output', 1,'double');port_label('output', 2,'double');port_label('output', 3,'doub"
+	"le');port_label('output', 4,'double');port_label('output', 5,'int32');port_label('output', 6,'int32');port_label('out"
+	"put', 7,'int32');port_label('output', 8,'int32');port_label('output', 9,'int32');port_label('output', 10,'int32');por"
+	"t_label('output', 11,'int32');port_label('output', 12,'int32');port_label('output', 13,'int32');port_label('output', "
+	"14,'int32');port_label('output', 15,'int32');port_label('output', 16,'int32');port_label('output', 17,'int32');port_l"
+	"abel('output', 18,'int32');"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -1402,7 +1403,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "porttype_double"
 	    Prompt		    "Number of data port, type DOUBLE"
-	    Value		    "1"
+	    Value		    "4"
 	    Tunable		    "off"
 	    Callback		    "amg_usbconverter_n_serial_callback('porttype');"
 	  }
@@ -1532,7 +1533,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "outputtype"
 	    Prompt		    "Output data type"
-	    Value		    "[15  0 6 6 6 6 6 6 6 6 6 6 6 6 6 6]"
+	    Value		    "[18  0 0 0 0 6 6 6 6 6 6 6 6 6 6 6 6 6 6]"
 	    Tunable		    "off"
 	    Visible		    "off"
 	  }
@@ -1559,7 +1560,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "bindatalength"
 	    Prompt		    "Binary data length"
-	    Value		    "64"
+	    Value		    "88"
 	    Tunable		    "off"
 	    Visible		    "off"
 	  }
@@ -1586,7 +1587,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "sampletime"
 	    Prompt		    "Sample time (sec)"
-	    Value		    "0.005"
+	    Value		    "0.001"
 	    Tunable		    "off"
 	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
 	  }
@@ -1607,7 +1608,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "blockid"
 	    Prompt		    "BlockID"
-	    Value		    "HostSerialRx"
+	    Value		    "HostSerialRx1"
 	    Evaluate		    "off"
 	    Tunable		    "off"
 	    Enabled		    "off"
@@ -1623,7 +1624,7 @@ Model {
       Name		      "Host Serial Setup"
       SID		      "96"
       Ports		      []
-      Position		      [350, 20, 505, 100]
+      Position		      [20, 35, 175, 115]
       ZOrder		      270
       Priority		      "1"
       FunctionName	      "amg_usbconverter_n_serial"
@@ -2109,7 +2110,7 @@ Model {
       Name		      "Host Serial Tx2"
       SID		      "98"
       Ports		      [10]
-      Position		      [2385, 63, 2545, 822]
+      Position		      [2410, 133, 2570, 892]
       ZOrder		      272
       Priority		      "1"
       FunctionName	      "amg_usbconverter_n_serial"
@@ -2124,10 +2125,10 @@ Model {
 	Help			"web(fullfile(waijungdocroot,'amg_usbconverter_n_uart.htm'), '-browser')"
 	Initialization		"amg_usbconverter_n_serial_callback('init');"
 	SelfModifiable		"on"
-	Display			"text(0.95, 0.5, 'Port: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.1','ver','middle','hor','r"
-	"ight');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'double');port_label('in"
-	"put', 4,'double');port_label('input', 5,'double');port_label('input', 6,'int32');port_label('input', 7,'int32');port_"
-	"label('input', 8,'int32');port_label('input', 9,'int32');port_label('input', 10,'int32');"
+	Display			"text(0.95, 0.5, 'Port: COM6\\nPacket: Binary\\nTransfer: Blocking\\nTs (sec): 0.001','ver','middle','hor',"
+	"'right');port_label('input', 1,'double');port_label('input', 2,'double');port_label('input', 3,'double');port_label('"
+	"input', 4,'double');port_label('input', 5,'double');port_label('input', 6,'int32');port_label('input', 7,'int32');por"
+	"t_label('input', 8,'int32');port_label('input', 9,'int32');port_label('input', 10,'int32');"
 	IconUnits		"normalized"
 	Array {
 	  Type			  "Simulink.MaskParameter"
@@ -2554,7 +2555,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "sampletime"
 	    Prompt		    "Sample time (sec)"
-	    Value		    "0.1"
+	    Value		    "0.001"
 	    Tunable		    "off"
 	    Callback		    "amg_usbconverter_n_serial_callback('sampletime');"
 	  }
@@ -2591,43 +2592,41 @@ Model {
       Name		      "I\nGain1"
       SID		      "77"
       Ports		      [1, 1]
-      Position		      [1380, 270, 1445, 300]
+      Position		      [1405, 340, 1470, 370]
       ZOrder		      251
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "0"
-      gain		      "0.003"
+      gain		      "0"
       high		      "0.1"
     }
     Block {
       BlockType		      ManualSwitch
       Name		      "Manual Switch"
       SID		      "32"
-      Position		      [1565, 497, 1595, 533]
+      Position		      [1590, 567, 1620, 603]
       ZOrder		      19
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
       Name		      "Manual Switch1"
       SID		      "42"
-      Position		      [1565, 572, 1595, 608]
+      Position		      [1590, 642, 1620, 678]
       ZOrder		      178
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      Reference
       Name		      "P\nGain"
       SID		      "74"
       Ports		      [1, 1]
-      Position		      [1380, 210, 1445, 240]
+      Position		      [1405, 280, 1470, 310]
       ZOrder		      249
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
-      low		      "0.0001"
-      gain		      "0.003"
+      low		      "1e-05"
+      gain		      "0.0001"
       high		      "1"
     }
     Block {
@@ -2635,7 +2634,7 @@ Model {
       Name		      "PID output"
       SID		      "23"
       Ports		      [1]
-      Position		      [845, 149, 960, 181]
+      Position		      [870, 219, 985, 251]
       ZOrder		      9
       Format		      "long"
       Decimation	      "1"
@@ -2646,7 +2645,7 @@ Model {
       Name		      "Pos Counter"
       SID		      "4"
       Ports		      [1]
-      Position		      [845, 260, 960, 290]
+      Position		      [870, 330, 985, 360]
       ZOrder		      -1
       Format		      "bank"
       Decimation	      "1"
@@ -2657,7 +2656,7 @@ Model {
       Name		      "Pos Counter1"
       SID		      "46"
       Ports		      [1]
-      Position		      [845, 426, 960, 454]
+      Position		      [870, 496, 985, 524]
       ZOrder		      181
       Format		      "bank"
       Decimation	      "1"
@@ -2668,11 +2667,11 @@ Model {
       Name		      "Pos Scope"
       SID		      "14"
       Ports		      [7]
-      Position		      [1050, 262, 1080, 298]
+      Position		      [1075, 332, 1105, 368]
       ZOrder		      -16
       Floating		      off
-      Location		      [501, 192, 1762, 1145]
-      Open		      off
+      Location		      [2548, 78, 3809, 2053]
+      Open		      on
       NumInputPorts	      "7"
       List {
 	ListType		AxesTitles
@@ -2695,11 +2694,11 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      LegendLocations	      "0.86783     0.94019     0.11261    0.021336\n0.86783     0.80378     0.11261    0.021336\n"
-      "0.86783     0.66842     0.11261    0.021336\n0.86783     0.53305     0.11261    0.021336\n0.86783     0.39769   "
-      "  0.11261    0.021336\n0.86307     0.26128     0.11737    0.021336\n0.86783     0.12592     0.10785    0.021336"
-      YMin		      "-2500~-12.5~-8000~-1~-200~-5~-17500"
-      YMax		      "12500~12.5~1000~1~200~5~0"
+      LegendLocations	      "0.86783     0.94791     0.15279    0.014402\n0.86783      0.8115     0.15279    0.014402\n"
+      "0.86783     0.67614     0.15279    0.014402\n0.86783     0.54077     0.15279    0.014402\n0.86783     0.40541   "
+      "  0.15993    0.014402\n0.86307       0.269     0.15993    0.014402\n0.86783     0.13364     0.14803    0.014402"
+      YMin		      "2500~-70~-5000~-1~-200~-5~-17500"
+      YMax		      "22500~80~5000~1~200~5~0"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
@@ -2709,7 +2708,7 @@ Model {
       Name		      "Pos Scope2"
       SID		      "57"
       Ports		      [5]
-      Position		      [1040, 468, 1070, 502]
+      Position		      [1065, 538, 1095, 572]
       ZOrder		      192
       Floating		      off
       Location		      [249, 157, 1911, 1109]
@@ -2749,16 +2748,16 @@ Model {
       Name		      "Position"
       SID		      "63"
       Ports		      []
-      Position		      [1150, 239, 1180, 271]
+      Position		      [1175, 309, 1205, 341]
       ZOrder		      198
       List {
 	ListType		IOSignalStrings
-	set0ParseKeys		"17,18"
-	set0Sigs		"From Workspace:o1From Workspace1:o1"
+	set0ParseKeys		"18,18,17"
+	set0Sigs		"Host Serial Rx1:o5Host Serial Rx1:o6From Workspace:o1"
       }
       Floating		      on
-      Location		      [144, 106, 1824, 1076]
-      Open		      off
+      Location		      [1697, 644, 3377, 1614]
+      Open		      on
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -2776,7 +2775,7 @@ Model {
       }
       ShowLegends	      off
       TimeRange		      "20"
-      YMin		      "-30000"
+      YMin		      "-10000"
       YMax		      "22500"
       SaveName		      "ScopeData2"
       DataFormat	      "StructureWithTime"
@@ -2787,7 +2786,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Position Reset"
       SID		      "33"
-      Position		      [1700, 832, 1730, 868]
+      Position		      [1725, 902, 1755, 938]
       ZOrder		      20
     }
     Block {
@@ -2795,13 +2794,13 @@ Model {
       Name		      "Position Setpoint"
       SID		      "30"
       Ports		      [1, 1]
-      Position		      [1425, 487, 1500, 523]
+      Position		      [1450, 557, 1525, 593]
       ZOrder		      16
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-10000"
-      gain		      "0"
+      gain		      "7695.86"
       high		      "10000"
     }
     Block {
@@ -2809,20 +2808,20 @@ Model {
       Name		      "Position Setpoint1"
       SID		      "43"
       Ports		      [1, 1]
-      Position		      [1425, 562, 1500, 598]
+      Position		      [1450, 632, 1525, 668]
       ZOrder		      175
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-10000"
-      gain		      "0"
+      gain		      "0.1"
       high		      "10000"
     }
     Block {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "66"
-      Position		      [1515, 669, 1555, 711]
+      Position		      [1540, 739, 1580, 781]
       ZOrder		      241
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -2832,7 +2831,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition2"
       SID		      "67"
-      Position		      [1340, 419, 1380, 461]
+      Position		      [1365, 489, 1405, 531]
       ZOrder		      242
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -2842,7 +2841,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition3"
       SID		      "68"
-      Position		      [1070, 584, 1110, 626]
+      Position		      [1095, 654, 1135, 696]
       ZOrder		      243
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -2853,7 +2852,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition4"
       SID		      "73"
-      Position		      [1290, 914, 1330, 956]
+      Position		      [1315, 984, 1355, 1026]
       ZOrder		      248
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTimeOpt    "Inherit"
@@ -2864,7 +2863,7 @@ Model {
       Name		      "Speed"
       SID		      "3"
       Ports		      [1]
-      Position		      [845, 316, 960, 344]
+      Position		      [870, 386, 985, 414]
       ZOrder		      -1
       Format		      "long"
       Decimation	      "1"
@@ -2875,7 +2874,7 @@ Model {
       Name		      "Speed1"
       SID		      "48"
       Ports		      [1]
-      Position		      [845, 481, 960, 509]
+      Position		      [870, 551, 985, 579]
       ZOrder		      182
       Format		      "long"
       Decimation	      "1"
@@ -2885,7 +2884,7 @@ Model {
       BlockType		      Step
       Name		      "Step"
       SID		      "31"
-      Position		      [1175, 470, 1330, 540]
+      Position		      [1200, 540, 1355, 610]
       ZOrder		      18
       After		      "10000"
       SampleTime	      "0.001"
@@ -2894,61 +2893,17 @@ Model {
       BlockType		      Step
       Name		      "Step1"
       SID		      "44"
-      Position		      [1175, 570, 1330, 640]
+      Position		      [1200, 640, 1355, 710]
       ZOrder		      177
       After		      "1000"
       SampleTime	      "0.001"
     }
     Block {
       BlockType		      Display
-      Name		      "error"
-      SID		      "19"
-      Ports		      [1]
-      Position		      [845, 371, 960, 399]
-      ZOrder		      6
-      Format		      "bank"
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "error1"
-      SID		      "50"
-      Ports		      [1]
-      Position		      [845, 537, 960, 563]
-      ZOrder		      184
-      Format		      "bank"
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "index"
-      SID		      "58"
-      Ports		      [1]
-      Position		      [845, 592, 960, 618]
-      ZOrder		      193
-      Format		      "bank"
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "index1"
-      SID		      "59"
-      Ports		      [1]
-      Position		      [845, 647, 960, 673]
-      ZOrder		      194
-      Format		      "bank"
-      Decimation	      "1"
-      Lockdown		      off
-    }
-    Block {
-      BlockType		      Display
-      Name		      "siine"
+      Name		      "board temp"
       SID		      "53"
       Ports		      [1]
-      Position		      [785, 870, 900, 890]
+      Position		      [755, 85, 870, 105]
       ZOrder		      187
       Format		      "bank"
       Decimation	      "1"
@@ -2956,13 +2911,13 @@ Model {
     }
     Block {
       BlockType		      Scope
-      Name		      "sine"
+      Name		      "board temp plot"
       SID		      "52"
       Ports		      [1]
-      Position		      [940, 864, 970, 896]
+      Position		      [910, 79, 940, 111]
       ZOrder		      188
       Floating		      off
-      Location		      [235, 120, 1915, 1090]
+      Location		      [1978, 90, 3658, 1060]
       Open		      off
       NumInputPorts	      "1"
       ZoomMode		      "xonly"
@@ -2989,10 +2944,100 @@ Model {
       LimitDataPoints	      off
       SampleTime	      "0.01"
     }
+    Block {
+      BlockType		      Display
+      Name		      "error"
+      SID		      "19"
+      Ports		      [1]
+      Position		      [870, 441, 985, 469]
+      ZOrder		      6
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "error1"
+      SID		      "50"
+      Ports		      [1]
+      Position		      [870, 607, 985, 633]
+      ZOrder		      184
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "index"
+      SID		      "58"
+      Ports		      [1]
+      Position		      [870, 662, 985, 688]
+      ZOrder		      193
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "index1"
+      SID		      "59"
+      Ports		      [1]
+      Position		      [870, 717, 985, 743]
+      ZOrder		      194
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "motor current"
+      SID		      "99"
+      Ports		      [1]
+      Position		      [755, 25, 870, 45]
+      ZOrder		      273
+      Format		      "bank"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "motor current plot"
+      SID		      "100"
+      Ports		      [1]
+      Position		      [910, 19, 940, 51]
+      ZOrder		      274
+      Floating		      off
+      Location		      [235, 120, 1915, 1090]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "5"
+      YMin		      "0"
+      YMax		      "4000"
+      SaveName		      "ScopeData4"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0.01"
+    }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      2
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      5
+      Points		      [450, 0]
       Branch {
 	DstBlock		"Direction"
 	DstPort			1
@@ -3004,9 +3049,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      4
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      7
+      Points		      [450, 0]
       Branch {
 	DstBlock		"Speed"
 	DstPort			1
@@ -3018,9 +3063,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      3
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      6
+      Points		      [450, 0]
       Branch {
 	DstBlock		"Pos Counter"
 	DstPort			1
@@ -3032,9 +3077,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      5
-      Points		      [305, 0; 0, 1]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      8
+      Points		      [450, 0; 0, 1]
       Branch {
 	DstBlock		"error"
 	DstPort			1
@@ -3046,9 +3091,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      1
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      4
+      Points		      [450, 0]
       Branch {
 	DstBlock		"PID output"
 	DstPort			1
@@ -3174,9 +3219,9 @@ Model {
       DstPort		      7
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      7
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      10
+      Points		      [450, 0]
       Branch {
 	DstBlock		"Speed1"
 	DstPort			1
@@ -3188,9 +3233,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      6
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      9
+      Points		      [450, 0]
       Branch {
 	DstBlock		"Pos Counter1"
 	DstPort			1
@@ -3202,9 +3247,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      8
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      11
+      Points		      [450, 0]
       Branch {
 	DstBlock		"error1"
 	DstPort			1
@@ -3216,17 +3261,17 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      14
-      Points		      [242, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      2
+      Points		      [313, 0]
       Branch {
-	Points			[0, -5; 158, 0]
-	DstBlock		"sine"
+	Points			[0, 27; 170, 0; 0, -37]
+	DstBlock		"board temp plot"
 	DstPort			1
       }
       Branch {
-	Points			[0, 20]
-	DstBlock		"siine"
+	Points			[0, -10]
+	DstBlock		"board temp"
 	DstPort			1
       }
     }
@@ -3238,9 +3283,9 @@ Model {
       DstPort		      8
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      9
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      12
+      Points		      [450, 0]
       Branch {
 	DstBlock		"index"
 	DstPort			1
@@ -3252,9 +3297,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      10
-      Points		      [305, 0]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      13
+      Points		      [450, 0]
       Branch {
 	DstBlock		"index1"
 	DstPort			1
@@ -3279,9 +3324,9 @@ Model {
       DstPort		      2
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      11
-      Points		      [451, 0; 0, -405]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      14
+      Points		      [614, 0; 0, -405]
       DstBlock		      "Pos Scope"
       DstPort		      6
     }
@@ -3321,9 +3366,9 @@ Model {
       DstPort		      7
     }
     Line {
-      SrcBlock		      "Host Serial Rx"
-      SrcPort		      15
-      Points		      [380, 0; 0, 20]
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      18
+      Points		      [452, 0; 0, 20]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
@@ -3372,6 +3417,21 @@ Model {
       Points		      [259, 0; 0, 45]
       DstBlock		      "Host Serial Tx2"
       DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Host Serial Rx1"
+      SrcPort		      1
+      Points		      [70, 0; 0, -1; 244, 0]
+      Branch {
+	Points			[0, 22; 161, 0; 0, -36]
+	DstBlock		"motor current plot"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -14]
+	DstBlock		"motor current"
+	DstPort			1
+      }
     }
   }
 }

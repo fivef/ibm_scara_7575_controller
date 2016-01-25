@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.349"
+    ComputedModelVersion    "1.369"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -60,28 +60,16 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1884.0, 863.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [237.68652277776982, 37.855299270737191]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "256"
-	  Extents		  [1946.0, 1113.0]
-	  ZoomFactor		  [1.7499999999999993]
-	  Offset		  [0.0, 4.5474735088646412e-13]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1884.0, 867.0]
+	ZoomFactor		[1.25]
+	Offset			[1125.6661546610524, 709.3630092883443]
       }
     }
   }
@@ -91,9 +79,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jan 11 15:24:07 2016"
-  RTWModifiedTimeStamp	  374426579
-  ModelVersionFormat	  "1.%<AutoIncrement:349>"
+  LastModifiedDate	  "Mon Jan 25 16:14:56 2016"
+  RTWModifiedTimeStamp	  375638226
+  ModelVersionFormat	  "1.%<AutoIncrement:369>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -128,7 +116,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "test"
     signals_		    []
@@ -188,13 +176,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      8
       Version		      "1.13.0"
       Array {
 	Type			"Handle"
 	Dimension		11
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  9
 	  Version		  "1.13.0"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
@@ -229,7 +217,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.13.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -261,7 +249,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.13.0"
 	  BlockReduction	  on
 	  BooleanDataType	  on
@@ -304,7 +292,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.13.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -394,7 +382,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.13.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -435,7 +423,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.13.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -450,7 +438,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.13.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -465,7 +453,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.13.0"
 	  SystemTargetFile	  "stm32f4.tlc"
 	  GenCodeOnly		  off
@@ -517,7 +505,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      17
 	      Version		      "1.13.0"
 	      ForceParamTrailComments off
 	      GenerateComments	      on
@@ -558,7 +546,7 @@ Model {
 	    }
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      18
 	      Version		      "1.13.0"
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
@@ -609,7 +597,7 @@ Model {
 		Dimension		1
 		Simulink.ERTTargetCC {
 		  $BackupClass		  "Simulink.TargetCC"
-		  $ObjectID		  20
+		  $ObjectID		  19
 		  Version		  "1.13.0"
 		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
 		  TargetLibSuffix	  ""
@@ -724,7 +712,7 @@ Model {
 	  }
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  21
+	  $ObjectID		  20
 	  Version		  "1.13.0"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -737,7 +725,7 @@ Model {
 	  HDLCActiveTab		  "0"
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  22
+	  $ObjectID		  21
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -749,7 +737,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    MECH.SimMechanicsCC {
-	      $ObjectID		      23
+	      $ObjectID		      22
 	      Version		      "1.13.0"
 	      Name		      "SimMechanics"
 	      WarnOnRedundantConstraints on
@@ -782,14 +770,14 @@ Model {
 	      OVRRIDBodyVisualizationType "NONE"
 	    }
 	    simmechanics.ConfigurationSet {
-	      $ObjectID		      24
+	      $ObjectID		      23
 	      Version		      "1.13.0"
 	      Description	      "SimMechanics 2G"
 	      Array {
 		Type			"Handle"
 		Dimension		2
 		simmechanics.DiagnosticsConfigSet {
-		  $ObjectID		  25
+		  $ObjectID		  24
 		  Version		  "1.13.0"
 		  Description		  "Diagnostics"
 		  Name			  "DiagnosticsConfigSet"
@@ -803,7 +791,7 @@ Model {
 		  SimMechanicsJointTargetOverSpecification "error"
 		}
 		simmechanics.ExplorerConfigSet {
-		  $ObjectID		  26
+		  $ObjectID		  25
 		  Version		  "1.13.0"
 		  Description		  "Explorer"
 		  Name			  "ExplorerConfigSet"
@@ -828,7 +816,7 @@ Model {
 	}
 	DES.SimEventsCC {
 	  $BackupClass		  "Simulink.CustomCC"
-	  $ObjectID		  27
+	  $ObjectID		  26
 	  Version		  "1.13.0"
 	  Name			  "SimEvents"
 	  SimEventsActiveTab	  "0"
@@ -854,11 +842,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    9
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    28
+    $ObjectID		    27
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -978,17 +966,6 @@ Model {
       SampleTime	      "-1"
       StateMustResolveToSignalObject off
       CodeGenStateStorageClass "Auto"
-    }
-    Block {
-      BlockType		      DiscretePulseGenerator
-      PulseType		      "Sample based"
-      TimeSource	      "Use simulation time"
-      Amplitude		      "1"
-      Period		      "2"
-      PulseWidth	      "1"
-      PhaseDelay	      "0"
-      SampleTime	      "1"
-      VectorParams1D	      on
     }
     Block {
       BlockType		      EnablePort
@@ -1215,15 +1192,15 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "601"
+    SIDHighWatermark	    "603"
     Block {
       BlockType		      Reference
       Name		      "Compare\nTo Constant"
       SID		      "383"
       Ports		      [1, 1]
-      Position		      [2260, 770, 2290, 800]
+      Position		      [2415, 855, 2445, 885]
       ZOrder		      170
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
@@ -1238,7 +1215,7 @@ Model {
       Name		      "Compare\nTo Constant1"
       SID		      "419"
       Ports		      [1, 1]
-      Position		      [2295, 1240, 2325, 1270]
+      Position		      [2450, 1325, 2480, 1355]
       ZOrder		      179
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
@@ -1252,7 +1229,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "508"
-      Position		      [2350, 820, 2380, 850]
+      Position		      [2510, 855, 2540, 885]
       ZOrder		      210
       Value		      "0.2"
     }
@@ -1260,7 +1237,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant2"
       SID		      "587"
-      Position		      [2390, 1225, 2420, 1255]
+      Position		      [2545, 1320, 2575, 1350]
       ZOrder		      255
       Value		      "0.2"
     }
@@ -1268,7 +1245,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion1"
       SID		      "375"
-      Position		      [530, 598, 605, 632]
+      Position		      [695, 688, 770, 722]
       ZOrder		      182
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "boolean"
@@ -1279,7 +1256,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion2"
       SID		      "533"
-      Position		      [1385, 568, 1460, 602]
+      Position		      [1505, 613, 1580, 647]
       ZOrder		      232
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "int32"
@@ -1290,7 +1267,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion3"
       SID		      "506"
-      Position		      [595, 688, 670, 722]
+      Position		      [695, 643, 770, 677]
       ZOrder		      208
       ForegroundColor	      "[0.380392, 0.741176, 0.988235]"
       OutDataTypeStr	      "boolean"
@@ -1301,7 +1278,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion4"
       SID		      "421"
-      Position		      [1880, 1263, 1955, 1297]
+      Position		      [2030, 1373, 2105, 1407]
       ZOrder		      176
       OutDataTypeStr	      "double"
       RndMeth		      "Floor"
@@ -1311,7 +1288,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion7"
       SID		      "491"
-      Position		      [1725, 788, 1800, 822]
+      Position		      [1890, 893, 1965, 927]
       ZOrder		      199
       OutDataTypeStr	      "double"
       RndMeth		      "Floor"
@@ -1322,7 +1299,7 @@ Model {
       Name		      "Enabled\nSubsystem"
       SID		      "534"
       Ports		      [1, 1, 1]
-      Position		      [1045, 739, 1145, 781]
+      Position		      [1210, 819, 1310, 861]
       ZOrder		      233
       TreatAsAtomicUnit	      on
       MinAlgLoopOccurrences   off
@@ -1334,7 +1311,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Enabled\nSubsystem"
-	Location		[26, 16, 1882, 1149]
+	Location		[1912, 1061, 3848, 2130]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1506,170 +1483,13 @@ Model {
       }
     }
     Block {
-      BlockType		      SubSystem
-      Name		      "Enabled\nSubsystem1"
-      SID		      "567"
-      Ports		      [1, 1, 1]
-      Position		      [815, 1164, 915, 1206]
-      ZOrder		      249
-      TreatAsAtomicUnit	      on
-      MinAlgLoopOccurrences   off
-      PropExecContextOutsideSubsystem off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      Opaque		      off
-      RequestExecContextInheritance off
-      MaskHideContents	      off
-      System {
-	Name			"Enabled\nSubsystem1"
-	Location		[50, 12, 1906, 1145]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "In1"
-	  SID			  "568"
-	  Position		  [110, 103, 140, 117]
-	  ZOrder		  -1
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  EnablePort
-	  Name			  "Enable"
-	  SID			  "569"
-	  Ports			  []
-	  Position		  [235, 20, 255, 40]
-	  ZOrder		  -2
-	}
-	Block {
-	  BlockType		  DiscretePulseGenerator
-	  Name			  "Pulse\nGenerator"
-	  SID			  "566"
-	  Ports			  [0, 1]
-	  Position		  [230, 144, 260, 176]
-	  ZOrder		  249
-	  Period		  "1"
-	  SampleTime		  "0.001"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  SID			  "570"
-	  Position		  [360, 103, 390, 117]
-	  ZOrder		  -3
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  SrcBlock		  "Pulse\nGenerator"
-	  SrcPort		  1
-	  Points		  [45, 0; 0, -50]
-	  DstBlock		  "Out1"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "Enabled\nSubsystem2"
-      SID		      "591"
-      Ports		      [1, 1, 1]
-      Position		      [815, 1004, 915, 1046]
-      ZOrder		      258
-      TreatAsAtomicUnit	      on
-      MinAlgLoopOccurrences   off
-      PropExecContextOutsideSubsystem off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      Opaque		      off
-      RequestExecContextInheritance off
-      MaskHideContents	      off
-      System {
-	Name			"Enabled\nSubsystem2"
-	Location		[50, 12, 1906, 1145]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "In1"
-	  SID			  "592"
-	  Position		  [110, 103, 140, 117]
-	  ZOrder		  -1
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  EnablePort
-	  Name			  "Enable"
-	  SID			  "593"
-	  Ports			  []
-	  Position		  [235, 20, 255, 40]
-	  ZOrder		  -2
-	}
-	Block {
-	  BlockType		  DiscretePulseGenerator
-	  Name			  "Pulse\nGenerator"
-	  SID			  "594"
-	  Ports			  [0, 1]
-	  Position		  [230, 144, 260, 176]
-	  ZOrder		  249
-	  Period		  "1"
-	  SampleTime		  "0.001"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  SID			  "595"
-	  Position		  [360, 103, 390, 117]
-	  ZOrder		  -3
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  SrcBlock		  "Pulse\nGenerator"
-	  SrcPort		  1
-	  Points		  [45, 0; 0, -50]
-	  DstBlock		  "Out1"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
       BlockType		      Logic
       Name		      "Logical\nOperator"
       SID		      "502"
       Ports		      [2, 1]
-      Position		      [900, 407, 930, 438]
+      Position		      [1065, 487, 1095, 518]
       ZOrder		      204
       Operator		      "OR"
-      AllPortsSameDT	      off
-      OutDataTypeStr	      "boolean"
-    }
-    Block {
-      BlockType		      Logic
-      Name		      "Logical\nOperator1"
-      SID		      "600"
-      Ports		      [1, 1]
-      Position		      [815, 919, 845, 951]
-      ZOrder		      263
-      Operator		      "NOT"
       AllPortsSameDT	      off
       OutDataTypeStr	      "boolean"
     }
@@ -1678,7 +1498,7 @@ Model {
       Name		      "Motor 1"
       SID		      "256"
       Ports		      [1]
-      Position		      [2420, 884, 2535, 926]
+      Position		      [2615, 1369, 2730, 1411]
       ZOrder		      154
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -1689,8 +1509,8 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 1"
-	Location		[1648, 649, 3646, 1968]
-	Open			on
+	Location		[1912, 1061, 3848, 2130]
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1745,7 +1565,7 @@ Model {
 	  EnableBusSupport	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    29
+	    $ObjectID		    28
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "stm32f4_basicpwm"
 	    Description		    "This block implements basic Edge-aligned Pulse Width Modulation (PWM) generation.\nAll timers a"
@@ -1760,7 +1580,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      22
 	      Object {
-		$ObjectID		30
+		$ObjectID		29
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1787,7 +1607,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('timer');"
 	      }
 	      Object {
-		$ObjectID		31
+		$ObjectID		30
 		Type			"edit"
 		Name			"pwmperiod"
 		Prompt			"PWM Period (seconds)"
@@ -1796,7 +1616,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('pwmperiod');"
 	      }
 	      Object {
-		$ObjectID		32
+		$ObjectID		31
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1813,7 +1633,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('polarity');"
 	      }
 	      Object {
-		$ObjectID		33
+		$ObjectID		32
 		Type			"edit"
 		Name			"polaritystr"
 		Prompt			"Polaritystr"
@@ -1824,7 +1644,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		34
+		$ObjectID		33
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1843,7 +1663,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch1pin');"
 	      }
 	      Object {
-		$ObjectID		35
+		$ObjectID		34
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1862,7 +1682,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch2pin');"
 	      }
 	      Object {
-		$ObjectID		36
+		$ObjectID		35
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1880,7 +1700,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch3pin');"
 	      }
 	      Object {
-		$ObjectID		37
+		$ObjectID		36
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -1898,7 +1718,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch4pin');"
 	      }
 	      Object {
-		$ObjectID		38
+		$ObjectID		37
 		Type			"edit"
 		Name			"sampletime"
 		Prompt			"Sample time (sec)"
@@ -1907,7 +1727,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('sampletime');"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		38
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
@@ -1919,7 +1739,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('sampletimestr');"
 	      }
 	      Object {
-		$ObjectID		40
+		$ObjectID		39
 		Type			"edit"
 		Name			"blockid"
 		Prompt			"BlockID"
@@ -1931,7 +1751,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('blockid');"
 	      }
 	      Object {
-		$ObjectID		41
+		$ObjectID		40
 		Type			"edit"
 		Name			"portpinstr"
 		Prompt			"Port pin string"
@@ -1941,7 +1761,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		42
+		$ObjectID		41
 		Type			"checkbox"
 		Name			"enablecustomportlabel"
 		Prompt			"Enable custom port labels"
@@ -1950,7 +1770,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('enablecustomportlabel');"
 	      }
 	      Object {
-		$ObjectID		43
+		$ObjectID		42
 		Type			"edit"
 		Name			"cinputportlabel"
 		Prompt			"Custom input port labels (Ex. In1, In2, In3)"
@@ -1960,7 +1780,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		44
+		$ObjectID		43
 		Type			"edit"
 		Name			"coutputportlabel"
 		Prompt			"Custom output port labels (Ex. Out1, Out2, Out3)"
@@ -1970,7 +1790,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		45
+		$ObjectID		44
 		Type			"edit"
 		Name			"apb"
 		Prompt			"APB"
@@ -1980,7 +1800,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		46
+		$ObjectID		45
 		Type			"edit"
 		Name			"portstr"
 		Prompt			"Port string"
@@ -1991,7 +1811,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		47
+		$ObjectID		46
 		Type			"edit"
 		Name			"pinstr"
 		Prompt			"Pin string"
@@ -2002,7 +1822,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		48
+		$ObjectID		47
 		Type			"edit"
 		Name			"pinmat"
 		Prompt			"Pin matrix"
@@ -2012,7 +1832,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		49
+		$ObjectID		48
 		Type			"edit"
 		Name			"timarr"
 		Prompt			"Timer ARR"
@@ -2023,7 +1843,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		50
+		$ObjectID		49
 		Type			"edit"
 		Name			"timprescale"
 		Prompt			"Timer PRESCALE"
@@ -2034,7 +1854,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		51
+		$ObjectID		50
 		Type			"edit"
 		Name			"chmat"
 		Prompt			"Channel order"
@@ -2268,7 +2088,7 @@ Model {
       Name		      "Motor 2"
       SID		      "422"
       Ports		      [1]
-      Position		      [2480, 1289, 2595, 1331]
+      Position		      [2580, 899, 2695, 941]
       ZOrder		      173
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -2279,7 +2099,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Motor 2"
-	Location		[50, 12, 1906, 1145]
+	Location		[1687, 999, 3623, 2068]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -2335,7 +2155,7 @@ Model {
 	  EnableBusSupport	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    52
+	    $ObjectID		    51
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "stm32f4_basicpwm"
 	    Description		    "This block implements basic Edge-aligned Pulse Width Modulation (PWM) generation.\nAll timers a"
@@ -2350,7 +2170,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      22
 	      Object {
-		$ObjectID		53
+		$ObjectID		52
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2377,7 +2197,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('timer');"
 	      }
 	      Object {
-		$ObjectID		54
+		$ObjectID		53
 		Type			"edit"
 		Name			"pwmperiod"
 		Prompt			"PWM Period (seconds)"
@@ -2386,7 +2206,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('pwmperiod');"
 	      }
 	      Object {
-		$ObjectID		55
+		$ObjectID		54
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2403,7 +2223,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('polarity');"
 	      }
 	      Object {
-		$ObjectID		56
+		$ObjectID		55
 		Type			"edit"
 		Name			"polaritystr"
 		Prompt			"Polaritystr"
@@ -2414,7 +2234,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		57
+		$ObjectID		56
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2431,7 +2251,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch1pin');"
 	      }
 	      Object {
-		$ObjectID		58
+		$ObjectID		57
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2448,7 +2268,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch2pin');"
 	      }
 	      Object {
-		$ObjectID		59
+		$ObjectID		58
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2465,7 +2285,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch3pin');"
 	      }
 	      Object {
-		$ObjectID		60
+		$ObjectID		59
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -2482,7 +2302,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('ch4pin');"
 	      }
 	      Object {
-		$ObjectID		61
+		$ObjectID		60
 		Type			"edit"
 		Name			"sampletime"
 		Prompt			"Sample time (sec)"
@@ -2491,7 +2311,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('sampletime');"
 	      }
 	      Object {
-		$ObjectID		62
+		$ObjectID		61
 		Type			"edit"
 		Name			"sampletimestr"
 		Prompt			"Compiled sample time (sec) in string"
@@ -2503,7 +2323,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('sampletimestr');"
 	      }
 	      Object {
-		$ObjectID		63
+		$ObjectID		62
 		Type			"edit"
 		Name			"blockid"
 		Prompt			"BlockID"
@@ -2515,7 +2335,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('blockid');"
 	      }
 	      Object {
-		$ObjectID		64
+		$ObjectID		63
 		Type			"edit"
 		Name			"portpinstr"
 		Prompt			"Port pin string"
@@ -2525,7 +2345,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		65
+		$ObjectID		64
 		Type			"checkbox"
 		Name			"enablecustomportlabel"
 		Prompt			"Enable custom port labels"
@@ -2534,7 +2354,7 @@ Model {
 		Callback		"stm32f4_basicpwm_callback('enablecustomportlabel');"
 	      }
 	      Object {
-		$ObjectID		66
+		$ObjectID		65
 		Type			"edit"
 		Name			"cinputportlabel"
 		Prompt			"Custom input port labels (Ex. In1, In2, In3)"
@@ -2544,7 +2364,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		67
+		$ObjectID		66
 		Type			"edit"
 		Name			"coutputportlabel"
 		Prompt			"Custom output port labels (Ex. Out1, Out2, Out3)"
@@ -2554,7 +2374,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		68
+		$ObjectID		67
 		Type			"edit"
 		Name			"apb"
 		Prompt			"APB"
@@ -2564,7 +2384,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		69
+		$ObjectID		68
 		Type			"edit"
 		Name			"portstr"
 		Prompt			"Port string"
@@ -2575,7 +2395,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		70
+		$ObjectID		69
 		Type			"edit"
 		Name			"pinstr"
 		Prompt			"Pin string"
@@ -2586,7 +2406,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		71
+		$ObjectID		70
 		Type			"edit"
 		Name			"pinmat"
 		Prompt			"Pin matrix"
@@ -2596,7 +2416,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		72
+		$ObjectID		71
 		Type			"edit"
 		Name			"timarr"
 		Prompt			"Timer ARR"
@@ -2607,7 +2427,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		73
+		$ObjectID		72
 		Type			"edit"
 		Name			"timprescale"
 		Prompt			"Timer PRESCALE"
@@ -2618,7 +2438,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		74
+		$ObjectID		73
 		Type			"edit"
 		Name			"chmat"
 		Prompt			"Channel order"
@@ -2839,15 +2659,6 @@ Model {
 	  DstPort		  1
 	}
 	Annotation {
-	  SID			  "431"
-	  Name			  "-1 to 1 to pwm and motor direction converter\n"
-	  Position		  [516, 86]
-	  HorizontalAlignment	  "left"
-	  BackgroundColor	  "yellow"
-	  DropShadow		  on
-	  ZOrder		  -1
-	}
-	Annotation {
 	  SID			  "586"
 	  Name			  "-1 to 1 to pwm and motor direction converter\nadds gain, deadband offset and threshold"
 	  Position		  [236, 101]
@@ -2863,7 +2674,7 @@ Model {
       Name		      "PID Controller"
       SID		      "293"
       Ports		      [5, 1]
-      Position		      [1845, 798, 2020, 922]
+      Position		      [2015, 878, 2210, 1182]
       ZOrder		      156
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       DialogController	      "pidpack.PIDConfig.pidDDGCreate"
@@ -2880,7 +2691,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		75
+	$ObjectID		74
 	$ClassName		"Simulink.Mask"
 	Type			"PID 1dof"
 	Description		"Simulink:masks:PID1dof_MD"
@@ -2888,7 +2699,7 @@ Model {
 	SelfModifiable		"on"
 	Display			"image(imread(fullfile(matlabroot,'toolbox','simulink','blocks','@pidpack','@PIDMasks','images','blank.png'"
 	"),'png'),[0 0 1 1]);\ndisp('PID(s)')\nport_label('input',1, '');\nport_label('output',1, '');\nplot([0 4 4 7]+2,[0 0 "
-	"8 8]+83);\nplot([1 4 6]+2,[3 6 3]+83);\nplot([0 4 6 10]+162,[0 0 8 8]+58);\n"
+	"8 8]+208);\nplot([1 4 6]+2,[3 6 3]+208);\nplot([0 4 6 10]+182,[0 0 8 8]+148);\n"
 	RunInitForIconRedraw	"on"
 	IconUnits		"pixels"
 	Capabilities		"slmaskedcaps(gcbh)"
@@ -2896,7 +2707,7 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  102
 	  Object {
-	    $ObjectID		    76
+	    $ObjectID		    75
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -2915,7 +2726,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    77
+	    $ObjectID		    76
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -2931,7 +2742,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    78
+	    $ObjectID		    77
 	    Type		    "edit"
 	    Name		    "SampleTime"
 	    Prompt		    "Simulink:masks:SampleTime1ForInherited_MP"
@@ -2939,7 +2750,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    79
+	    $ObjectID		    78
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -2956,7 +2767,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    80
+	    $ObjectID		    79
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -2973,7 +2784,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    81
+	    $ObjectID		    80
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -2989,35 +2800,35 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    82
+	    $ObjectID		    81
 	    Type		    "edit"
 	    Name		    "P"
 	    Prompt		    "Simulink:masks:ProportionalP_MP"
 	    Value		    "0.0005"
 	  }
 	  Object {
-	    $ObjectID		    83
+	    $ObjectID		    82
 	    Type		    "edit"
 	    Name		    "I"
 	    Prompt		    "Simulink:masks:IntegralI_MP"
 	    Value		    "0.0005"
 	  }
 	  Object {
-	    $ObjectID		    84
+	    $ObjectID		    83
 	    Type		    "edit"
 	    Name		    "D"
 	    Prompt		    "Simulink:masks:DerivativeD_MP"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    85
+	    $ObjectID		    84
 	    Type		    "edit"
 	    Name		    "N"
 	    Prompt		    "Simulink:masks:FilterCoefficientN_MP"
 	    Value		    "20"
 	  }
 	  Object {
-	    $ObjectID		    86
+	    $ObjectID		    85
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3033,7 +2844,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    87
+	    $ObjectID		    86
 	    Type		    "edit"
 	    Name		    "InitialConditionForIntegrator"
 	    Prompt		    "Simulink:masks:Integrator_MP"
@@ -3041,7 +2852,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    88
+	    $ObjectID		    87
 	    Type		    "edit"
 	    Name		    "InitialConditionForFilter"
 	    Prompt		    "Simulink:masks:Filter_MP"
@@ -3049,7 +2860,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    89
+	    $ObjectID		    88
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3068,7 +2879,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    90
+	    $ObjectID		    89
 	    Type		    "checkbox"
 	    Name		    "IgnoreLimit"
 	    Prompt		    "Simulink:masks:IgnoreResetWhenLinearizing_MP"
@@ -3077,7 +2888,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    91
+	    $ObjectID		    90
 	    Type		    "checkbox"
 	    Name		    "ZeroCross"
 	    Prompt		    "Simulink:masks:EnableZerocrossingDetection_MP"
@@ -3086,7 +2897,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    92
+	    $ObjectID		    91
 	    Type		    "checkbox"
 	    Name		    "LimitOutput"
 	    Prompt		    "Simulink:masks:LimitOutput_MP"
@@ -3095,21 +2906,21 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    93
+	    $ObjectID		    92
 	    Type		    "edit"
 	    Name		    "UpperSaturationLimit"
 	    Prompt		    "Simulink:masks:UpperSaturationLimit_MP"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    94
+	    $ObjectID		    93
 	    Type		    "edit"
 	    Name		    "LowerSaturationLimit"
 	    Prompt		    "Simulink:masks:LowerSaturationLimit_MP"
 	    Value		    "-1"
 	  }
 	  Object {
-	    $ObjectID		    95
+	    $ObjectID		    94
 	    Type		    "checkbox"
 	    Name		    "LinearizeAsGain"
 	    Prompt		    "Simulink:masks:IgnoreSaturationWhenLinearizing_MP"
@@ -3118,7 +2929,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    96
+	    $ObjectID		    95
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3135,14 +2946,14 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    97
+	    $ObjectID		    96
 	    Type		    "edit"
 	    Name		    "Kb"
 	    Prompt		    "Simulink:masks:BackcalculationCoefficientKb_MP"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    98
+	    $ObjectID		    97
 	    Type		    "checkbox"
 	    Name		    "TrackingMode"
 	    Prompt		    "Simulink:masks:EnableTrackingMode_MP"
@@ -3151,14 +2962,14 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    99
+	    $ObjectID		    98
 	    Type		    "edit"
 	    Name		    "Kt"
 	    Prompt		    "Simulink:masks:TrackingCoefficientKt_MP"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    100
+	    $ObjectID		    99
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3179,7 +2990,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    101
+	    $ObjectID		    100
 	    Type		    "checkbox"
 	    Name		    "SaturateOnIntegerOverflow"
 	    Prompt		    "Simulink:masks:SaturateOnIntegerOverflow_MP"
@@ -3188,7 +2999,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    102
+	    $ObjectID		    101
 	    Type		    "checkbox"
 	    Name		    "LockScale"
 	    Prompt		    "Simulink:masks:LockDataTypeAgainstFxpTools_MP"
@@ -3197,7 +3008,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    103
+	    $ObjectID		    102
 	    Type		    "min"
 	    Name		    "PParamMin"
 	    Prompt		    "Simulink:masks:PParameterMinimum_MP"
@@ -3205,7 +3016,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    104
+	    $ObjectID		    103
 	    Type		    "max"
 	    Name		    "PParamMax"
 	    Prompt		    "Simulink:masks:PParameterMaximum_MP"
@@ -3213,7 +3024,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    105
+	    $ObjectID		    104
 	    Type		    "unidt({a=30|28|29|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3223,7 +3034,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    106
+	    $ObjectID		    105
 	    Type		    "min"
 	    Name		    "IParamMin"
 	    Prompt		    "Simulink:masks:IParameterMinimum_MP"
@@ -3231,7 +3042,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    107
+	    $ObjectID		    106
 	    Type		    "max"
 	    Name		    "IParamMax"
 	    Prompt		    "Simulink:masks:IParameterMaximum_MP"
@@ -3239,7 +3050,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    108
+	    $ObjectID		    107
 	    Type		    "unidt({a=33|31|32|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3249,7 +3060,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    109
+	    $ObjectID		    108
 	    Type		    "min"
 	    Name		    "DParamMin"
 	    Prompt		    "Simulink:masks:DParameterMinimum_MP"
@@ -3257,7 +3068,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    110
+	    $ObjectID		    109
 	    Type		    "max"
 	    Name		    "DParamMax"
 	    Prompt		    "Simulink:masks:DParameterMaximum_MP"
@@ -3265,7 +3076,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    111
+	    $ObjectID		    110
 	    Type		    "unidt({a=36|34|35|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3275,7 +3086,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    112
+	    $ObjectID		    111
 	    Type		    "min"
 	    Name		    "NParamMin"
 	    Prompt		    "Simulink:masks:NParameterMinimum_MP"
@@ -3283,7 +3094,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    113
+	    $ObjectID		    112
 	    Type		    "max"
 	    Name		    "NParamMax"
 	    Prompt		    "Simulink:masks:NParameterMaximum_MP"
@@ -3291,7 +3102,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    114
+	    $ObjectID		    113
 	    Type		    "unidt({a=39|37|38|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3301,7 +3112,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    115
+	    $ObjectID		    114
 	    Type		    "min"
 	    Name		    "KbParamMin"
 	    Prompt		    "Simulink:masks:KbParameterMinimum_MP"
@@ -3309,7 +3120,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    116
+	    $ObjectID		    115
 	    Type		    "max"
 	    Name		    "KbParamMax"
 	    Prompt		    "Simulink:masks:KbParameterMaximum_MP"
@@ -3317,7 +3128,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    117
+	    $ObjectID		    116
 	    Type		    "unidt({a=42|40|41|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3327,7 +3138,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    118
+	    $ObjectID		    117
 	    Type		    "min"
 	    Name		    "KtParamMin"
 	    Prompt		    "Simulink:masks:KtParameterMinimum_MP"
@@ -3335,7 +3146,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    119
+	    $ObjectID		    118
 	    Type		    "max"
 	    Name		    "KtParamMax"
 	    Prompt		    "Simulink:masks:KtParameterMaximum_MP"
@@ -3343,7 +3154,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    120
+	    $ObjectID		    119
 	    Type		    "unidt({a=45|43|44|}{i=Inherit: Inherit via internal rule|Inherit: Same as input}{b=double|single|int8|"
 	    "uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTU"
 	    "nsignedSign})"
@@ -3353,7 +3164,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    121
+	    $ObjectID		    120
 	    Type		    "min"
 	    Name		    "POutMin"
 	    Prompt		    "Simulink:masks:PProductOutputMinimum_MP"
@@ -3361,7 +3172,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    122
+	    $ObjectID		    121
 	    Type		    "max"
 	    Name		    "POutMax"
 	    Prompt		    "Simulink:masks:PProductOutputMaximum_MP"
@@ -3369,7 +3180,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    123
+	    $ObjectID		    122
 	    Type		    "unidt({a=48|46|47|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3379,7 +3190,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    124
+	    $ObjectID		    123
 	    Type		    "min"
 	    Name		    "IOutMin"
 	    Prompt		    "Simulink:masks:IProductOutputMinimum_MP"
@@ -3387,7 +3198,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    125
+	    $ObjectID		    124
 	    Type		    "max"
 	    Name		    "IOutMax"
 	    Prompt		    "Simulink:masks:IProductOutputMaximum_MP"
@@ -3395,7 +3206,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    126
+	    $ObjectID		    125
 	    Type		    "unidt({a=51|49|50|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3405,7 +3216,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    127
+	    $ObjectID		    126
 	    Type		    "min"
 	    Name		    "DOutMin"
 	    Prompt		    "Simulink:masks:DProductOutputMinimum_MP"
@@ -3413,7 +3224,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    128
+	    $ObjectID		    127
 	    Type		    "max"
 	    Name		    "DOutMax"
 	    Prompt		    "Simulink:masks:DProductOutputMaximum_MP"
@@ -3421,7 +3232,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    129
+	    $ObjectID		    128
 	    Type		    "unidt({a=54|52|53|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3431,7 +3242,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    130
+	    $ObjectID		    129
 	    Type		    "min"
 	    Name		    "NOutMin"
 	    Prompt		    "Simulink:masks:NProductOutputMinimum_MP"
@@ -3439,7 +3250,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    131
+	    $ObjectID		    130
 	    Type		    "max"
 	    Name		    "NOutMax"
 	    Prompt		    "Simulink:masks:NProductOutputMaximum_MP"
@@ -3447,7 +3258,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    132
+	    $ObjectID		    131
 	    Type		    "unidt({a=57|55|56|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3457,7 +3268,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    133
+	    $ObjectID		    132
 	    Type		    "min"
 	    Name		    "KbOutMin"
 	    Prompt		    "Simulink:masks:KbProductOutputMinimum_MP"
@@ -3465,7 +3276,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    134
+	    $ObjectID		    133
 	    Type		    "max"
 	    Name		    "KbOutMax"
 	    Prompt		    "Simulink:masks:KbProductOutputMaximum_MP"
@@ -3473,7 +3284,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    135
+	    $ObjectID		    134
 	    Type		    "unidt({a=60|58|59|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3483,7 +3294,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    136
+	    $ObjectID		    135
 	    Type		    "min"
 	    Name		    "KtOutMin"
 	    Prompt		    "Simulink:masks:KtProductOutputMinimum_MP"
@@ -3491,7 +3302,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    137
+	    $ObjectID		    136
 	    Type		    "max"
 	    Name		    "KtOutMax"
 	    Prompt		    "Simulink:masks:KtProductOutputMaximum_MP"
@@ -3499,7 +3310,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    138
+	    $ObjectID		    137
 	    Type		    "unidt({a=63|61|62|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as input}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTB"
 	    "estPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3509,7 +3320,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    139
+	    $ObjectID		    138
 	    Type		    "min"
 	    Name		    "IntegratorOutMin"
 	    Prompt		    "Simulink:masks:IntegratorOutputMinimum_MP"
@@ -3517,7 +3328,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    140
+	    $ObjectID		    139
 	    Type		    "max"
 	    Name		    "IntegratorOutMax"
 	    Prompt		    "Simulink:masks:IntegratorOutputMaximum_MP"
@@ -3525,7 +3336,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    141
+	    $ObjectID		    140
 	    Type		    "unidt({a=66|64|65|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation}{b=doub"
 	    "le|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDT"
 	    "SignedSign|UDTUnsignedSign})"
@@ -3535,7 +3346,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    142
+	    $ObjectID		    141
 	    Type		    "min"
 	    Name		    "FilterOutMin"
 	    Prompt		    "Simulink:masks:FilterOutputMinimum_MP"
@@ -3543,7 +3354,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    143
+	    $ObjectID		    142
 	    Type		    "max"
 	    Name		    "FilterOutMax"
 	    Prompt		    "Simulink:masks:FilterOutputMaximum_MP"
@@ -3551,7 +3362,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    144
+	    $ObjectID		    143
 	    Type		    "unidt({a=69|67|68|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation}{b=doub"
 	    "le|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDT"
 	    "SignedSign|UDTUnsignedSign})"
@@ -3561,7 +3372,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    145
+	    $ObjectID		    144
 	    Type		    "min"
 	    Name		    "SumOutMin"
 	    Prompt		    "Simulink:masks:SumOutputMinimum_MP"
@@ -3569,7 +3380,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    146
+	    $ObjectID		    145
 	    Type		    "max"
 	    Name		    "SumOutMax"
 	    Prompt		    "Simulink:masks:SumOutputMaximum_MP"
@@ -3577,7 +3388,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    147
+	    $ObjectID		    146
 	    Type		    "unidt({a=72|70|71|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
 	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3587,7 +3398,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    148
+	    $ObjectID		    147
 	    Type		    "min"
 	    Name		    "SumI1OutMin"
 	    Prompt		    "Simulink:masks:SumI1OutputMinimum_MP"
@@ -3595,7 +3406,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    149
+	    $ObjectID		    148
 	    Type		    "max"
 	    Name		    "SumI1OutMax"
 	    Prompt		    "Simulink:masks:SumI1OutputMaximum_MP"
@@ -3603,7 +3414,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    150
+	    $ObjectID		    149
 	    Type		    "unidt({a=75|73|74|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
 	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3613,7 +3424,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    151
+	    $ObjectID		    150
 	    Type		    "min"
 	    Name		    "SumI2OutMin"
 	    Prompt		    "Simulink:masks:SumI2OutputMinimum_MP"
@@ -3621,7 +3432,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    152
+	    $ObjectID		    151
 	    Type		    "max"
 	    Name		    "SumI2OutMax"
 	    Prompt		    "Simulink:masks:SumI2OutputMaximum_MP"
@@ -3629,7 +3440,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    153
+	    $ObjectID		    152
 	    Type		    "unidt({a=78|76|77|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
 	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3639,7 +3450,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    154
+	    $ObjectID		    153
 	    Type		    "min"
 	    Name		    "SumI3OutMin"
 	    Prompt		    "Simulink:masks:SumI3OutputMinimum_MP"
@@ -3647,7 +3458,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    155
+	    $ObjectID		    154
 	    Type		    "max"
 	    Name		    "SumI3OutMax"
 	    Prompt		    "Simulink:masks:SumI3OutputMaximum_MP"
@@ -3655,7 +3466,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    156
+	    $ObjectID		    155
 	    Type		    "unidt({a=81|79|80|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
 	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3665,7 +3476,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    157
+	    $ObjectID		    156
 	    Type		    "min"
 	    Name		    "SumDOutMin"
 	    Prompt		    "Simulink:masks:SumDOutputMinimum_MP"
@@ -3673,7 +3484,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    158
+	    $ObjectID		    157
 	    Type		    "max"
 	    Name		    "SumDOutMax"
 	    Prompt		    "Simulink:masks:SumDOutputMaximum_MP"
@@ -3681,7 +3492,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    159
+	    $ObjectID		    158
 	    Type		    "unidt({a=84|82|83|}{i=Inherit: Inherit via internal rule|Inherit: Inherit via back propagation|Inherit"
 	    ": Same as first input|Inherit: Same as accumulator}{b=double|single|int8|uint8|int16|uint16|int32|uint32}{s=UDTBi"
 	    "naryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|UDTUnsignedSign})"
@@ -3691,7 +3502,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    160
+	    $ObjectID		    159
 	    Type		    "unidt({a=85|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
 	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
 	    Name		    "SumAccumDataTypeStr"
@@ -3700,7 +3511,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    161
+	    $ObjectID		    160
 	    Type		    "unidt({a=86|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
 	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
 	    Name		    "SumI1AccumDataTypeStr"
@@ -3709,7 +3520,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    162
+	    $ObjectID		    161
 	    Type		    "unidt({a=87|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
 	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
 	    Name		    "SumI2AccumDataTypeStr"
@@ -3718,7 +3529,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    163
+	    $ObjectID		    162
 	    Type		    "unidt({a=88|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
 	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
 	    Name		    "SumI3AccumDataTypeStr"
@@ -3727,7 +3538,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    164
+	    $ObjectID		    163
 	    Type		    "unidt({a=89|||}{i=Inherit: Inherit via internal rule|Inherit: Same as first input}{b=double|single|int"
 	    "8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode}{g=UDTSignedSign|UDTUnsignedSign})"
 	    Name		    "SumDAccumDataTypeStr"
@@ -3736,7 +3547,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    165
+	    $ObjectID		    164
 	    Type		    "min"
 	    Name		    "SaturationOutMin"
 	    Prompt		    "Simulink:masks:SaturationOutputMinimum_MP"
@@ -3744,7 +3555,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    166
+	    $ObjectID		    165
 	    Type		    "max"
 	    Name		    "SaturationOutMax"
 	    Prompt		    "Simulink:masks:SaturationOutputMaximum_MP"
@@ -3752,7 +3563,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    167
+	    $ObjectID		    166
 	    Type		    "unidt({a=92|90|91|}{i=Inherit: Inherit via back propagation|Inherit: Same as input}{b=double|single|in"
 	    "t8|uint8|int16|uint16|int32|uint32}{s=UDTBinaryPointMode|UDTSlopeBiasMode|UDTBestPrecisionMode}{g=UDTSignedSign|U"
 	    "DTUnsignedSign})"
@@ -3762,7 +3573,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    168
+	    $ObjectID		    167
 	    Type		    "edit"
 	    Name		    "IntegratorContinuousStateAttributes"
 	    Prompt		    "Simulink:masks:StateNameegposition_MP"
@@ -3771,7 +3582,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    169
+	    $ObjectID		    168
 	    Type		    "edit"
 	    Name		    "IntegratorStateIdentifier"
 	    Prompt		    "Simulink:masks:StateName_MP"
@@ -3780,7 +3591,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    170
+	    $ObjectID		    169
 	    Type		    "checkbox"
 	    Name		    "IntegratorStateMustResolveToSignalObject"
 	    Prompt		    "Simulink:masks:StateNameMustResolveToSimulinkSignalObject_MP"
@@ -3789,7 +3600,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    171
+	    $ObjectID		    170
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3807,7 +3618,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    172
+	    $ObjectID		    171
 	    Type		    "edit"
 	    Name		    "IntegratorRTWStateStorageTypeQualifier"
 	    Prompt		    "Simulink:masks:CodeGenerationStorageTypeQualifier_MP"
@@ -3816,7 +3627,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    173
+	    $ObjectID		    172
 	    Type		    "edit"
 	    Name		    "FilterContinuousStateAttributes"
 	    Prompt		    "Simulink:masks:StateNameegposition_MP"
@@ -3825,7 +3636,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    174
+	    $ObjectID		    173
 	    Type		    "edit"
 	    Name		    "FilterStateIdentifier"
 	    Prompt		    "Simulink:masks:StateName_MP"
@@ -3834,7 +3645,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    175
+	    $ObjectID		    174
 	    Type		    "checkbox"
 	    Name		    "FilterStateMustResolveToSignalObject"
 	    Prompt		    "Simulink:masks:StateNameMustResolveToSimulinkSignalObject_MP"
@@ -3843,7 +3654,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    176
+	    $ObjectID		    175
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -3861,7 +3672,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    177
+	    $ObjectID		    176
 	    Type		    "edit"
 	    Name		    "FilterRTWStateStorageTypeQualifier"
 	    Prompt		    "Simulink:masks:CodeGenerationStorageTypeQualifier_MP"
@@ -3874,7 +3685,7 @@ Model {
       }
       System {
 	Name			"PID Controller"
-	Location		[50, 12, 1906, 1145]
+	Location		[1912, 1061, 3848, 2130]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -3886,7 +3697,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"200"
+	ZoomFactor		"175"
 	SIDHighWatermark	"1802"
 	SIDPrevWatermark	"1689"
 	Block {
@@ -3919,7 +3730,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "i"
 	  SID			  "293:1691"
-	  Position		  [85, 110, 105, 130]
+	  Position		  [10, 110, 30, 130]
 	  ZOrder		  15
 	  ForegroundColor	  "[1.000000, 0.258824, 0.819608]"
 	  Port			  "4"
@@ -3951,7 +3762,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "Clamping circuit"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [1912, 1061, 3848, 2130]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -4092,19 +3903,21 @@ Model {
 	    Line {
 	      SrcBlock		      "preSat"
 	      SrcPort		      1
-	      Points		      [0, 0]
+	      Points		      [-85, 0]
+	      Branch {
+		Points			[0, 40]
+		Branch {
+		  Points		  [0, 70]
+		  DstBlock		  "DeadZone"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
 	      Branch {
 		DstBlock		"SignPreSat"
-		DstPort			1
-	      }
-	      Branch {
-		Points			[-85, 0; 0, 110]
-		DstBlock		"DeadZone"
-		DstPort			1
-	      }
-	      Branch {
-		Points			[-85, 0; 0, 40]
-		DstBlock		"Gain"
 		DstPort			1
 	      }
 	    }
@@ -4234,7 +4047,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Integral Gain"
 	  SID			  "293:1774"
-	  Position		  [120, 160, 150, 190]
+	  Position		  [105, 195, 135, 225]
 	  ZOrder		  61
 	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
 	  DisableCoverage	  on
@@ -4538,7 +4351,7 @@ Model {
       Name		      "PID Controller1"
       SID		      "432"
       Ports		      [2, 1]
-      Position		      [2000, 1281, 2155, 1399]
+      Position		      [2165, 1361, 2320, 1479]
       ZOrder		      174
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       LibraryVersion	      "1.274"
@@ -4648,7 +4461,7 @@ Model {
       Name		      "Quadratur Encoder2"
       SID		      "474"
       Ports		      [2, 6]
-      Position		      [980, 392, 1155, 528]
+      Position		      [1145, 472, 1320, 608]
       ZOrder		      200
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       LibraryVersion	      "1.179"
@@ -4681,31 +4494,10 @@ Model {
       outputportdiminfo	      "[1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6;1  1  1  6]"
     }
     Block {
-      BlockType		      Reference
-      Name		      "Queue"
-      SID		      "565"
-      Ports		      [3, 3]
-      Position		      [975, 1012, 1070, 1078]
-      ZOrder		      247
-      LibraryVersion	      "1.413"
-      SourceBlock	      "dspbuff3/Queue"
-      SourceType	      "Queue"
-      depth		      "5000"
-      trigger		      "Non-zero sample"
-      overflow		      "Ignore"
-      pes		      "Warning"
-      eso		      on
-      fso		      off
-      nso		      on
-      clr		      off
-      clrOutport	      off
-      adf		      off
-    }
-    Block {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "216"
-      Position		      [780, 239, 820, 281]
+      Position		      [775, 324, 815, 366]
       ZOrder		      119
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -4716,7 +4508,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition3"
       SID		      "435"
-      Position		      [535, 414, 575, 456]
+      Position		      [700, 494, 740, 536]
       ZOrder		      180
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTime	      "0.01"
@@ -4725,7 +4517,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition4"
       SID		      "436"
-      Position		      [700, 274, 740, 316]
+      Position		      [700, 369, 740, 411]
       ZOrder		      181
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       Integrity		      off
@@ -4736,17 +4528,63 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition5"
       SID		      "560"
-      Position		      [845, 629, 885, 671]
+      Position		      [1015, 729, 1055, 771]
       ZOrder		      235
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       OutPortSampleTime	      "0.01"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Regular ADC"
+      SID		      "602"
+      Ports		      [0, 2]
+      Position		      [1745, 152, 1930, 228]
+      ZOrder		      264
+      LibraryVersion	      "1.14"
+      SourceBlock	      "stm32f4_adc_lib/Regular ADC"
+      SourceType	      "stm32f4_regular_adc"
+      adcmodule		      "1"
+      outputdatatype	      "Double"
+      prescaler		      "2"
+      prescalerstr	      "ADC_Prescaler_Div2"
+      chsamplingtime	      "Auto"
+      chsamplingtimestr	      "ADC_SampleTime_480Cycles"
+      read_an0		      off
+      read_an1		      off
+      read_an2		      off
+      read_an3		      off
+      read_an4		      off
+      read_an5		      on
+      read_an6		      off
+      read_an7		      off
+      read_an8		      off
+      read_an9		      off
+      read_an10		      off
+      read_an11		      off
+      read_an12		      off
+      read_an13		      off
+      read_an14		      off
+      read_an15		      off
+      read_an16		      off
+      read_an17		      on
+      read_an18		      off
+      pinstr		      "GPIO_Pin_5"
+      usedpinarray	      "[0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  1  0]"
+      usedportidarray	      "[0]"
+      usedpinidarray	      "[5]"
+      usedpinidcount	      "1"
+      sampletime	      "0.01"
+      blockid		      "RegularADC"
+      enablecustomportlabel   on
+      cinputportlabel	      "0"
+      coutputportlabel	      "Motor1Current, BoardTemp"
     }
     Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "294"
       Ports		      [2, 1]
-      Position		      [1550, 845, 1570, 865]
+      Position		      [1755, 900, 1775, 920]
       ZOrder		      157
       ShowName		      off
       IconShape		      "round"
@@ -4761,7 +4599,7 @@ Model {
       Name		      "Sum1"
       SID		      "433"
       Ports		      [2, 1]
-      Position		      [1735, 1315, 1755, 1335]
+      Position		      [1780, 1380, 1800, 1400]
       ZOrder		      175
       ShowName		      off
       IconShape		      "round"
@@ -4775,7 +4613,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch"
       SID		      "382"
-      Position		      [2250, 835, 2300, 875]
+      Position		      [2415, 915, 2465, 955]
       ZOrder		      169
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
@@ -4784,7 +4622,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch1"
       SID		      "434"
-      Position		      [2285, 1305, 2335, 1345]
+      Position		      [2450, 1385, 2500, 1425]
       ZOrder		      178
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
@@ -4793,7 +4631,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch2"
       SID		      "507"
-      Position		      [2340, 885, 2390, 925]
+      Position		      [2510, 900, 2560, 940]
       ZOrder		      209
       Criteria		      "u2 > Threshold"
       InputSameDT	      off
@@ -4803,7 +4641,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch4"
       SID		      "588"
-      Position		      [2380, 1290, 2430, 1330]
+      Position		      [2545, 1370, 2595, 1410]
       ZOrder		      254
       Criteria		      "u2 > Threshold"
       InputSameDT	      off
@@ -4814,7 +4652,7 @@ Model {
       Name		      "Target Setup"
       SID		      "2"
       Ports		      []
-      Position		      [1190, 175, 1428, 297]
+      Position		      [670, 20, 908, 142]
       ZOrder		      -12
       Priority		      "100"
       LibraryVersion	      "1.397"
@@ -4863,7 +4701,7 @@ Model {
       Name		      "USB VCP Receiver STM32F4"
       SID		      "18"
       Ports		      [0, 10]
-      Position		      [20, 244, 185, 711]
+      Position		      [20, 314, 185, 781]
       ZOrder		      -5
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
       LibraryVersion	      "1.34"
@@ -4878,25 +4716,25 @@ Model {
     }
     Block {
       BlockType		      Reference
-      Name		      "USB VCP Send STM32F4"
-      SID		      "1"
-      Ports		      [15]
-      Position		      [1715, 117, 1905, 673]
-      ZOrder		      -5
+      Name		      "USB VCP Send STM32F1"
+      SID		      "603"
+      Ports		      [18]
+      Position		      [1990, 139, 2185, 806]
+      ZOrder		      265
       LibraryVersion	      "1.34"
       SourceBlock	      "USBVCP_STM32F4/USB VCP Send STM32F4"
       SourceType	      "USB_VCP_SEND_STM32F4 High Speed Large Data Packet Size"
       speed		      "USB 1.1   12Mbit/s"
       data_size		      "2048 Bytes"
       header_data	      "'0E 0E'"
-      binary_data	      "'double int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int32'"
+      binary_data	      "'double double double double int32 int32 int32 int32 int32 int32 int32 int32 int32 int32 int3"
+      "2 int32 int32 int32'"
       terminator_data	      "'0A 0A'"
-      sampletime	      "0.01"
+      sampletime	      "0.001"
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      1
-      Points		      [0, -15]
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
@@ -4905,39 +4743,39 @@ Model {
       SrcPort		      1
       Points		      [342, 0]
       Branch {
-	Points			[0, 445]
-	DstBlock		"Sum"
-	DstPort			1
+	Points			[0, -140]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			6
       }
       Branch {
-	Points			[0, -195]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			3
+	Points			[0, 420]
+	DstBlock		"Sum"
+	DstPort			1
       }
     }
     Line {
       SrcBlock		      "PID Controller"
       SrcPort		      1
-      Points		      [139, 0]
+      Points		      [114, 0]
       Branch {
-	Points			[0, -98; -30, 0; 0, -746; -452, 0; 0, 129]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, 10]
+	Points			[0, -80]
 	DstBlock		"Switch"
 	DstPort			3
+      }
+      Branch {
+	Points			[0, 179; -498, 0; 0, -929]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			4
       }
     }
     Line {
       SrcBlock		      "Sum"
       SrcPort		      1
-      Points		      [44, 0; 0, -50]
+      Points		      [20, 0]
       Branch {
-	Points			[-90, 0; 0, -525]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			5
+	Points			[0, -490]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			8
       }
       Branch {
 	DstBlock		"Data Type Conversion7"
@@ -4947,14 +4785,13 @@ Model {
     Line {
       SrcBlock		      "Switch"
       SrcPort		      1
-      Points		      [15, 0; 0, 65]
       DstBlock		      "Switch2"
       DstPort		      3
     }
     Line {
       SrcBlock		      "Compare\nTo Constant"
       SrcPort		      1
-      Points		      [9, 0; 0, -26; -82, 0; 0, 96]
+      Points		      [19, 0; 0, -31; -82, 0; 0, 96]
       DstBlock		      "Switch"
       DstPort		      2
     }
@@ -4963,14 +4800,14 @@ Model {
       SrcPort		      2
       Points		      [384, 0]
       Branch {
-	Points			[0, 895]
-	DstBlock		"Sum1"
-	DstPort			1
+	Points			[0, -55]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			9
       }
       Branch {
-	Points			[0, -110]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			6
+	Points			[0, 880]
+	DstBlock		"Sum1"
+	DstPort			1
       }
     }
     Line {
@@ -4982,28 +4819,27 @@ Model {
     Line {
       SrcBlock		      "Rate Transition3"
       SrcPort		      1
-      Points		      [17, 0; 0, 41; -92, 0; 0, 874]
+      Points		      [17, 0; 0, 41; -92, 0; 0, 859]
       DstBlock		      "Sum1"
       DstPort		      2
     }
     Line {
       SrcBlock		      "Sum1"
       SrcPort		      1
-      Points		      [44, 0; 0, -45]
-      Branch {
-	Points			[-221, 0; 0, -895]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			8
-      }
+      Points		      [56, 0]
       Branch {
 	DstBlock		"Data Type Conversion4"
 	DstPort			1
+      }
+      Branch {
+	Points			[0, -865]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			11
       }
     }
     Line {
       SrcBlock		      "Data Type Conversion4"
       SrcPort		      1
-      Points		      [25, 0]
       DstBlock		      "PID Controller1"
       DstPort		      1
     }
@@ -5012,20 +4848,7 @@ Model {
       SrcPort		      1
       Points		      [266, 0]
       Branch {
-	Points			[549, 0; 0, 226]
-	Branch {
-	  Points		  [0, 529]
-	  DstBlock		  "PID Controller1"
-	  DstPort		  2
-	}
-	Branch {
-	  Points		  [402, 0; 0, -6]
-	  DstBlock		  "PID Controller"
-	  DstPort		  2
-	}
-      }
-      Branch {
-	Points			[0, -120]
+	Points			[0, -130]
 	Branch {
 	  DstBlock		  "Quadratur Encoder2"
 	  DstPort		  2
@@ -5034,6 +4857,18 @@ Model {
 	  Points		  [0, -80]
 	  DstBlock		  "Logical\nOperator"
 	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[549, 0; 0, 265]
+	Branch {
+	  Points		  [0, 480]
+	  DstBlock		  "PID Controller1"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "PID Controller"
+	  DstPort		  2
 	}
       }
     }
@@ -5046,49 +4881,47 @@ Model {
     Line {
       SrcBlock		      "Compare\nTo Constant1"
       SrcPort		      1
-      Points		      [9, 0; 0, -26; -82, 0; 0, 96]
+      Points		      [19, 0; 0, -31; -82, 0; 0, 96]
       DstBlock		      "Switch1"
       DstPort		      2
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      7
-      Points		      [270, 0; 0, -110]
+      Points		      [435, 0; 0, -100]
       DstBlock		      "Rate Transition3"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      2
-      Points		      [9, 0; 0, -25]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      9
-      Points		      [3, 0; 0, -20]
       DstBlock		      "Data Type Conversion1"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Quadratur Encoder2"
       SrcPort		      3
-      Points		      [456, 0; 0, -195]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      4
+      Points		      [258, 0; 0, -145]
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      7
     }
     Line {
       SrcBlock		      "Quadratur Encoder2"
       SrcPort		      4
-      Points		      [489, 0; 0, -110]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      7
+      Points		      [451, 0; 0, -60]
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      10
     }
     Line {
       SrcBlock		      "Rate Transition1"
       SrcPort		      1
-      Points		      [30, 0; 0, -162; 1380, 0; 0, 687]
+      Points		      [164, 0; 0, -221; 1416, 0; 0, 746]
       Branch {
 	DstBlock		"Switch"
 	DstPort			1
@@ -5101,22 +4934,20 @@ Model {
     Line {
       SrcBlock		      "Rate Transition4"
       SrcPort		      1
-      Points		      [15, 0; 0, 966; 1475, 0]
+      Points		      [88, 0; 0, 937; 1567, 0; 0, 13]
       Branch {
-	Points			[0, -6]
-	DstBlock		"Compare\nTo Constant1"
+	Points			[0, 50]
+	DstBlock		"Switch1"
 	DstPort			1
       }
       Branch {
-	Points			[0, 49]
-	DstBlock		"Switch1"
+	DstBlock		"Compare\nTo Constant1"
 	DstPort			1
       }
     }
     Line {
       SrcBlock		      "Data Type Conversion7"
       SrcPort		      1
-      Points		      [17, 0; 0, 5]
       DstBlock		      "PID Controller"
       DstPort		      1
     }
@@ -5125,29 +4956,29 @@ Model {
       SrcPort		      5
       Points		      [41, 0]
       Branch {
-	Points			[0, 95; -198, 0; 0, 175]
-	DstBlock		"Enabled\nSubsystem"
-	DstPort			1
+	Points			[0, -10]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			12
       }
       Branch {
-	Points			[481, 0; 0, -60]
-	DstBlock		"USB VCP Send STM32F4"
-	DstPort			9
+	Points			[0, 105; -198, 0; 0, 165]
+	DstBlock		"Enabled\nSubsystem"
+	DstPort			1
       }
     }
     Line {
       SrcBlock		      "Quadratur Encoder2"
       SrcPort		      6
-      Points		      [538, 0; 0, -45]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      10
+      Points		      [650, 0]
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      13
     }
     Line {
       SrcBlock		      "Enabled\nSubsystem"
       SrcPort		      1
       Points		      [89, 0; 0, -40]
       Branch {
-	Points			[0, -135]
+	Points			[0, -170]
 	DstBlock		"Data Type Conversion2"
 	DstPort			1
       }
@@ -5166,143 +4997,108 @@ Model {
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      8
-      Points		      [12, 0; 0, 115]
       DstBlock		      "Data Type Conversion3"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Constant"
       SrcPort		      1
-      Points		      [11, 0; 0, 45; -86, 0; 0, 10]
+      Points		      [9, 0; 0, -22; -74, 0; 0, 57]
       DstBlock		      "Switch2"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Switch2"
       SrcPort		      1
-      DstBlock		      "Motor 1"
+      DstBlock		      "Motor 2"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Data Type Conversion2"
       SrcPort		      1
-      Points		      [16, 0; 0, -85]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      11
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      14
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      6
-      Points		      [116, 0; 0, 380]
+      Points		      [281, 0; 0, 365]
       DstBlock		      "Sum"
       DstPort		      2
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      10
-      Points		      [618, 0; 0, -30]
       DstBlock		      "Rate Transition5"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Rate Transition5"
       SrcPort		      1
-      Points		      [759, 0; 0, -10]
-      DstBlock		      "USB VCP Send STM32F4"
-      DstPort		      15
-    }
-    Line {
-      SrcBlock		      "Queue"
-      SrcPort		      1
-      Points		      [51, 0; 0, 8]
-    }
-    Line {
-      SrcBlock		      "Enabled\nSubsystem1"
-      SrcPort		      1
-      Points		      [25, 0; 0, -120]
-      DstBlock		      "Queue"
-      DstPort		      3
-    }
-    Line {
-      Points		      [649, 1000; 61, 0]
-      Branch {
-	Points			[0, -65]
-	DstBlock		"Logical\nOperator1"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, 20; 77, 0; 0, 75; 92, 0; 0, 54]
-	DstBlock		"Enabled\nSubsystem1"
-	DstPort			enable
-      }
+      Points		      [55, 0; 0, 20]
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      18
     }
     Line {
       SrcBlock		      "Constant2"
       SrcPort		      1
-      Points		      [11, 0; 0, 45; -86, 0; 0, 10]
+      Points		      [9, 0; 0, -26; -74, 0; 0, 66]
       DstBlock		      "Switch4"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Switch4"
       SrcPort		      1
-      DstBlock		      "Motor 2"
+      DstBlock		      "Motor 1"
       DstPort		      1
-    }
-    Line {
-      SrcBlock		      "Enabled\nSubsystem2"
-      SrcPort		      1
-      Points		      [14, 0; 0, 20]
-      DstBlock		      "Queue"
-      DstPort		      2
-    }
-    Line {
-      SrcBlock		      "Logical\nOperator1"
-      SrcPort		      1
-      Points		      [15, 0]
-      DstBlock		      "Enabled\nSubsystem2"
-      DstPort		      enable
     }
     Line {
       SrcBlock		      "Data Type Conversion3"
       SrcPort		      1
-      Points		      [420, 0]
+      Points		      [485, 0]
       DstBlock		      "Enabled\nSubsystem"
       DstPort		      enable
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      3
-      Points		      [0, -205; 1387, 0; 0, 700]
+      Points		      [869, 0; 0, -195; 668, 0; 0, 790]
       DstBlock		      "PID Controller"
       DstPort		      3
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      4
-      Points		      [530, 0; 0, 465; 1110, 0]
+      Points		      [368, 0; 0, 610]
       DstBlock		      "PID Controller"
       DstPort		      4
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
       SrcPort		      5
-      Points		      [196, 0; 0, 441; 1444, 0]
+      Points		      [323, 0; 0, 625]
       DstBlock		      "PID Controller"
       DstPort		      5
     }
-    Annotation {
-      SID		      "438"
-      Name		      "Careful seems to not work with more outputs than now???!??!"
-      Position		      [673, 217]
-      ZOrder		      -1
+    Line {
+      SrcBlock		      "Regular ADC"
+      SrcPort		      1
+      Points		      [25, 0; 0, 5]
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Regular ADC"
+      SrcPort		      2
+      DstBlock		      "USB VCP Send STM32F1"
+      DstPort		      2
     }
     Annotation {
       SID		      "221"
       Name		      "1) if rLeft or rRight is set to high, the encoder is resetted to 0\n2) Timer 2 and 4 are used!!! \n"
       "2) The data type of the encoder output is int32.\n3) \"enc 1\": 	Chanel A --> A15 \n		       Chanel B --> B3\n		"
       "	Index --> D0\n  \"enc 2\": 	Chanel A --> B6 \n		       Chanel B --> B7 \n			Index-> --> B12\n"
-      Position		      [886, 251]
+      Position		      [1101, 396]
       HorizontalAlignment     "left"
       BackgroundColor	      "yellow"
       DropShadow	      on

@@ -65,11 +65,11 @@ path = [0.57 0.1 0; 0.30 0.1 0; 0.57 0.1 0];
 %p = 
 %mstraj(path, [2000 2000 2000], [], [0 0 0], 0.1, 0.9)
 
+timestep = 0.007
 
+p = mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], timestep, 0.1)
 
-p = mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], 0.01, 0.1)
-
-mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], 0.01, 0.1)
+%mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], 0.01, 0.1)
 
 %scale the trajectory
 Tp = transl(p);
