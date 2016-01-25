@@ -47,16 +47,16 @@ y = r*sin(t)
 x = x.'
 y = y.'
 
-
-
 %path = [x,y,zeros(length(x),1)]
+
+
 %not wokring anymore no ik found: path = [ 1 0 0; 1 0 0; 0 0 0; 0 2 0; 1 2 0; 1 2 0; 0 1 0; 0 1 0; 1 1 0; 1 1 0];
 
 %square
 %path = [0.45 0 0; 0.45 0.1 0; 0.35 0.01 0; 0.35 0 0; 0.45 0 0]; 
 
 %line
-path = [0.57 0.1 0; 0.30 0.1 0; 0.57 0.1 0]; 
+path = [0.57 0.1 0; 0.30 0.1 0; 0.57 0.1 0; 0.57 0.1 0; 0.30 0.1 0; 0.57 0.1 0]; 
 
 %plot3(path(:,1), path(:,2), path(:,3), 'color', 'k', 'LineWidth', 2)
 
@@ -65,11 +65,12 @@ path = [0.57 0.1 0; 0.30 0.1 0; 0.57 0.1 0];
 %p = 
 %mstraj(path, [2000 2000 2000], [], [0 0 0], 0.1, 0.9)
 
-timestep = 0.007
+timestep = 0.1
+
+%plots the trajectory
+mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], timestep, 0.1)
 
 p = mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], timestep, 0.1)
-
-%mstraj(path, [0.1 0.1 0.1], [], [path(1,1) path(1,2) 0], 0.01, 0.1)
 
 %scale the trajectory
 Tp = transl(p);
@@ -101,8 +102,12 @@ q_out = q_out(2:end,:)
 q_out(:,1) = radians_to_encoder_steps(q_out(:,1),JOINT_1_TRANSMISSION)
 q_out(:,2) = radians_to_encoder_steps(q_out(:,2),JOINT_2_TRANSMISSION)
 
+total_duration_in_s = 10.0
+
+t = 0:total_duration_in_s/length(q_out):total_duration_in_s
+t = t(2:end)'
 wave1.signals.values = [q_out(:,1)]
-wave1.time = []
+wave1.time = t
 
 wave2.signals.values = [q_out(:,2)]
 wave2.time = []
