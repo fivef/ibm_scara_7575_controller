@@ -114,13 +114,18 @@ mtraj(@tpoly, q0, qf, steps)
 [q, qd, qdd] = mtraj(@tpoly, q0, qf, t)
 
 q_out = q
+q_outd = qd
 
 %get rid of first value
 q_out = q_out(2:end,:)
+q_outd = q_outd(2:end,:)
 
 %conversion from radian angles to encoder steps
 q_out(:,1) = radians_to_encoder_steps(q_out(:,1),JOINT_1_TRANSMISSION)
 q_out(:,2) = radians_to_encoder_steps(q_out(:,2),JOINT_2_TRANSMISSION)
+
+q_outd(:,1) = radians_to_encoder_steps(q_outd(:,1),JOINT_1_TRANSMISSION)
+q_outd(:,2) = radians_to_encoder_steps(q_outd(:,2),JOINT_2_TRANSMISSION)
 
 
 t = t(2:end)'
@@ -129,6 +134,9 @@ wave1.time = t
 
 wave2.signals.values = [q_out(:,2)]
 wave2.time = []
+
+wave1d.signals.values = [q_outd(:,1)]
+wave1d.time = t
 
 disp(['Done'])
 
