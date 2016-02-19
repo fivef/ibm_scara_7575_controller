@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.155"
+    ComputedModelVersion    "1.159"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [59.0, 1019.0, 1936.0, 1069.0]
+      Location		      [1889.0, 838.0, 1936.0, 1050.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1884.0, 867.0]
+	Extents			[1884.0, 848.0]
 	ZoomFactor		[1.0]
-	Offset			[714.15371881552483, 205.0]
+	Offset			[715.0, 121.0]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jan 25 18:27:29 2016"
-  RTWModifiedTimeStamp	  375647043
-  ModelVersionFormat	  "1.%<AutoIncrement:155>"
+  LastModifiedDate	  "Fri Feb 19 20:43:22 2016"
+  RTWModifiedTimeStamp	  377172543
+  ModelVersionFormat	  "1.%<AutoIncrement:159>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -863,7 +863,7 @@ Model {
   }
   System {
     Name		    "scara_host"
-    Location		    [59, 1019, 1995, 2088]
+    Location		    [1889, 838, 3825, 1888]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -973,7 +973,7 @@ Model {
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
-      low		      "0"
+      low		      "-2.9437e-08"
       gain		      "0"
       high		      "10000"
     }
@@ -1080,7 +1080,7 @@ Model {
       ZOrder		      11
       Floating		      on
       Location		      [1921, 120, 3601, 1090]
-      Open		      on
+      Open		      off
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -2596,9 +2596,9 @@ Model {
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
-      low		      "0"
+      low		      "-0.11775"
       gain		      "0"
-      high		      "0.1"
+      high		      "0.11775"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2606,7 +2606,6 @@ Model {
       SID		      "32"
       Position		      [1590, 567, 1620, 603]
       ZOrder		      19
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2625,8 +2624,8 @@ Model {
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
-      low		      "1e-05"
-      gain		      "0.001"
+      low		      "-0.00011775"
+      gain		      "0.01"
       high		      "1"
     }
     Block {
@@ -2670,8 +2669,8 @@ Model {
       Position		      [1075, 332, 1105, 368]
       ZOrder		      -16
       Floating		      off
-      Location		      [2548, 78, 3809, 2053]
-      Open		      on
+      Location		      [402, 143, 1664, 2118]
+      Open		      off
       NumInputPorts	      "7"
       List {
 	ListType		AxesTitles
@@ -2694,11 +2693,8 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      LegendLocations	      "0.86783     0.94791     0.15279    0.014402\n0.86783      0.8115     0.15279    0.014402\n"
-      "0.86783     0.67614     0.15279    0.014402\n0.86783     0.54077     0.15279    0.014402\n0.86783     0.40541   "
-      "  0.15993    0.014402\n0.86307       0.269     0.15993    0.014402\n0.86783     0.13364     0.14803    0.014402"
-      YMin		      "10000~-30~-5000~0.95~-200~-5~-17500"
-      YMax		      "19000~70~5000~1.05~200~5~0"
+      YMin		      "10000~-50~-5000~0.95~-200~-5~-17500"
+      YMax		      "19000~50~5000~1.05~200~5~0"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       SampleTime	      "0"
@@ -2752,7 +2748,7 @@ Model {
       ZOrder		      198
       Floating		      on
       Location		      [1697, 644, 3377, 1614]
-      Open		      on
+      Open		      off
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -2794,9 +2790,9 @@ Model {
       LibraryVersion	      "1.274"
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
-      low		      "-10000"
+      low		      "-60"
       gain		      "0"
-      high		      "10000"
+      high		      "60"
     }
     Block {
       BlockType		      Reference
@@ -2809,7 +2805,7 @@ Model {
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-10000"
-      gain		      "0.1"
+      gain		      "0"
       high		      "10000"
     }
     Block {
