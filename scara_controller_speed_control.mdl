@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.378"
+    ComputedModelVersion    "1.382"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -69,7 +69,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1884.0, 848.0]
 	ZoomFactor		[0.8]
-	Offset			[1.7714276842672234, 161.69826643443702]
+	Offset			[-127.7450264786562, 188.898797732852]
       }
     }
   }
@@ -79,9 +79,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Feb 20 15:31:02 2016"
-  RTWModifiedTimeStamp	  377882748
-  ModelVersionFormat	  "1.%<AutoIncrement:378>"
+  LastModifiedDate	  "Sat Feb 20 19:50:49 2016"
+  RTWModifiedTimeStamp	  377888357
+  ModelVersionFormat	  "1.%<AutoIncrement:382>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -1216,7 +1216,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "605"
+    SIDHighWatermark	    "606"
     Block {
       BlockType		      Reference
       Name		      "Compare\nTo Constant"
@@ -1310,7 +1310,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Data Type Conversion7"
       SID		      "491"
-      Position		      [1890, 893, 1965, 927]
+      Position		      [1650, 878, 1725, 912]
       ZOrder		      199
       OutDataTypeStr	      "double"
       RndMeth		      "Floor"
@@ -4702,7 +4702,6 @@ Model {
       IconShape		      "round"
       Inputs		      "|+-"
       InputSameDT	      off
-      AccumDataTypeStr	      "int32"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
     }
@@ -4879,8 +4878,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Sum"
+      SrcBlock		      "Lowpass Filter"
       SrcPort		      1
+      Points		      [35, 0]
       DstBlock		      "Data Type Conversion7"
       DstPort		      1
     }
@@ -4928,16 +4928,8 @@ Model {
     Line {
       SrcBlock		      "Sum1"
       SrcPort		      1
-      Points		      [56, 0]
-      Branch {
-	DstBlock		"Data Type Conversion4"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -1055]
-	DstBlock		"USB VCP Send STM32F1"
-	DstPort			11
-      }
+      DstBlock		      "Data Type Conversion4"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "Data Type Conversion4"
@@ -4995,8 +4987,7 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      2
+      Points		      [280, 397; 0, -7]
       DstBlock		      "Rate Transition4"
       DstPort		      1
     }
@@ -5058,7 +5049,8 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion7"
       SrcPort		      1
-      DstBlock		      "PID Controller"
+      Points		      [10, 0]
+      DstBlock		      "Sum"
       DstPort		      1
     }
     Line {
@@ -5131,8 +5123,8 @@ Model {
     }
     Line {
       SrcBlock		      "USB VCP Receiver STM32F4"
-      SrcPort		      6
-      Points		      [281, 0; 0, 365]
+      SrcPort		      2
+      Points		      [43, 0; 0, 545]
       DstBlock		      "Sum"
       DstPort		      2
     }
@@ -5201,16 +5193,25 @@ Model {
       Points		      [182, 0; 0, -6]
     }
     Line {
-      SrcBlock		      "Lowpass Filter"
+      SrcBlock		      "Sum"
       SrcPort		      1
-      Points		      [52, 0; 0, 70]
-      DstBlock		      "Sum"
-      DstPort		      1
+      Points		      [95, 0]
+      Branch {
+	Points			[0, -665]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID Controller"
+	DstPort			1
+      }
     }
-    Line {
-      Points		      [1906, 831; 0, -411]
-      DstBlock		      "USB VCP Send STM32F1"
-      DstPort		      8
+    Annotation {
+      SID		      "606"
+      Name		      "With more than these values the connection somehow doesn't work anymore, \nit is not possible to ad"
+      "d a new double"
+      Position		      [46, 809]
+      ZOrder		      -1
     }
     Annotation {
       SID		      "221"

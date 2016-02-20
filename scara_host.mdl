@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.159"
+    ComputedModelVersion    "1.167"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1889.0, 838.0, 1936.0, 1050.0]
+      Location		      [1912.0, 38.0, 1936.0, 1050.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -67,7 +67,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1884.0, 848.0]
 	ZoomFactor		[1.0]
-	Offset			[715.0, 121.0]
+	Offset			[468.0, 131.01772815370049]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Feb 19 20:43:22 2016"
-  RTWModifiedTimeStamp	  377172543
-  ModelVersionFormat	  "1.%<AutoIncrement:159>"
+  LastModifiedDate	  "Sat Feb 20 19:50:48 2016"
+  RTWModifiedTimeStamp	  377898449
+  ModelVersionFormat	  "1.%<AutoIncrement:167>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -263,7 +263,7 @@ Model {
 	  }
 	  BlockReduction	  on
 	  BooleanDataType	  on
-	  ConditionallyExecuteInputs on
+	  ConditionallyExecuteInputs off
 	  InlineParams		  off
 	  UseIntDivNetSlope	  off
 	  UseFloatMulNetSlope	  off
@@ -700,8 +700,8 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
-      CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 192, 55, 1088, 723 ] 
+      CurrentDlgPage	      "Optimization"
+      ConfigPrmDlgPosition     [ 2018, 250, 3118, 965 ] 
     }
     PropName		    "ConfigurationSets"
   }
@@ -863,7 +863,7 @@ Model {
   }
   System {
     Name		    "scara_host"
-    Location		    [1889, 838, 3825, 1888]
+    Location		    [1912, 38, 3848, 1088]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -877,7 +877,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "103"
+    SIDHighWatermark	    "104"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -891,7 +891,7 @@ Model {
       SID		      "29"
       Position		      [1405, 560, 1435, 590]
       ZOrder		      17
-      OutDataTypeStr	      "int32"
+      OutDataTypeStr	      "double"
     }
     Block {
       BlockType		      Constant
@@ -995,7 +995,7 @@ Model {
       Position		      [1705, 568, 1780, 602]
       ZOrder		      171
       ForegroundColor	      "[0.901961, 0.000000, 0.000000]"
-      OutDataTypeStr	      "int32"
+      OutDataTypeStr	      "double"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
     }
@@ -1078,9 +1078,14 @@ Model {
       Ports		      []
       Position		      [1010, 129, 1040, 161]
       ZOrder		      11
+      List {
+	ListType		IOSignalStrings
+	set0ParseKeys		"18,20"
+	set0Sigs		"Host Serial Rx1:o7velocity Setpoint:o1"
+      }
       Floating		      on
-      Location		      [1921, 120, 3601, 1090]
-      Open		      off
+      Location		      [174, 239, 1854, 1209]
+      Open		      on
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -1101,7 +1106,7 @@ Model {
       YMax		      "13000"
       SaveName		      "ScopeData5"
       DataFormat	      "StructureWithTime"
-      LimitDataPoints	      off
+      MaxDataPoints	      "10000"
       SampleTime	      "0"
     }
     Block {
@@ -1357,7 +1362,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "timeout"
 	    Prompt		    "Wait time-out (Seconds)"
-	    Value		    "2"
+	    Value		    "5"
 	    Tunable		    "off"
 	  }
 	  Object {
@@ -2109,7 +2114,7 @@ Model {
       Name		      "Host Serial Tx2"
       SID		      "98"
       Ports		      [10]
-      Position		      [2410, 133, 2570, 892]
+      Position		      [2410, 141, 2570, 904]
       ZOrder		      272
       Priority		      "1"
       FunctionName	      "amg_usbconverter_n_serial"
@@ -2597,8 +2602,8 @@ Model {
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-0.11775"
-      gain		      "0"
-      high		      "0.11775"
+      gain		      "0.25953"
+      high		      "18.94"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2625,7 +2630,7 @@ Model {
       SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
       SourceType	      "Slider Gain"
       low		      "-0.00011775"
-      gain		      "0.01"
+      gain		      "0.00597"
       high		      "1"
     }
     Block {
@@ -2701,6 +2706,41 @@ Model {
     }
     Block {
       BlockType		      Scope
+      Name		      "Pos Scope1"
+      SID		      "104"
+      Ports		      [2]
+      Position		      [1230, 217, 1260, 253]
+      ZOrder		      277
+      Floating		      off
+      Location		      [402, 143, 1664, 2118]
+      Open		      on
+      NumInputPorts	      "2"
+      List {
+	ListType		AxesTitles
+	axes1			"velocity_setpoint"
+	axes2			"velocity"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      on
+      LegendLocations	      "0.78627      0.9643     0.13682    0.014402\n0.81955     0.47823     0.15267    0.014402"
+      YMin		      "-100~-100"
+      YMax		      "100~100"
+      SaveToWorkspace	      on
+      SaveName		      "system_analysis"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
       Name		      "Pos Scope2"
       SID		      "57"
       Ports		      [5]
@@ -2746,6 +2786,11 @@ Model {
       Ports		      []
       Position		      [1175, 309, 1205, 341]
       ZOrder		      198
+      List {
+	ListType		IOSignalStrings
+	set0ParseKeys		"12,10"
+	set0Sigs		"Constant8:o1D Gain1:o1"
+      }
       Floating		      on
       Location		      [1697, 644, 3377, 1614]
       Open		      off
@@ -2779,34 +2824,6 @@ Model {
       SID		      "33"
       Position		      [1725, 902, 1755, 938]
       ZOrder		      20
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Position Setpoint"
-      SID		      "30"
-      Ports		      [1, 1]
-      Position		      [1450, 557, 1525, 593]
-      ZOrder		      16
-      LibraryVersion	      "1.274"
-      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
-      SourceType	      "Slider Gain"
-      low		      "-60"
-      gain		      "0"
-      high		      "60"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Position Setpoint1"
-      SID		      "43"
-      Ports		      [1, 1]
-      Position		      [1450, 632, 1525, 668]
-      ZOrder		      175
-      LibraryVersion	      "1.274"
-      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
-      SourceType	      "Slider Gain"
-      low		      "-10000"
-      gain		      "0"
-      high		      "10000"
     }
     Block {
       BlockType		      RateTransition
@@ -3025,6 +3042,34 @@ Model {
       LimitDataPoints	      off
       SampleTime	      "0.01"
     }
+    Block {
+      BlockType		      Reference
+      Name		      "velocity Setpoint"
+      SID		      "30"
+      Ports		      [1, 1]
+      Position		      [1450, 557, 1525, 593]
+      ZOrder		      16
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      low		      "-80"
+      gain		      "0"
+      high		      "80"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "velocity Setpoint1"
+      SID		      "43"
+      Ports		      [1, 1]
+      Position		      [1450, 632, 1525, 668]
+      ZOrder		      175
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      low		      "-10000"
+      gain		      "0"
+      high		      "10000"
+    }
     Line {
       SrcBlock		      "Host Serial Rx1"
       SrcPort		      5
@@ -3042,15 +3087,23 @@ Model {
     Line {
       SrcBlock		      "Host Serial Rx1"
       SrcPort		      7
-      Points		      [450, 0]
+      Points		      [356, 0]
       Branch {
-	DstBlock		"Speed"
-	DstPort			1
+	Points			[0, 52; 453, 0; 0, -187]
+	DstBlock		"Pos Scope1"
+	DstPort			2
       }
       Branch {
-	Points			[0, -1; 138, 0; 0, -39]
-	DstBlock		"Pos Scope"
-	DstPort			2
+	Points			[94, 0]
+	Branch {
+	  DstBlock		  "Speed"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -1; 138, 0; 0, -39]
+	  DstBlock		  "Pos Scope"
+	  DstPort		  2
+	}
       }
     }
     Line {
@@ -3069,8 +3122,8 @@ Model {
     }
     Line {
       SrcBlock		      "Host Serial Rx1"
-      SrcPort		      8
-      Points		      [450, 0; 0, 1]
+      SrcPort		      3
+      Points		      [223, 0; 0, 276; 227, 0]
       Branch {
 	DstBlock		"error"
 	DstPort			1
@@ -3098,9 +3151,15 @@ Model {
     Line {
       SrcBlock		      "Direct Speed set"
       SrcPort		      1
-      Points		      [302, 0; 0, -15]
-      DstBlock		      "Host Serial Tx2"
-      DstPort		      1
+      Points		      [62, 0]
+      Branch {
+	Points			[0, 215; -701, 0; 0, -181; 15, 0]
+      }
+      Branch {
+	Points			[240, 0; 0, -5]
+	DstBlock		"Host Serial Tx2"
+	DstPort			1
+      }
     }
     Line {
       SrcBlock		      "Constant"
@@ -3111,22 +3170,8 @@ Model {
     Line {
       SrcBlock		      "Constant1"
       SrcPort		      1
-      DstBlock		      "Position Setpoint"
+      DstBlock		      "velocity Setpoint"
       DstPort		      1
-    }
-    Line {
-      SrcBlock		      "Manual Switch"
-      SrcPort		      1
-      Points		      [44, 0]
-      Branch {
-	Points			[0, 284; -574, 0; 0, -98; -27, 0; 0, -96]
-	DstBlock		"Rate Transition3"
-	DstPort			1
-      }
-      Branch {
-	DstBlock		"Data Type Conversion3"
-	DstPort			1
-      }
     }
     Line {
       SrcBlock		      "Step"
@@ -3136,7 +3181,7 @@ Model {
     Line {
       SrcBlock		      "Position Reset"
       SrcPort		      1
-      Points		      [190, 0; 0, -145]
+      Points		      [190, 0; 0, -135]
       DstBlock		      "Host Serial Tx2"
       DstPort		      9
     }
@@ -3157,12 +3202,12 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion3"
       SrcPort		      1
-      Points		      [310, 0; 0, -35]
+      Points		      [486, 0; 0, -325]
       DstBlock		      "Host Serial Tx2"
-      DstPort		      6
+      DstPort		      2
     }
     Line {
-      SrcBlock		      "Position Setpoint"
+      SrcBlock		      "velocity Setpoint"
       SrcPort		      1
       DstBlock		      "Manual Switch"
       DstPort		      1
@@ -3170,8 +3215,7 @@ Model {
     Line {
       SrcBlock		      "Direct Speed set1"
       SrcPort		      1
-      DstBlock		      "Host Serial Tx2"
-      DstPort		      2
+      Points		      [-5, 0; 469, 0; 0, 0]
     }
     Line {
       SrcBlock		      "Constant4"
@@ -3182,7 +3226,7 @@ Model {
     Line {
       SrcBlock		      "Constant5"
       SrcPort		      1
-      DstBlock		      "Position Setpoint1"
+      DstBlock		      "velocity Setpoint1"
       DstPort		      1
     }
     Line {
@@ -3197,7 +3241,7 @@ Model {
       Points		      [-5, 0; 23, 0]
     }
     Line {
-      SrcBlock		      "Position Setpoint1"
+      SrcBlock		      "velocity Setpoint1"
       SrcPort		      1
       DstBlock		      "Manual Switch1"
       DstPort		      1
@@ -3205,7 +3249,7 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion1"
       SrcPort		      1
-      Points		      [310, 0; 0, -35]
+      Points		      [310, 0; 0, -25]
       DstBlock		      "Host Serial Tx2"
       DstPort		      7
     }
@@ -3269,7 +3313,7 @@ Model {
     Line {
       SrcBlock		      "Home Axis 1"
       SrcPort		      1
-      Points		      [315, 0; 0, -95]
+      Points		      [315, 0; 0, -85]
       DstBlock		      "Host Serial Tx2"
       DstPort		      8
     }
@@ -3364,13 +3408,6 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "Rate Transition4"
-      SrcPort		      1
-      Points		      [785, 0; 0, -155]
-      DstBlock		      "Host Serial Tx2"
-      DstPort		      10
-    }
-    Line {
       SrcBlock		      "Constant8"
       SrcPort		      1
       DstBlock		      "P\nGain"
@@ -3379,7 +3416,7 @@ Model {
     Line {
       SrcBlock		      "P\nGain"
       SrcPort		      1
-      Points		      [657, 0; 0, 30]
+      Points		      [657, 0; 0, 40]
       DstBlock		      "Host Serial Tx2"
       DstPort		      3
     }
@@ -3392,7 +3429,7 @@ Model {
     Line {
       SrcBlock		      "I\nGain1"
       SrcPort		      1
-      Points		      [458, 0; 0, 45]
+      Points		      [458, 0; 0, 55]
       DstBlock		      "Host Serial Tx2"
       DstPort		      4
     }
@@ -3405,7 +3442,7 @@ Model {
     Line {
       SrcBlock		      "D\nGain1"
       SrcPort		      1
-      Points		      [259, 0; 0, 45]
+      Points		      [259, 0; 0, 55]
       DstBlock		      "Host Serial Tx2"
       DstPort		      5
     }
@@ -3421,6 +3458,35 @@ Model {
       Branch {
 	Points			[0, -14]
 	DstBlock		"motor current"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Rate Transition4"
+      SrcPort		      1
+      Points		      [820, 0; 0, -145]
+      DstBlock		      "Host Serial Tx2"
+      DstPort		      10
+    }
+    Line {
+      SrcBlock		      "Manual Switch"
+      SrcPort		      1
+      Points		      [3, 0]
+      Branch {
+	Points			[41, 0]
+	Branch {
+	  Points		  [0, 284; -574, 0; 0, -98; -27, 0; 0, -96]
+	  DstBlock		  "Rate Transition3"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Data Type Conversion3"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, -312; -428, 0; 0, -48]
+	DstBlock		"Pos Scope1"
 	DstPort			1
       }
     }
