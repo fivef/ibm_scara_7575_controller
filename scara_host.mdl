@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.167"
+    ComputedModelVersion    "1.172"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -66,8 +66,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1884.0, 848.0]
-	ZoomFactor		[1.0]
-	Offset			[468.0, 131.01772815370049]
+	ZoomFactor		[1.25]
+	Offset			[604.917837303015, 123.44029192035838]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Feb 20 19:50:48 2016"
-  RTWModifiedTimeStamp	  377898449
-  ModelVersionFormat	  "1.%<AutoIncrement:167>"
+  LastModifiedDate	  "Sat Feb 20 21:45:46 2016"
+  RTWModifiedTimeStamp	  377904744
+  ModelVersionFormat	  "1.%<AutoIncrement:172>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -875,7 +875,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "104"
     Block {
@@ -1084,8 +1084,8 @@ Model {
 	set0Sigs		"Host Serial Rx1:o7velocity Setpoint:o1"
       }
       Floating		      on
-      Location		      [174, 239, 1854, 1209]
-      Open		      on
+      Location		      [168, 171, 1847, 1811]
+      Open		      off
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -3086,15 +3086,10 @@ Model {
     }
     Line {
       SrcBlock		      "Host Serial Rx1"
-      SrcPort		      7
-      Points		      [356, 0]
+      SrcPort		      2
+      Points		      [109, 0; 0, 286; 247, 0]
       Branch {
-	Points			[0, 52; 453, 0; 0, -187]
-	DstBlock		"Pos Scope1"
-	DstPort			2
-      }
-      Branch {
-	Points			[94, 0]
+	Points			[0, -11; 94, 0]
 	Branch {
 	  DstBlock		  "Speed"
 	  DstPort		  1
@@ -3104,6 +3099,11 @@ Model {
 	  DstBlock		  "Pos Scope"
 	  DstPort		  2
 	}
+      }
+      Branch {
+	Points			[0, 41; 453, 0; 0, -187]
+	DstBlock		"Pos Scope1"
+	DstPort			2
       }
     }
     Line {
@@ -3153,7 +3153,7 @@ Model {
       SrcPort		      1
       Points		      [62, 0]
       Branch {
-	Points			[0, 215; -701, 0; 0, -181; 15, 0]
+	Points			[0, 36; -593, 0; 0, -29; -108, 0]
       }
       Branch {
 	Points			[240, 0; 0, -5]
@@ -3296,9 +3296,7 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Host Serial Rx1"
-      SrcPort		      2
-      Points		      [313, 0]
+      Points		      [495, 105; 0, 0; 223, 0]
       Branch {
 	Points			[0, 27; 170, 0; 0, -37]
 	DstBlock		"board temp plot"
@@ -3473,6 +3471,11 @@ Model {
       SrcPort		      1
       Points		      [3, 0]
       Branch {
+	Points			[0, -312; -428, 0; 0, -48]
+	DstBlock		"Pos Scope1"
+	DstPort			1
+      }
+      Branch {
 	Points			[41, 0]
 	Branch {
 	  Points		  [0, 284; -574, 0; 0, -98; -27, 0; 0, -96]
@@ -3483,11 +3486,6 @@ Model {
 	  DstBlock		  "Data Type Conversion3"
 	  DstPort		  1
 	}
-      }
-      Branch {
-	Points			[0, -312; -428, 0; 0, -48]
-	DstBlock		"Pos Scope1"
-	DstPort			1
       }
     }
   }

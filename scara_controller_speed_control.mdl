@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.382"
+    ComputedModelVersion    "1.384"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -69,7 +69,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1884.0, 848.0]
 	ZoomFactor		[0.8]
-	Offset			[-127.7450264786562, 188.898797732852]
+	Offset			[863.25649488308113, 229.33511686523184]
       }
     }
   }
@@ -79,9 +79,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sp"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Feb 20 19:50:49 2016"
-  RTWModifiedTimeStamp	  377888357
-  ModelVersionFormat	  "1.%<AutoIncrement:382>"
+  LastModifiedDate	  "Sat Feb 20 21:45:47 2016"
+  RTWModifiedTimeStamp	  377900715
+  ModelVersionFormat	  "1.%<AutoIncrement:384>"
   ConfigurationManager	  "None"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -1216,7 +1216,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "606"
+    SIDHighWatermark	    "607"
     Block {
       BlockType		      Reference
       Name		      "Compare\nTo Constant"
@@ -1505,6 +1505,44 @@ Model {
       }
     }
     Block {
+      BlockType		      Reference
+      Name		      "Gaussian Filter"
+      SID		      "607"
+      Ports		      [1, 1]
+      Position		      [1475, 358, 1555, 402]
+      ZOrder		      267
+      LibraryVersion	      "1.601"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "commfilt2/Gaussian Filter"
+      SourceType	      "Gaussian Filter"
+      N			      "8"
+      BT		      "0.3"
+      D			      "2"
+      sampMode		      "Frame-based"
+      normMode		      "Sum of coefficients"
+      filterGain	      "1"
+      checkCoeff	      off
+      variableName	      "gaussFilt"
+      launchFVT		      off
+      roundingMode	      "Floor"
+      overflowMode	      off
+      coeffMode		      "Same word length as input"
+      coeffWordLength	      "16"
+      coeffFracLength	      "15"
+      prodOutputMode	      "Same as input"
+      prodOutputWordLength    "32"
+      prodOutputFracLength    "30"
+      accumMode		      "Same as product output"
+      accumWordLength	      "32"
+      accumFracLength	      "30"
+      outputMode	      "Same as accumulator"
+      outputWordLength	      "16"
+      outputFracLength	      "15"
+      LockScale		      off
+      InputProcessing	      "Columns as channels (frame based)"
+    }
+    Block {
       BlockType		      Logic
       Name		      "Logical\nOperator"
       SID		      "502"
@@ -1520,12 +1558,12 @@ Model {
       Name		      "Lowpass Filter"
       SID		      "604"
       Ports		      [1, 1]
-      Position		      [1495, 819, 1595, 861]
+      Position		      [1480, 269, 1580, 311]
       ZOrder		      266
       UserDataPersistent      on
-      UserData		      "DataTag0"
+      UserData		      "DataTag1"
       DialogController	      "fdesignblkfcn"
-      DialogControllerArgs    "DataTag1"
+      DialogControllerArgs    "DataTag2"
       CopyFcn		      "fdesignblkfcn(gcbh, {'CopyFcn'});"
       InitFcn		      "fdesignblkfcn(gcbh, {'InitFcn'});"
       MinAlgLoopOccurrences   off
@@ -2786,7 +2824,7 @@ Model {
       ZOrder		      156
       ForegroundColor	      "[0.909804, 0.819608, 0.321569]"
       DialogController	      "pidpack.PIDConfig.pidDDGCreate"
-      DialogControllerArgs    "DataTag2"
+      DialogControllerArgs    "DataTag3"
       DeleteFcn		      "pidpack.PIDConfig.closeTuner(gcbh)"
       ModelCloseFcn	      "pidpack.PIDConfig.closeTuner(gcbh)"
       NameChangeFcn	      "pidpack.PIDConfig.updateTunerName(gcbh)"
@@ -4878,9 +4916,9 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Lowpass Filter"
+      SrcBlock		      "Gaussian Filter"
       SrcPort		      1
-      Points		      [35, 0]
+      Points		      [60, 0; 0, 515]
       DstBlock		      "Data Type Conversion7"
       DstPort		      1
     }
@@ -5000,16 +5038,9 @@ Model {
     Line {
       SrcBlock		      "Quadratur Encoder2"
       SrcPort		      3
-      Points		      [155, 0]
-      Branch {
-	Points			[103, 0; 0, -145]
-	DstBlock		"USB VCP Send STM32F1"
-	DstPort			7
-      }
-      Branch {
-	DstBlock		"Lowpass Filter"
-	DstPort			1
-      }
+      Points		      [94, 0; 0, -150]
+      DstBlock		      "Gaussian Filter"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "Quadratur Encoder2"
@@ -5049,9 +5080,17 @@ Model {
     Line {
       SrcBlock		      "Data Type Conversion7"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Sum"
-      DstPort		      1
+      Points		      [3, 0]
+      Branch {
+	Points			[0, -685]
+	DstBlock		"USB VCP Send STM32F1"
+	DstPort			2
+      }
+      Branch {
+	Points			[7, 0]
+	DstBlock		"Sum"
+	DstPort			1
+      }
     }
     Line {
       SrcBlock		      "Quadratur Encoder2"
@@ -5227,9 +5266,21 @@ Model {
   }
 }
 MatData {
-  NumRecords		  3
+  NumRecords		  4
   DataRecord {
     Tag			    DataTag0
+    Data		    "  %)30     .    P (   8    (     @         %    \"     $    !     0         %  0 %@    $   !8    :&%S26"
+    "YH97)I=&5D3W!T:6]N     &9I;'1E<D-O;G-T<G5C=&]R      !F:6QT97)#;VYS=')U8W1O<D%R9W, 9G9T;V]L                      X "
+    "   P    !@    @    ) @        4    (     0    $    !          (  0 !    #@   $     &    \"     0         !0    @  "
+    "  !    \"P    $         $     L   !D9FEL=\"YD9F9I<@      #@   &@!   &    \"     $         !0    @    !     0    $ "
+    "        #@   #@!   &    \"     8         !0    @    !    (0    $         \"0    @!   G =/P +;0/I4+DQ9&ZNP^L+[?]3 7"
+    "!S^)7PG@(04A/RHW*#?@*#<_=XX1B:$633]I$M&K@]Q@/\\3Q$1P,\"W(_TTU2IU;2@3\\Q\\I%Z>3^0/X78 L*96)L_OMO^$;P]I3]E0I>25W6N/U"
+    "4O27TB*+0_!W=<*1.@N#_B\\901TL2[/V-A?5M(Y[P_XO&4$=+$NS\\'=UPI$Z\"X/U4O27TB*+0_94*7DE=UKC^^V_X1O#VE/X78 L*96)L_,?*1>"
+    "GD_D#_335*G5M*!/\\3Q$1P,\"W(_:1+1JX/<8#]WCA&)H19-/RHW*#?@*#<_B5\\)X\"$%(3^POM_U,!<'/Y4+DQ9&ZNP^)P'3\\ \"VT#X.    ."
+    "     8    (    !@         %    \"     $    !     0         )    \"            / _"
+  }
+  DataRecord {
+    Tag			    DataTag1
     Data		    "  %)30     .    $\"\\!  8    (     @         %    \"     $    !     0         %  0 '@    $   \"^!0  8VQ"
     "A<W,                                 3W!E<F%T:6YG36]D90                      5F%R:6%B;&5.86UE                     "
     "   26UP=6QS95)E<W!O;G-E                    3W)D97)-;V1E                            3W)D97(                        "
@@ -6149,13 +6200,13 @@ MatData {
     "     8         !0    @               $         \"0         "
   }
   DataRecord {
-    Tag			    DataTag1
+    Tag			    DataTag2
     Data		    "  %)30     .    P     8    (     0         %    \"     $    \"     0         .    .     8    (    !    "
     "      %    \"     $    '     0         0    !P   $]P96Y&8VX #@   %     &    \"     0         !0    @    !    (    "
     " $         $    \"    !&:6QT97)$97-I9VY$:6%L;V<N3&]W<&%S<T1E<VEG;@"
   }
   DataRecord {
-    Tag			    DataTag2
+    Tag			    DataTag3
     Data		    "  %)30     .    :     8    (     0         %    \"     $    !     0         .    .     8    (    !     "
     "     %    \"     $    '     0         0    !P   $]P96Y&8VX "
   }
